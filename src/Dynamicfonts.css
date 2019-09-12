@@ -1,0 +1,10890 @@
+@font-face{
+
+    src:url(./fonts/QCF2001.ttf);  
+   
+   font-family:font1; 
+   
+   } 
+   @font-face{
+
+    src:url(./fonts/bismillah.ttf);  
+   
+   font-family:bism; 
+   
+   } 
+   
+   .bism{
+    font-family: bism; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+
+   }
+    .p1{font-family: font1; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2002.ttf);  
+   
+   font-family:font2; 
+   
+   } 
+   
+    .p2{font-family: font2; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2003.ttf);  
+   
+   font-family:font3; 
+   
+   } 
+   
+    .p3{font-family: font3; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2004.ttf);  
+   
+   font-family:font4; 
+   
+   } 
+   
+    .p4{font-family: font4; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2005.ttf);  
+   
+   font-family:font5; 
+   
+   } 
+   
+    .p5{font-family: font5; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2006.ttf);  
+   
+   font-family:font6; 
+   
+   } 
+   
+    .p6{font-family: font6; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2007.ttf);  
+   
+   font-family:font7; 
+   
+   } 
+   
+    .p7{font-family: font7; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2008.ttf);  
+   
+   font-family:font8; 
+   
+   } 
+   
+    .p8{font-family: font8; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2009.ttf);  
+   
+   font-family:font9; 
+   
+   } 
+   
+    .p9{font-family: font9; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2010.ttf);  
+   
+   font-family:font10; 
+   
+   } 
+   
+    .p10{font-family: font10; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2011.ttf);  
+   
+   font-family:font11; 
+   
+   } 
+   
+    .p11{font-family: font11; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2012.ttf);  
+   
+   font-family:font12; 
+   
+   } 
+   
+    .p12{font-family: font12; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2013.ttf);  
+   
+   font-family:font13; 
+   
+   } 
+   
+    .p13{font-family: font13; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2014.ttf);  
+   
+   font-family:font14; 
+   
+   } 
+   
+    .p14{font-family: font14; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2015.ttf);  
+   
+   font-family:font15; 
+   
+   } 
+   
+    .p15{font-family: font15; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2016.ttf);  
+   
+   font-family:font16; 
+   
+   } 
+   
+    .p16{font-family: font16; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2017.ttf);  
+   
+   font-family:font17; 
+   
+   } 
+   
+    .p17{font-family: font17; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2018.ttf);  
+   
+   font-family:font18; 
+   
+   } 
+   
+    .p18{font-family: font18; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2019.ttf);  
+   
+   font-family:font19; 
+   
+   } 
+   
+    .p19{font-family: font19; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2020.ttf);  
+   
+   font-family:font20; 
+   
+   } 
+   
+    .p20{font-family: font20; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2021.ttf);  
+   
+   font-family:font21; 
+   
+   } 
+   
+    .p21{font-family: font21; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2022.ttf);  
+   
+   font-family:font22; 
+   
+   } 
+   
+    .p22{font-family: font22; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2023.ttf);  
+   
+   font-family:font23; 
+   
+   } 
+   
+    .p23{font-family: font23; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2024.ttf);  
+   
+   font-family:font24; 
+   
+   } 
+   
+    .p24{font-family: font24; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2025.ttf);  
+   
+   font-family:font25; 
+   
+   } 
+   
+    .p25{font-family: font25; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2026.ttf);  
+   
+   font-family:font26; 
+   
+   } 
+   
+    .p26{font-family: font26; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2027.ttf);  
+   
+   font-family:font27; 
+   
+   } 
+   
+    .p27{font-family: font27; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2028.ttf);  
+   
+   font-family:font28; 
+   
+   } 
+   
+    .p28{font-family: font28; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2029.ttf);  
+   
+   font-family:font29; 
+   
+   } 
+   
+    .p29{font-family: font29; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2030.ttf);  
+   
+   font-family:font30; 
+   
+   } 
+   
+    .p30{font-family: font30; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2031.ttf);  
+   
+   font-family:font31; 
+   
+   } 
+   
+    .p31{font-family: font31; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2032.ttf);  
+   
+   font-family:font32; 
+   
+   } 
+   
+    .p32{font-family: font32; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2033.ttf);  
+   
+   font-family:font33; 
+   
+   } 
+   
+    .p33{font-family: font33; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2034.ttf);  
+   
+   font-family:font34; 
+   
+   } 
+   
+    .p34{font-family: font34; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2035.ttf);  
+   
+   font-family:font35; 
+   
+   } 
+   
+    .p35{font-family: font35; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2036.ttf);  
+   
+   font-family:font36; 
+   
+   } 
+   
+    .p36{font-family: font36; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2037.ttf);  
+   
+   font-family:font37; 
+   
+   } 
+   
+    .p37{font-family: font37; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2038.ttf);  
+   
+   font-family:font38; 
+   
+   } 
+   
+    .p38{font-family: font38; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2039.ttf);  
+   
+   font-family:font39; 
+   
+   } 
+   
+    .p39{font-family: font39; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2040.ttf);  
+   
+   font-family:font40; 
+   
+   } 
+   
+    .p40{font-family: font40; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2041.ttf);  
+   
+   font-family:font41; 
+   
+   } 
+   
+    .p41{font-family: font41; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2042.ttf);  
+   
+   font-family:font42; 
+   
+   } 
+   
+    .p42{font-family: font42; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2043.ttf);  
+   
+   font-family:font43; 
+   
+   } 
+   
+    .p43{font-family: font43; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2044.ttf);  
+   
+   font-family:font44; 
+   
+   } 
+   
+    .p44{font-family: font44; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2045.ttf);  
+   
+   font-family:font45; 
+   
+   } 
+   
+    .p45{font-family: font45; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2046.ttf);  
+   
+   font-family:font46; 
+   
+   } 
+   
+    .p46{font-family: font46; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2047.ttf);  
+   
+   font-family:font47; 
+   
+   } 
+   
+    .p47{font-family: font47; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2048.ttf);  
+   
+   font-family:font48; 
+   
+   } 
+   
+    .p48{font-family: font48; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2049.ttf);  
+   
+   font-family:font49; 
+   
+   } 
+   
+    .p49{font-family: font49; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2050.ttf);  
+   
+   font-family:font50; 
+   
+   } 
+   
+    .p50{font-family: font50; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2051.ttf);  
+   
+   font-family:font51; 
+   
+   } 
+   
+    .p51{font-family: font51; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2052.ttf);  
+   
+   font-family:font52; 
+   
+   } 
+   
+    .p52{font-family: font52; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2053.ttf);  
+   
+   font-family:font53; 
+   
+   } 
+   
+    .p53{font-family: font53; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2054.ttf);  
+   
+   font-family:font54; 
+   
+   } 
+   
+    .p54{font-family: font54; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2055.ttf);  
+   
+   font-family:font55; 
+   
+   } 
+   
+    .p55{font-family: font55; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2056.ttf);  
+   
+   font-family:font56; 
+   
+   } 
+   
+    .p56{font-family: font56; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2057.ttf);  
+   
+   font-family:font57; 
+   
+   } 
+   
+    .p57{font-family: font57; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2058.ttf);  
+   
+   font-family:font58; 
+   
+   } 
+   
+    .p58{font-family: font58; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2059.ttf);  
+   
+   font-family:font59; 
+   
+   } 
+   
+    .p59{font-family: font59; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2060.ttf);  
+   
+   font-family:font60; 
+   
+   } 
+   
+    .p60{font-family: font60; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2061.ttf);  
+   
+   font-family:font61; 
+   
+   } 
+   
+    .p61{font-family: font61; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2062.ttf);  
+   
+   font-family:font62; 
+   
+   } 
+   
+    .p62{font-family: font62; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2063.ttf);  
+   
+   font-family:font63; 
+   
+   } 
+   
+    .p63{font-family: font63; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2064.ttf);  
+   
+   font-family:font64; 
+   
+   } 
+   
+    .p64{font-family: font64; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2065.ttf);  
+   
+   font-family:font65; 
+   
+   } 
+   
+    .p65{font-family: font65; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2066.ttf);  
+   
+   font-family:font66; 
+   
+   } 
+   
+    .p66{font-family: font66; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2067.ttf);  
+   
+   font-family:font67; 
+   
+   } 
+   
+    .p67{font-family: font67; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2068.ttf);  
+   
+   font-family:font68; 
+   
+   } 
+   
+    .p68{font-family: font68; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2069.ttf);  
+   
+   font-family:font69; 
+   
+   } 
+   
+    .p69{font-family: font69; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2070.ttf);  
+   
+   font-family:font70; 
+   
+   } 
+   
+    .p70{font-family: font70; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2071.ttf);  
+   
+   font-family:font71; 
+   
+   } 
+   
+    .p71{font-family: font71; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2072.ttf);  
+   
+   font-family:font72; 
+   
+   } 
+   
+    .p72{font-family: font72; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2073.ttf);  
+   
+   font-family:font73; 
+   
+   } 
+   
+    .p73{font-family: font73; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2074.ttf);  
+   
+   font-family:font74; 
+   
+   } 
+   
+    .p74{font-family: font74; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2075.ttf);  
+   
+   font-family:font75; 
+   
+   } 
+   
+    .p75{font-family: font75; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2076.ttf);  
+   
+   font-family:font76; 
+   
+   } 
+   
+    .p76{font-family: font76; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2077.ttf);  
+   
+   font-family:font77; 
+   
+   } 
+   
+    .p77{font-family: font77; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2078.ttf);  
+   
+   font-family:font78; 
+   
+   } 
+   
+    .p78{font-family: font78; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2079.ttf);  
+   
+   font-family:font79; 
+   
+   } 
+   
+    .p79{font-family: font79; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2080.ttf);  
+   
+   font-family:font80; 
+   
+   } 
+   
+    .p80{font-family: font80; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2081.ttf);  
+   
+   font-family:font81; 
+   
+   } 
+   
+    .p81{font-family: font81; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2082.ttf);  
+   
+   font-family:font82; 
+   
+   } 
+   
+    .p82{font-family: font82; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2083.ttf);  
+   
+   font-family:font83; 
+   
+   } 
+   
+    .p83{font-family: font83; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2084.ttf);  
+   
+   font-family:font84; 
+   
+   } 
+   
+    .p84{font-family: font84; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2085.ttf);  
+   
+   font-family:font85; 
+   
+   } 
+   
+    .p85{font-family: font85; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2086.ttf);  
+   
+   font-family:font86; 
+   
+   } 
+   
+    .p86{font-family: font86; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2087.ttf);  
+   
+   font-family:font87; 
+   
+   } 
+   
+    .p87{font-family: font87; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2088.ttf);  
+   
+   font-family:font88; 
+   
+   } 
+   
+    .p88{font-family: font88; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2089.ttf);  
+   
+   font-family:font89; 
+   
+   } 
+   
+    .p89{font-family: font89; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2090.ttf);  
+   
+   font-family:font90; 
+   
+   } 
+   
+    .p90{font-family: font90; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2091.ttf);  
+   
+   font-family:font91; 
+   
+   } 
+   
+    .p91{font-family: font91; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2092.ttf);  
+   
+   font-family:font92; 
+   
+   } 
+   
+    .p92{font-family: font92; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2093.ttf);  
+   
+   font-family:font93; 
+   
+   } 
+   
+    .p93{font-family: font93; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2094.ttf);  
+   
+   font-family:font94; 
+   
+   } 
+   
+    .p94{font-family: font94; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2095.ttf);  
+   
+   font-family:font95; 
+   
+   } 
+   
+    .p95{font-family: font95; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2096.ttf);  
+   
+   font-family:font96; 
+   
+   } 
+   
+    .p96{font-family: font96; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2097.ttf);  
+   
+   font-family:font97; 
+   
+   } 
+   
+    .p97{font-family: font97; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2098.ttf);  
+   
+   font-family:font98; 
+   
+   } 
+   
+    .p98{font-family: font98; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2099.ttf);  
+   
+   font-family:font99; 
+   
+   } 
+   
+    .p99{font-family: font99; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2100.ttf);  
+   
+   font-family:font100; 
+   
+   } 
+   
+    .p100{font-family: font100; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2101.ttf);  
+   
+   font-family:font101; 
+   
+   } 
+   
+    .p101{font-family: font101; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2102.ttf);  
+   
+   font-family:font102; 
+   
+   } 
+   
+    .p102{font-family: font102; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2103.ttf);  
+   
+   font-family:font103; 
+   
+   } 
+   
+    .p103{font-family: font103; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2104.ttf);  
+   
+   font-family:font104; 
+   
+   } 
+   
+    .p104{font-family: font104; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2105.ttf);  
+   
+   font-family:font105; 
+   
+   } 
+   
+    .p105{font-family: font105; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2106.ttf);  
+   
+   font-family:font106; 
+   
+   } 
+   
+    .p106{font-family: font106; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2107.ttf);  
+   
+   font-family:font107; 
+   
+   } 
+   
+    .p107{font-family: font107; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2108.ttf);  
+   
+   font-family:font108; 
+   
+   } 
+   
+    .p108{font-family: font108; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2109.ttf);  
+   
+   font-family:font109; 
+   
+   } 
+   
+    .p109{font-family: font109; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2110.ttf);  
+   
+   font-family:font110; 
+   
+   } 
+   
+    .p110{font-family: font110; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2111.ttf);  
+   
+   font-family:font111; 
+   
+   } 
+   
+    .p111{font-family: font111; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2112.ttf);  
+   
+   font-family:font112; 
+   
+   } 
+   
+    .p112{font-family: font112; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2113.ttf);  
+   
+   font-family:font113; 
+   
+   } 
+   
+    .p113{font-family: font113; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2114.ttf);  
+   
+   font-family:font114; 
+   
+   } 
+   
+    .p114{font-family: font114; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2115.ttf);  
+   
+   font-family:font115; 
+   
+   } 
+   
+    .p115{font-family: font115; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2116.ttf);  
+   
+   font-family:font116; 
+   
+   } 
+   
+    .p116{font-family: font116; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2117.ttf);  
+   
+   font-family:font117; 
+   
+   } 
+   
+    .p117{font-family: font117; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2118.ttf);  
+   
+   font-family:font118; 
+   
+   } 
+   
+    .p118{font-family: font118; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2119.ttf);  
+   
+   font-family:font119; 
+   
+   } 
+   
+    .p119{font-family: font119; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2120.ttf);  
+   
+   font-family:font120; 
+   
+   } 
+   
+    .p120{font-family: font120; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2121.ttf);  
+   
+   font-family:font121; 
+   
+   } 
+   
+    .p121{font-family: font121; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2122.ttf);  
+   
+   font-family:font122; 
+   
+   } 
+   
+    .p122{font-family: font122; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2123.ttf);  
+   
+   font-family:font123; 
+   
+   } 
+   
+    .p123{font-family: font123; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2124.ttf);  
+   
+   font-family:font124; 
+   
+   } 
+   
+    .p124{font-family: font124; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2125.ttf);  
+   
+   font-family:font125; 
+   
+   } 
+   
+    .p125{font-family: font125; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2126.ttf);  
+   
+   font-family:font126; 
+   
+   } 
+   
+    .p126{font-family: font126; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2127.ttf);  
+   
+   font-family:font127; 
+   
+   } 
+   
+    .p127{font-family: font127; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2128.ttf);  
+   
+   font-family:font128; 
+   
+   } 
+   
+    .p128{font-family: font128; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2129.ttf);  
+   
+   font-family:font129; 
+   
+   } 
+   
+    .p129{font-family: font129; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2130.ttf);  
+   
+   font-family:font130; 
+   
+   } 
+   
+    .p130{font-family: font130; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2131.ttf);  
+   
+   font-family:font131; 
+   
+   } 
+   
+    .p131{font-family: font131; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2132.ttf);  
+   
+   font-family:font132; 
+   
+   } 
+   
+    .p132{font-family: font132; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2133.ttf);  
+   
+   font-family:font133; 
+   
+   } 
+   
+    .p133{font-family: font133; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2134.ttf);  
+   
+   font-family:font134; 
+   
+   } 
+   
+    .p134{font-family: font134; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2135.ttf);  
+   
+   font-family:font135; 
+   
+   } 
+   
+    .p135{font-family: font135; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2136.ttf);  
+   
+   font-family:font136; 
+   
+   } 
+   
+    .p136{font-family: font136; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2137.ttf);  
+   
+   font-family:font137; 
+   
+   } 
+   
+    .p137{font-family: font137; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2138.ttf);  
+   
+   font-family:font138; 
+   
+   } 
+   
+    .p138{font-family: font138; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2139.ttf);  
+   
+   font-family:font139; 
+   
+   } 
+   
+    .p139{font-family: font139; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2140.ttf);  
+   
+   font-family:font140; 
+   
+   } 
+   
+    .p140{font-family: font140; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2141.ttf);  
+   
+   font-family:font141; 
+   
+   } 
+   
+    .p141{font-family: font141; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2142.ttf);  
+   
+   font-family:font142; 
+   
+   } 
+   
+    .p142{font-family: font142; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2143.ttf);  
+   
+   font-family:font143; 
+   
+   } 
+   
+    .p143{font-family: font143; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2144.ttf);  
+   
+   font-family:font144; 
+   
+   } 
+   
+    .p144{font-family: font144; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2145.ttf);  
+   
+   font-family:font145; 
+   
+   } 
+   
+    .p145{font-family: font145; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2146.ttf);  
+   
+   font-family:font146; 
+   
+   } 
+   
+    .p146{font-family: font146; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2147.ttf);  
+   
+   font-family:font147; 
+   
+   } 
+   
+    .p147{font-family: font147; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2148.ttf);  
+   
+   font-family:font148; 
+   
+   } 
+   
+    .p148{font-family: font148; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2149.ttf);  
+   
+   font-family:font149; 
+   
+   } 
+   
+    .p149{font-family: font149; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2150.ttf);  
+   
+   font-family:font150; 
+   
+   } 
+   
+    .p150{font-family: font150; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2151.ttf);  
+   
+   font-family:font151; 
+   
+   } 
+   
+    .p151{font-family: font151; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2152.ttf);  
+   
+   font-family:font152; 
+   
+   } 
+   
+    .p152{font-family: font152; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2153.ttf);  
+   
+   font-family:font153; 
+   
+   } 
+   
+    .p153{font-family: font153; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2154.ttf);  
+   
+   font-family:font154; 
+   
+   } 
+   
+    .p154{font-family: font154; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2155.ttf);  
+   
+   font-family:font155; 
+   
+   } 
+   
+    .p155{font-family: font155; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2156.ttf);  
+   
+   font-family:font156; 
+   
+   } 
+   
+    .p156{font-family: font156; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2157.ttf);  
+   
+   font-family:font157; 
+   
+   } 
+   
+    .p157{font-family: font157; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2158.ttf);  
+   
+   font-family:font158; 
+   
+   } 
+   
+    .p158{font-family: font158; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2159.ttf);  
+   
+   font-family:font159; 
+   
+   } 
+   
+    .p159{font-family: font159; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2160.ttf);  
+   
+   font-family:font160; 
+   
+   } 
+   
+    .p160{font-family: font160; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2161.ttf);  
+   
+   font-family:font161; 
+   
+   } 
+   
+    .p161{font-family: font161; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2162.ttf);  
+   
+   font-family:font162; 
+   
+   } 
+   
+    .p162{font-family: font162; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2163.ttf);  
+   
+   font-family:font163; 
+   
+   } 
+   
+    .p163{font-family: font163; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2164.ttf);  
+   
+   font-family:font164; 
+   
+   } 
+   
+    .p164{font-family: font164; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2165.ttf);  
+   
+   font-family:font165; 
+   
+   } 
+   
+    .p165{font-family: font165; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2166.ttf);  
+   
+   font-family:font166; 
+   
+   } 
+   
+    .p166{font-family: font166; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2167.ttf);  
+   
+   font-family:font167; 
+   
+   } 
+   
+    .p167{font-family: font167; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2168.ttf);  
+   
+   font-family:font168; 
+   
+   } 
+   
+    .p168{font-family: font168; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2169.ttf);  
+   
+   font-family:font169; 
+   
+   } 
+   
+    .p169{font-family: font169; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2170.ttf);  
+   
+   font-family:font170; 
+   
+   } 
+   
+    .p170{font-family: font170; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2171.ttf);  
+   
+   font-family:font171; 
+   
+   } 
+   
+    .p171{font-family: font171; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2172.ttf);  
+   
+   font-family:font172; 
+   
+   } 
+   
+    .p172{font-family: font172; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2173.ttf);  
+   
+   font-family:font173; 
+   
+   } 
+   
+    .p173{font-family: font173; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2174.ttf);  
+   
+   font-family:font174; 
+   
+   } 
+   
+    .p174{font-family: font174; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2175.ttf);  
+   
+   font-family:font175; 
+   
+   } 
+   
+    .p175{font-family: font175; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2176.ttf);  
+   
+   font-family:font176; 
+   
+   } 
+   
+    .p176{font-family: font176; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2177.ttf);  
+   
+   font-family:font177; 
+   
+   } 
+   
+    .p177{font-family: font177; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2178.ttf);  
+   
+   font-family:font178; 
+   
+   } 
+   
+    .p178{font-family: font178; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2179.ttf);  
+   
+   font-family:font179; 
+   
+   } 
+   
+    .p179{font-family: font179; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2180.ttf);  
+   
+   font-family:font180; 
+   
+   } 
+   
+    .p180{font-family: font180; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2181.ttf);  
+   
+   font-family:font181; 
+   
+   } 
+   
+    .p181{font-family: font181; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2182.ttf);  
+   
+   font-family:font182; 
+   
+   } 
+   
+    .p182{font-family: font182; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2183.ttf);  
+   
+   font-family:font183; 
+   
+   } 
+   
+    .p183{font-family: font183; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2184.ttf);  
+   
+   font-family:font184; 
+   
+   } 
+   
+    .p184{font-family: font184; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2185.ttf);  
+   
+   font-family:font185; 
+   
+   } 
+   
+    .p185{font-family: font185; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2186.ttf);  
+   
+   font-family:font186; 
+   
+   } 
+   
+    .p186{font-family: font186; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2187.ttf);  
+   
+   font-family:font187; 
+   
+   } 
+   
+    .p187{font-family: font187; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2188.ttf);  
+   
+   font-family:font188; 
+   
+   } 
+   
+    .p188{font-family: font188; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2189.ttf);  
+   
+   font-family:font189; 
+   
+   } 
+   
+    .p189{font-family: font189; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2190.ttf);  
+   
+   font-family:font190; 
+   
+   } 
+   
+    .p190{font-family: font190; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2191.ttf);  
+   
+   font-family:font191; 
+   
+   } 
+   
+    .p191{font-family: font191; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2192.ttf);  
+   
+   font-family:font192; 
+   
+   } 
+   
+    .p192{font-family: font192; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2193.ttf);  
+   
+   font-family:font193; 
+   
+   } 
+   
+    .p193{font-family: font193; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2194.ttf);  
+   
+   font-family:font194; 
+   
+   } 
+   
+    .p194{font-family: font194; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2195.ttf);  
+   
+   font-family:font195; 
+   
+   } 
+   
+    .p195{font-family: font195; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2196.ttf);  
+   
+   font-family:font196; 
+   
+   } 
+   
+    .p196{font-family: font196; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2197.ttf);  
+   
+   font-family:font197; 
+   
+   } 
+   
+    .p197{font-family: font197; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2198.ttf);  
+   
+   font-family:font198; 
+   
+   } 
+   
+    .p198{font-family: font198; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2199.ttf);  
+   
+   font-family:font199; 
+   
+   } 
+   
+    .p199{font-family: font199; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2200.ttf);  
+   
+   font-family:font200; 
+   
+   } 
+   
+    .p200{font-family: font200; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2201.ttf);  
+   
+   font-family:font201; 
+   
+   } 
+   
+    .p201{font-family: font201; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2202.ttf);  
+   
+   font-family:font202; 
+   
+   } 
+   
+    .p202{font-family: font202; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2203.ttf);  
+   
+   font-family:font203; 
+   
+   } 
+   
+    .p203{font-family: font203; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2204.ttf);  
+   
+   font-family:font204; 
+   
+   } 
+   
+    .p204{font-family: font204; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2205.ttf);  
+   
+   font-family:font205; 
+   
+   } 
+   
+    .p205{font-family: font205; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2206.ttf);  
+   
+   font-family:font206; 
+   
+   } 
+   
+    .p206{font-family: font206; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2207.ttf);  
+   
+   font-family:font207; 
+   
+   } 
+   
+    .p207{font-family: font207; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2208.ttf);  
+   
+   font-family:font208; 
+   
+   } 
+   
+    .p208{font-family: font208; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2209.ttf);  
+   
+   font-family:font209; 
+   
+   } 
+   
+    .p209{font-family: font209; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2210.ttf);  
+   
+   font-family:font210; 
+   
+   } 
+   
+    .p210{font-family: font210; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2211.ttf);  
+   
+   font-family:font211; 
+   
+   } 
+   
+    .p211{font-family: font211; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2212.ttf);  
+   
+   font-family:font212; 
+   
+   } 
+   
+    .p212{font-family: font212; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2213.ttf);  
+   
+   font-family:font213; 
+   
+   } 
+   
+    .p213{font-family: font213; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2214.ttf);  
+   
+   font-family:font214; 
+   
+   } 
+   
+    .p214{font-family: font214; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2215.ttf);  
+   
+   font-family:font215; 
+   
+   } 
+   
+    .p215{font-family: font215; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2216.ttf);  
+   
+   font-family:font216; 
+   
+   } 
+   
+    .p216{font-family: font216; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2217.ttf);  
+   
+   font-family:font217; 
+   
+   } 
+   
+    .p217{font-family: font217; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2218.ttf);  
+   
+   font-family:font218; 
+   
+   } 
+   
+    .p218{font-family: font218; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2219.ttf);  
+   
+   font-family:font219; 
+   
+   } 
+   
+    .p219{font-family: font219; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2220.ttf);  
+   
+   font-family:font220; 
+   
+   } 
+   
+    .p220{font-family: font220; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2221.ttf);  
+   
+   font-family:font221; 
+   
+   } 
+   
+    .p221{font-family: font221; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2222.ttf);  
+   
+   font-family:font222; 
+   
+   } 
+   
+    .p222{font-family: font222; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2223.ttf);  
+   
+   font-family:font223; 
+   
+   } 
+   
+    .p223{font-family: font223; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2224.ttf);  
+   
+   font-family:font224; 
+   
+   } 
+   
+    .p224{font-family: font224; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2225.ttf);  
+   
+   font-family:font225; 
+   
+   } 
+   
+    .p225{font-family: font225; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2226.ttf);  
+   
+   font-family:font226; 
+   
+   } 
+   
+    .p226{font-family: font226; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2227.ttf);  
+   
+   font-family:font227; 
+   
+   } 
+   
+    .p227{font-family: font227; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2228.ttf);  
+   
+   font-family:font228; 
+   
+   } 
+   
+    .p228{font-family: font228; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2229.ttf);  
+   
+   font-family:font229; 
+   
+   } 
+   
+    .p229{font-family: font229; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2230.ttf);  
+   
+   font-family:font230; 
+   
+   } 
+   
+    .p230{font-family: font230; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2231.ttf);  
+   
+   font-family:font231; 
+   
+   } 
+   
+    .p231{font-family: font231; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2232.ttf);  
+   
+   font-family:font232; 
+   
+   } 
+   
+    .p232{font-family: font232; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2233.ttf);  
+   
+   font-family:font233; 
+   
+   } 
+   
+    .p233{font-family: font233; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2234.ttf);  
+   
+   font-family:font234; 
+   
+   } 
+   
+    .p234{font-family: font234; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2235.ttf);  
+   
+   font-family:font235; 
+   
+   } 
+   
+    .p235{font-family: font235; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2236.ttf);  
+   
+   font-family:font236; 
+   
+   } 
+   
+    .p236{font-family: font236; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2237.ttf);  
+   
+   font-family:font237; 
+   
+   } 
+   
+    .p237{font-family: font237; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2238.ttf);  
+   
+   font-family:font238; 
+   
+   } 
+   
+    .p238{font-family: font238; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2239.ttf);  
+   
+   font-family:font239; 
+   
+   } 
+   
+    .p239{font-family: font239; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2240.ttf);  
+   
+   font-family:font240; 
+   
+   } 
+   
+    .p240{font-family: font240; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2241.ttf);  
+   
+   font-family:font241; 
+   
+   } 
+   
+    .p241{font-family: font241; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2242.ttf);  
+   
+   font-family:font242; 
+   
+   } 
+   
+    .p242{font-family: font242; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2243.ttf);  
+   
+   font-family:font243; 
+   
+   } 
+   
+    .p243{font-family: font243; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2244.ttf);  
+   
+   font-family:font244; 
+   
+   } 
+   
+    .p244{font-family: font244; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2245.ttf);  
+   
+   font-family:font245; 
+   
+   } 
+   
+    .p245{font-family: font245; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2246.ttf);  
+   
+   font-family:font246; 
+   
+   } 
+   
+    .p246{font-family: font246; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2247.ttf);  
+   
+   font-family:font247; 
+   
+   } 
+   
+    .p247{font-family: font247; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2248.ttf);  
+   
+   font-family:font248; 
+   
+   } 
+   
+    .p248{font-family: font248; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2249.ttf);  
+   
+   font-family:font249; 
+   
+   } 
+   
+    .p249{font-family: font249; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2250.ttf);  
+   
+   font-family:font250; 
+   
+   } 
+   
+    .p250{font-family: font250; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2251.ttf);  
+   
+   font-family:font251; 
+   
+   } 
+   
+    .p251{font-family: font251; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2252.ttf);  
+   
+   font-family:font252; 
+   
+   } 
+   
+    .p252{font-family: font252; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2253.ttf);  
+   
+   font-family:font253; 
+   
+   } 
+   
+    .p253{font-family: font253; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2254.ttf);  
+   
+   font-family:font254; 
+   
+   } 
+   
+    .p254{font-family: font254; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2255.ttf);  
+   
+   font-family:font255; 
+   
+   } 
+   
+    .p255{font-family: font255; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2256.ttf);  
+   
+   font-family:font256; 
+   
+   } 
+   
+    .p256{font-family: font256; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2257.ttf);  
+   
+   font-family:font257; 
+   
+   } 
+   
+    .p257{font-family: font257; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2258.ttf);  
+   
+   font-family:font258; 
+   
+   } 
+   
+    .p258{font-family: font258; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2259.ttf);  
+   
+   font-family:font259; 
+   
+   } 
+   
+    .p259{font-family: font259; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2260.ttf);  
+   
+   font-family:font260; 
+   
+   } 
+   
+    .p260{font-family: font260; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2261.ttf);  
+   
+   font-family:font261; 
+   
+   } 
+   
+    .p261{font-family: font261; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2262.ttf);  
+   
+   font-family:font262; 
+   
+   } 
+   
+    .p262{font-family: font262; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2263.ttf);  
+   
+   font-family:font263; 
+   
+   } 
+   
+    .p263{font-family: font263; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2264.ttf);  
+   
+   font-family:font264; 
+   
+   } 
+   
+    .p264{font-family: font264; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2265.ttf);  
+   
+   font-family:font265; 
+   
+   } 
+   
+    .p265{font-family: font265; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2266.ttf);  
+   
+   font-family:font266; 
+   
+   } 
+   
+    .p266{font-family: font266; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2267.ttf);  
+   
+   font-family:font267; 
+   
+   } 
+   
+    .p267{font-family: font267; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2268.ttf);  
+   
+   font-family:font268; 
+   
+   } 
+   
+    .p268{font-family: font268; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2269.ttf);  
+   
+   font-family:font269; 
+   
+   } 
+   
+    .p269{font-family: font269; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2270.ttf);  
+   
+   font-family:font270; 
+   
+   } 
+   
+    .p270{font-family: font270; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2271.ttf);  
+   
+   font-family:font271; 
+   
+   } 
+   
+    .p271{font-family: font271; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2272.ttf);  
+   
+   font-family:font272; 
+   
+   } 
+   
+    .p272{font-family: font272; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2273.ttf);  
+   
+   font-family:font273; 
+   
+   } 
+   
+    .p273{font-family: font273; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2274.ttf);  
+   
+   font-family:font274; 
+   
+   } 
+   
+    .p274{font-family: font274; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2275.ttf);  
+   
+   font-family:font275; 
+   
+   } 
+   
+    .p275{font-family: font275; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2276.ttf);  
+   
+   font-family:font276; 
+   
+   } 
+   
+    .p276{font-family: font276; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2277.ttf);  
+   
+   font-family:font277; 
+   
+   } 
+   
+    .p277{font-family: font277; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2278.ttf);  
+   
+   font-family:font278; 
+   
+   } 
+   
+    .p278{font-family: font278; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2279.ttf);  
+   
+   font-family:font279; 
+   
+   } 
+   
+    .p279{font-family: font279; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2280.ttf);  
+   
+   font-family:font280; 
+   
+   } 
+   
+    .p280{font-family: font280; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2281.ttf);  
+   
+   font-family:font281; 
+   
+   } 
+   
+    .p281{font-family: font281; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2282.ttf);  
+   
+   font-family:font282; 
+   
+   } 
+   
+    .p282{font-family: font282; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2283.ttf);  
+   
+   font-family:font283; 
+   
+   } 
+   
+    .p283{font-family: font283; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2284.ttf);  
+   
+   font-family:font284; 
+   
+   } 
+   
+    .p284{font-family: font284; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2285.ttf);  
+   
+   font-family:font285; 
+   
+   } 
+   
+    .p285{font-family: font285; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2286.ttf);  
+   
+   font-family:font286; 
+   
+   } 
+   
+    .p286{font-family: font286; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2287.ttf);  
+   
+   font-family:font287; 
+   
+   } 
+   
+    .p287{font-family: font287; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2288.ttf);  
+   
+   font-family:font288; 
+   
+   } 
+   
+    .p288{font-family: font288; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2289.ttf);  
+   
+   font-family:font289; 
+   
+   } 
+   
+    .p289{font-family: font289; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2290.ttf);  
+   
+   font-family:font290; 
+   
+   } 
+   
+    .p290{font-family: font290; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2291.ttf);  
+   
+   font-family:font291; 
+   
+   } 
+   
+    .p291{font-family: font291; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2292.ttf);  
+   
+   font-family:font292; 
+   
+   } 
+   
+    .p292{font-family: font292; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2293.ttf);  
+   
+   font-family:font293; 
+   
+   } 
+   
+    .p293{font-family: font293; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2294.ttf);  
+   
+   font-family:font294; 
+   
+   } 
+   
+    .p294{font-family: font294; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2295.ttf);  
+   
+   font-family:font295; 
+   
+   } 
+   
+    .p295{font-family: font295; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2296.ttf);  
+   
+   font-family:font296; 
+   
+   } 
+   
+    .p296{font-family: font296; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2297.ttf);  
+   
+   font-family:font297; 
+   
+   } 
+   
+    .p297{font-family: font297; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2298.ttf);  
+   
+   font-family:font298; 
+   
+   } 
+   
+    .p298{font-family: font298; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2299.ttf);  
+   
+   font-family:font299; 
+   
+   } 
+   
+    .p299{font-family: font299; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2300.ttf);  
+   
+   font-family:font300; 
+   
+   } 
+   
+    .p300{font-family: font300; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2301.ttf);  
+   
+   font-family:font301; 
+   
+   } 
+   
+    .p301{font-family: font301; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2302.ttf);  
+   
+   font-family:font302; 
+   
+   } 
+   
+    .p302{font-family: font302; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2303.ttf);  
+   
+   font-family:font303; 
+   
+   } 
+   
+    .p303{font-family: font303; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2304.ttf);  
+   
+   font-family:font304; 
+   
+   } 
+   
+    .p304{font-family: font304; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2305.ttf);  
+   
+   font-family:font305; 
+   
+   } 
+   
+    .p305{font-family: font305; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2306.ttf);  
+   
+   font-family:font306; 
+   
+   } 
+   
+    .p306{font-family: font306; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2307.ttf);  
+   
+   font-family:font307; 
+   
+   } 
+   
+    .p307{font-family: font307; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2308.ttf);  
+   
+   font-family:font308; 
+   
+   } 
+   
+    .p308{font-family: font308; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2309.ttf);  
+   
+   font-family:font309; 
+   
+   } 
+   
+    .p309{font-family: font309; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2310.ttf);  
+   
+   font-family:font310; 
+   
+   } 
+   
+    .p310{font-family: font310; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2311.ttf);  
+   
+   font-family:font311; 
+   
+   } 
+   
+    .p311{font-family: font311; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2312.ttf);  
+   
+   font-family:font312; 
+   
+   } 
+   
+    .p312{font-family: font312; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2313.ttf);  
+   
+   font-family:font313; 
+   
+   } 
+   
+    .p313{font-family: font313; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2314.ttf);  
+   
+   font-family:font314; 
+   
+   } 
+   
+    .p314{font-family: font314; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2315.ttf);  
+   
+   font-family:font315; 
+   
+   } 
+   
+    .p315{font-family: font315; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2316.ttf);  
+   
+   font-family:font316; 
+   
+   } 
+   
+    .p316{font-family: font316; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2317.ttf);  
+   
+   font-family:font317; 
+   
+   } 
+   
+    .p317{font-family: font317; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2318.ttf);  
+   
+   font-family:font318; 
+   
+   } 
+   
+    .p318{font-family: font318; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2319.ttf);  
+   
+   font-family:font319; 
+   
+   } 
+   
+    .p319{font-family: font319; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2320.ttf);  
+   
+   font-family:font320; 
+   
+   } 
+   
+    .p320{font-family: font320; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2321.ttf);  
+   
+   font-family:font321; 
+   
+   } 
+   
+    .p321{font-family: font321; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2322.ttf);  
+   
+   font-family:font322; 
+   
+   } 
+   
+    .p322{font-family: font322; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2323.ttf);  
+   
+   font-family:font323; 
+   
+   } 
+   
+    .p323{font-family: font323; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2324.ttf);  
+   
+   font-family:font324; 
+   
+   } 
+   
+    .p324{font-family: font324; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2325.ttf);  
+   
+   font-family:font325; 
+   
+   } 
+   
+    .p325{font-family: font325; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2326.ttf);  
+   
+   font-family:font326; 
+   
+   } 
+   
+    .p326{font-family: font326; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2327.ttf);  
+   
+   font-family:font327; 
+   
+   } 
+   
+    .p327{font-family: font327; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2328.ttf);  
+   
+   font-family:font328; 
+   
+   } 
+   
+    .p328{font-family: font328; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2329.ttf);  
+   
+   font-family:font329; 
+   
+   } 
+   
+    .p329{font-family: font329; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2330.ttf);  
+   
+   font-family:font330; 
+   
+   } 
+   
+    .p330{font-family: font330; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2331.ttf);  
+   
+   font-family:font331; 
+   
+   } 
+   
+    .p331{font-family: font331; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2332.ttf);  
+   
+   font-family:font332; 
+   
+   } 
+   
+    .p332{font-family: font332; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2333.ttf);  
+   
+   font-family:font333; 
+   
+   } 
+   
+    .p333{font-family: font333; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2334.ttf);  
+   
+   font-family:font334; 
+   
+   } 
+   
+    .p334{font-family: font334; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2335.ttf);  
+   
+   font-family:font335; 
+   
+   } 
+   
+    .p335{font-family: font335; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2336.ttf);  
+   
+   font-family:font336; 
+   
+   } 
+   
+    .p336{font-family: font336; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2337.ttf);  
+   
+   font-family:font337; 
+   
+   } 
+   
+    .p337{font-family: font337; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2338.ttf);  
+   
+   font-family:font338; 
+   
+   } 
+   
+    .p338{font-family: font338; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2339.ttf);  
+   
+   font-family:font339; 
+   
+   } 
+   
+    .p339{font-family: font339; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2340.ttf);  
+   
+   font-family:font340; 
+   
+   } 
+   
+    .p340{font-family: font340; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2341.ttf);  
+   
+   font-family:font341; 
+   
+   } 
+   
+    .p341{font-family: font341; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2342.ttf);  
+   
+   font-family:font342; 
+   
+   } 
+   
+    .p342{font-family: font342; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2343.ttf);  
+   
+   font-family:font343; 
+   
+   } 
+   
+    .p343{font-family: font343; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2344.ttf);  
+   
+   font-family:font344; 
+   
+   } 
+   
+    .p344{font-family: font344; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2345.ttf);  
+   
+   font-family:font345; 
+   
+   } 
+   
+    .p345{font-family: font345; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2346.ttf);  
+   
+   font-family:font346; 
+   
+   } 
+   
+    .p346{font-family: font346; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2347.ttf);  
+   
+   font-family:font347; 
+   
+   } 
+   
+    .p347{font-family: font347; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2348.ttf);  
+   
+   font-family:font348; 
+   
+   } 
+   
+    .p348{font-family: font348; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2349.ttf);  
+   
+   font-family:font349; 
+   
+   } 
+   
+    .p349{font-family: font349; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2350.ttf);  
+   
+   font-family:font350; 
+   
+   } 
+   
+    .p350{font-family: font350; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2351.ttf);  
+   
+   font-family:font351; 
+   
+   } 
+   
+    .p351{font-family: font351; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2352.ttf);  
+   
+   font-family:font352; 
+   
+   } 
+   
+    .p352{font-family: font352; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2353.ttf);  
+   
+   font-family:font353; 
+   
+   } 
+   
+    .p353{font-family: font353; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2354.ttf);  
+   
+   font-family:font354; 
+   
+   } 
+   
+    .p354{font-family: font354; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2355.ttf);  
+   
+   font-family:font355; 
+   
+   } 
+   
+    .p355{font-family: font355; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2356.ttf);  
+   
+   font-family:font356; 
+   
+   } 
+   
+    .p356{font-family: font356; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2357.ttf);  
+   
+   font-family:font357; 
+   
+   } 
+   
+    .p357{font-family: font357; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2358.ttf);  
+   
+   font-family:font358; 
+   
+   } 
+   
+    .p358{font-family: font358; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2359.ttf);  
+   
+   font-family:font359; 
+   
+   } 
+   
+    .p359{font-family: font359; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2360.ttf);  
+   
+   font-family:font360; 
+   
+   } 
+   
+    .p360{font-family: font360; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2361.ttf);  
+   
+   font-family:font361; 
+   
+   } 
+   
+    .p361{font-family: font361; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2362.ttf);  
+   
+   font-family:font362; 
+   
+   } 
+   
+    .p362{font-family: font362; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2363.ttf);  
+   
+   font-family:font363; 
+   
+   } 
+   
+    .p363{font-family: font363; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2364.ttf);  
+   
+   font-family:font364; 
+   
+   } 
+   
+    .p364{font-family: font364; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2365.ttf);  
+   
+   font-family:font365; 
+   
+   } 
+   
+    .p365{font-family: font365; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2366.ttf);  
+   
+   font-family:font366; 
+   
+   } 
+   
+    .p366{font-family: font366; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2367.ttf);  
+   
+   font-family:font367; 
+   
+   } 
+   
+    .p367{font-family: font367; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2368.ttf);  
+   
+   font-family:font368; 
+   
+   } 
+   
+    .p368{font-family: font368; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2369.ttf);  
+   
+   font-family:font369; 
+   
+   } 
+   
+    .p369{font-family: font369; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2370.ttf);  
+   
+   font-family:font370; 
+   
+   } 
+   
+    .p370{font-family: font370; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2371.ttf);  
+   
+   font-family:font371; 
+   
+   } 
+   
+    .p371{font-family: font371; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2372.ttf);  
+   
+   font-family:font372; 
+   
+   } 
+   
+    .p372{font-family: font372; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2373.ttf);  
+   
+   font-family:font373; 
+   
+   } 
+   
+    .p373{font-family: font373; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2374.ttf);  
+   
+   font-family:font374; 
+   
+   } 
+   
+    .p374{font-family: font374; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2375.ttf);  
+   
+   font-family:font375; 
+   
+   } 
+   
+    .p375{font-family: font375; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2376.ttf);  
+   
+   font-family:font376; 
+   
+   } 
+   
+    .p376{font-family: font376; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2377.ttf);  
+   
+   font-family:font377; 
+   
+   } 
+   
+    .p377{font-family: font377; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2378.ttf);  
+   
+   font-family:font378; 
+   
+   } 
+   
+    .p378{font-family: font378; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2379.ttf);  
+   
+   font-family:font379; 
+   
+   } 
+   
+    .p379{font-family: font379; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2380.ttf);  
+   
+   font-family:font380; 
+   
+   } 
+   
+    .p380{font-family: font380; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2381.ttf);  
+   
+   font-family:font381; 
+   
+   } 
+   
+    .p381{font-family: font381; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2382.ttf);  
+   
+   font-family:font382; 
+   
+   } 
+   
+    .p382{font-family: font382; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2383.ttf);  
+   
+   font-family:font383; 
+   
+   } 
+   
+    .p383{font-family: font383; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2384.ttf);  
+   
+   font-family:font384; 
+   
+   } 
+   
+    .p384{font-family: font384; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2385.ttf);  
+   
+   font-family:font385; 
+   
+   } 
+   
+    .p385{font-family: font385; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2386.ttf);  
+   
+   font-family:font386; 
+   
+   } 
+   
+    .p386{font-family: font386; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2387.ttf);  
+   
+   font-family:font387; 
+   
+   } 
+   
+    .p387{font-family: font387; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2388.ttf);  
+   
+   font-family:font388; 
+   
+   } 
+   
+    .p388{font-family: font388; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2389.ttf);  
+   
+   font-family:font389; 
+   
+   } 
+   
+    .p389{font-family: font389; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2390.ttf);  
+   
+   font-family:font390; 
+   
+   } 
+   
+    .p390{font-family: font390; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2391.ttf);  
+   
+   font-family:font391; 
+   
+   } 
+   
+    .p391{font-family: font391; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2392.ttf);  
+   
+   font-family:font392; 
+   
+   } 
+   
+    .p392{font-family: font392; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2393.ttf);  
+   
+   font-family:font393; 
+   
+   } 
+   
+    .p393{font-family: font393; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2394.ttf);  
+   
+   font-family:font394; 
+   
+   } 
+   
+    .p394{font-family: font394; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2395.ttf);  
+   
+   font-family:font395; 
+   
+   } 
+   
+    .p395{font-family: font395; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2396.ttf);  
+   
+   font-family:font396; 
+   
+   } 
+   
+    .p396{font-family: font396; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2397.ttf);  
+   
+   font-family:font397; 
+   
+   } 
+   
+    .p397{font-family: font397; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2398.ttf);  
+   
+   font-family:font398; 
+   
+   } 
+   
+    .p398{font-family: font398; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2399.ttf);  
+   
+   font-family:font399; 
+   
+   } 
+   
+    .p399{font-family: font399; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2400.ttf);  
+   
+   font-family:font400; 
+   
+   } 
+   
+    .p400{font-family: font400; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2401.ttf);  
+   
+   font-family:font401; 
+   
+   } 
+   
+    .p401{font-family: font401; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2402.ttf);  
+   
+   font-family:font402; 
+   
+   } 
+   
+    .p402{font-family: font402; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2403.ttf);  
+   
+   font-family:font403; 
+   
+   } 
+   
+    .p403{font-family: font403; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2404.ttf);  
+   
+   font-family:font404; 
+   
+   } 
+   
+    .p404{font-family: font404; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2405.ttf);  
+   
+   font-family:font405; 
+   
+   } 
+   
+    .p405{font-family: font405; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2406.ttf);  
+   
+   font-family:font406; 
+   
+   } 
+   
+    .p406{font-family: font406; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2407.ttf);  
+   
+   font-family:font407; 
+   
+   } 
+   
+    .p407{font-family: font407; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2408.ttf);  
+   
+   font-family:font408; 
+   
+   } 
+   
+    .p408{font-family: font408; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2409.ttf);  
+   
+   font-family:font409; 
+   
+   } 
+   
+    .p409{font-family: font409; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2410.ttf);  
+   
+   font-family:font410; 
+   
+   } 
+   
+    .p410{font-family: font410; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2411.ttf);  
+   
+   font-family:font411; 
+   
+   } 
+   
+    .p411{font-family: font411; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2412.ttf);  
+   
+   font-family:font412; 
+   
+   } 
+   
+    .p412{font-family: font412; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2413.ttf);  
+   
+   font-family:font413; 
+   
+   } 
+   
+    .p413{font-family: font413; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2414.ttf);  
+   
+   font-family:font414; 
+   
+   } 
+   
+    .p414{font-family: font414; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2415.ttf);  
+   
+   font-family:font415; 
+   
+   } 
+   
+    .p415{font-family: font415; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2416.ttf);  
+   
+   font-family:font416; 
+   
+   } 
+   
+    .p416{font-family: font416; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2417.ttf);  
+   
+   font-family:font417; 
+   
+   } 
+   
+    .p417{font-family: font417; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2418.ttf);  
+   
+   font-family:font418; 
+   
+   } 
+   
+    .p418{font-family: font418; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2419.ttf);  
+   
+   font-family:font419; 
+   
+   } 
+   
+    .p419{font-family: font419; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2420.ttf);  
+   
+   font-family:font420; 
+   
+   } 
+   
+    .p420{font-family: font420; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2421.ttf);  
+   
+   font-family:font421; 
+   
+   } 
+   
+    .p421{font-family: font421; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2422.ttf);  
+   
+   font-family:font422; 
+   
+   } 
+   
+    .p422{font-family: font422; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2423.ttf);  
+   
+   font-family:font423; 
+   
+   } 
+   
+    .p423{font-family: font423; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2424.ttf);  
+   
+   font-family:font424; 
+   
+   } 
+   
+    .p424{font-family: font424; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2425.ttf);  
+   
+   font-family:font425; 
+   
+   } 
+   
+    .p425{font-family: font425; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2426.ttf);  
+   
+   font-family:font426; 
+   
+   } 
+   
+    .p426{font-family: font426; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2427.ttf);  
+   
+   font-family:font427; 
+   
+   } 
+   
+    .p427{font-family: font427; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2428.ttf);  
+   
+   font-family:font428; 
+   
+   } 
+   
+    .p428{font-family: font428; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2429.ttf);  
+   
+   font-family:font429; 
+   
+   } 
+   
+    .p429{font-family: font429; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2430.ttf);  
+   
+   font-family:font430; 
+   
+   } 
+   
+    .p430{font-family: font430; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2431.ttf);  
+   
+   font-family:font431; 
+   
+   } 
+   
+    .p431{font-family: font431; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2432.ttf);  
+   
+   font-family:font432; 
+   
+   } 
+   
+    .p432{font-family: font432; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2433.ttf);  
+   
+   font-family:font433; 
+   
+   } 
+   
+    .p433{font-family: font433; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2434.ttf);  
+   
+   font-family:font434; 
+   
+   } 
+   
+    .p434{font-family: font434; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2435.ttf);  
+   
+   font-family:font435; 
+   
+   } 
+   
+    .p435{font-family: font435; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2436.ttf);  
+   
+   font-family:font436; 
+   
+   } 
+   
+    .p436{font-family: font436; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2437.ttf);  
+   
+   font-family:font437; 
+   
+   } 
+   
+    .p437{font-family: font437; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2438.ttf);  
+   
+   font-family:font438; 
+   
+   } 
+   
+    .p438{font-family: font438; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2439.ttf);  
+   
+   font-family:font439; 
+   
+   } 
+   
+    .p439{font-family: font439; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2440.ttf);  
+   
+   font-family:font440; 
+   
+   } 
+   
+    .p440{font-family: font440; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2441.ttf);  
+   
+   font-family:font441; 
+   
+   } 
+   
+    .p441{font-family: font441; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2442.ttf);  
+   
+   font-family:font442; 
+   
+   } 
+   
+    .p442{font-family: font442; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2443.ttf);  
+   
+   font-family:font443; 
+   
+   } 
+   
+    .p443{font-family: font443; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2444.ttf);  
+   
+   font-family:font444; 
+   
+   } 
+   
+    .p444{font-family: font444; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2445.ttf);  
+   
+   font-family:font445; 
+   
+   } 
+   
+    .p445{font-family: font445; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2446.ttf);  
+   
+   font-family:font446; 
+   
+   } 
+   
+    .p446{font-family: font446; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2447.ttf);  
+   
+   font-family:font447; 
+   
+   } 
+   
+    .p447{font-family: font447; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2448.ttf);  
+   
+   font-family:font448; 
+   
+   } 
+   
+    .p448{font-family: font448; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2449.ttf);  
+   
+   font-family:font449; 
+   
+   } 
+   
+    .p449{font-family: font449; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2450.ttf);  
+   
+   font-family:font450; 
+   
+   } 
+   
+    .p450{font-family: font450; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2451.ttf);  
+   
+   font-family:font451; 
+   
+   } 
+   
+    .p451{font-family: font451; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2452.ttf);  
+   
+   font-family:font452; 
+   
+   } 
+   
+    .p452{font-family: font452; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2453.ttf);  
+   
+   font-family:font453; 
+   
+   } 
+   
+    .p453{font-family: font453; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2454.ttf);  
+   
+   font-family:font454; 
+   
+   } 
+   
+    .p454{font-family: font454; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2455.ttf);  
+   
+   font-family:font455; 
+   
+   } 
+   
+    .p455{font-family: font455; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2456.ttf);  
+   
+   font-family:font456; 
+   
+   } 
+   
+    .p456{font-family: font456; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2457.ttf);  
+   
+   font-family:font457; 
+   
+   } 
+   
+    .p457{font-family: font457; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2458.ttf);  
+   
+   font-family:font458; 
+   
+   } 
+   
+    .p458{font-family: font458; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2459.ttf);  
+   
+   font-family:font459; 
+   
+   } 
+   
+    .p459{font-family: font459; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2460.ttf);  
+   
+   font-family:font460; 
+   
+   } 
+   
+    .p460{font-family: font460; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2461.ttf);  
+   
+   font-family:font461; 
+   
+   } 
+   
+    .p461{font-family: font461; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2462.ttf);  
+   
+   font-family:font462; 
+   
+   } 
+   
+    .p462{font-family: font462; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2463.ttf);  
+   
+   font-family:font463; 
+   
+   } 
+   
+    .p463{font-family: font463; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2464.ttf);  
+   
+   font-family:font464; 
+   
+   } 
+   
+    .p464{font-family: font464; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2465.ttf);  
+   
+   font-family:font465; 
+   
+   } 
+   
+    .p465{font-family: font465; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2466.ttf);  
+   
+   font-family:font466; 
+   
+   } 
+   
+    .p466{font-family: font466; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2467.ttf);  
+   
+   font-family:font467; 
+   
+   } 
+   
+    .p467{font-family: font467; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2468.ttf);  
+   
+   font-family:font468; 
+   
+   } 
+   
+    .p468{font-family: font468; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2469.ttf);  
+   
+   font-family:font469; 
+   
+   } 
+   
+    .p469{font-family: font469; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2470.ttf);  
+   
+   font-family:font470; 
+   
+   } 
+   
+    .p470{font-family: font470; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2471.ttf);  
+   
+   font-family:font471; 
+   
+   } 
+   
+    .p471{font-family: font471; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2472.ttf);  
+   
+   font-family:font472; 
+   
+   } 
+   
+    .p472{font-family: font472; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2473.ttf);  
+   
+   font-family:font473; 
+   
+   } 
+   
+    .p473{font-family: font473; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2474.ttf);  
+   
+   font-family:font474; 
+   
+   } 
+   
+    .p474{font-family: font474; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2475.ttf);  
+   
+   font-family:font475; 
+   
+   } 
+   
+    .p475{font-family: font475; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2476.ttf);  
+   
+   font-family:font476; 
+   
+   } 
+   
+    .p476{font-family: font476; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2477.ttf);  
+   
+   font-family:font477; 
+   
+   } 
+   
+    .p477{font-family: font477; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2478.ttf);  
+   
+   font-family:font478; 
+   
+   } 
+   
+    .p478{font-family: font478; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2479.ttf);  
+   
+   font-family:font479; 
+   
+   } 
+   
+    .p479{font-family: font479; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2480.ttf);  
+   
+   font-family:font480; 
+   
+   } 
+   
+    .p480{font-family: font480; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2481.ttf);  
+   
+   font-family:font481; 
+   
+   } 
+   
+    .p481{font-family: font481; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2482.ttf);  
+   
+   font-family:font482; 
+   
+   } 
+   
+    .p482{font-family: font482; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2483.ttf);  
+   
+   font-family:font483; 
+   
+   } 
+   
+    .p483{font-family: font483; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2484.ttf);  
+   
+   font-family:font484; 
+   
+   } 
+   
+    .p484{font-family: font484; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2485.ttf);  
+   
+   font-family:font485; 
+   
+   } 
+   
+    .p485{font-family: font485; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2486.ttf);  
+   
+   font-family:font486; 
+   
+   } 
+   
+    .p486{font-family: font486; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2487.ttf);  
+   
+   font-family:font487; 
+   
+   } 
+   
+    .p487{font-family: font487; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2488.ttf);  
+   
+   font-family:font488; 
+   
+   } 
+   
+    .p488{font-family: font488; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2489.ttf);  
+   
+   font-family:font489; 
+   
+   } 
+   
+    .p489{font-family: font489; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2490.ttf);  
+   
+   font-family:font490; 
+   
+   } 
+   
+    .p490{font-family: font490; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2491.ttf);  
+   
+   font-family:font491; 
+   
+   } 
+   
+    .p491{font-family: font491; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2492.ttf);  
+   
+   font-family:font492; 
+   
+   } 
+   
+    .p492{font-family: font492; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2493.ttf);  
+   
+   font-family:font493; 
+   
+   } 
+   
+    .p493{font-family: font493; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2494.ttf);  
+   
+   font-family:font494; 
+   
+   } 
+   
+    .p494{font-family: font494; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2495.ttf);  
+   
+   font-family:font495; 
+   
+   } 
+   
+    .p495{font-family: font495; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2496.ttf);  
+   
+   font-family:font496; 
+   
+   } 
+   
+    .p496{font-family: font496; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2497.ttf);  
+   
+   font-family:font497; 
+   
+   } 
+   
+    .p497{font-family: font497; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2498.ttf);  
+   
+   font-family:font498; 
+   
+   } 
+   
+    .p498{font-family: font498; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2499.ttf);  
+   
+   font-family:font499; 
+   
+   } 
+   
+    .p499{font-family: font499; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2500.ttf);  
+   
+   font-family:font500; 
+   
+   } 
+   
+    .p500{font-family: font500; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2501.ttf);  
+   
+   font-family:font501; 
+   
+   } 
+   
+    .p501{font-family: font501; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2502.ttf);  
+   
+   font-family:font502; 
+   
+   } 
+   
+    .p502{font-family: font502; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2503.ttf);  
+   
+   font-family:font503; 
+   
+   } 
+   
+    .p503{font-family: font503; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2504.ttf);  
+   
+   font-family:font504; 
+   
+   } 
+   
+    .p504{font-family: font504; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2505.ttf);  
+   
+   font-family:font505; 
+   
+   } 
+   
+    .p505{font-family: font505; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2506.ttf);  
+   
+   font-family:font506; 
+   
+   } 
+   
+    .p506{font-family: font506; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2507.ttf);  
+   
+   font-family:font507; 
+   
+   } 
+   
+    .p507{font-family: font507; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2508.ttf);  
+   
+   font-family:font508; 
+   
+   } 
+   
+    .p508{font-family: font508; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2509.ttf);  
+   
+   font-family:font509; 
+   
+   } 
+   
+    .p509{font-family: font509; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2510.ttf);  
+   
+   font-family:font510; 
+   
+   } 
+   
+    .p510{font-family: font510; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2511.ttf);  
+   
+   font-family:font511; 
+   
+   } 
+   
+    .p511{font-family: font511; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2512.ttf);  
+   
+   font-family:font512; 
+   
+   } 
+   
+    .p512{font-family: font512; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2513.ttf);  
+   
+   font-family:font513; 
+   
+   } 
+   
+    .p513{font-family: font513; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2514.ttf);  
+   
+   font-family:font514; 
+   
+   } 
+   
+    .p514{font-family: font514; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2515.ttf);  
+   
+   font-family:font515; 
+   
+   } 
+   
+    .p515{font-family: font515; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2516.ttf);  
+   
+   font-family:font516; 
+   
+   } 
+   
+    .p516{font-family: font516; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2517.ttf);  
+   
+   font-family:font517; 
+   
+   } 
+   
+    .p517{font-family: font517; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2518.ttf);  
+   
+   font-family:font518; 
+   
+   } 
+   
+    .p518{font-family: font518; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2519.ttf);  
+   
+   font-family:font519; 
+   
+   } 
+   
+    .p519{font-family: font519; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2520.ttf);  
+   
+   font-family:font520; 
+   
+   } 
+   
+    .p520{font-family: font520; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2521.ttf);  
+   
+   font-family:font521; 
+   
+   } 
+   
+    .p521{font-family: font521; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2522.ttf);  
+   
+   font-family:font522; 
+   
+   } 
+   
+    .p522{font-family: font522; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2523.ttf);  
+   
+   font-family:font523; 
+   
+   } 
+   
+    .p523{font-family: font523; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2524.ttf);  
+   
+   font-family:font524; 
+   
+   } 
+   
+    .p524{font-family: font524; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2525.ttf);  
+   
+   font-family:font525; 
+   
+   } 
+   
+    .p525{font-family: font525; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2526.ttf);  
+   
+   font-family:font526; 
+   
+   } 
+   
+    .p526{font-family: font526; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2527.ttf);  
+   
+   font-family:font527; 
+   
+   } 
+   
+    .p527{font-family: font527; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2528.ttf);  
+   
+   font-family:font528; 
+   
+   } 
+   
+    .p528{font-family: font528; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2529.ttf);  
+   
+   font-family:font529; 
+   
+   } 
+   
+    .p529{font-family: font529; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2530.ttf);  
+   
+   font-family:font530; 
+   
+   } 
+   
+    .p530{font-family: font530; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2531.ttf);  
+   
+   font-family:font531; 
+   
+   } 
+   
+    .p531{font-family: font531; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2532.ttf);  
+   
+   font-family:font532; 
+   
+   } 
+   
+    .p532{font-family: font532; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2533.ttf);  
+   
+   font-family:font533; 
+   
+   } 
+   
+    .p533{font-family: font533; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2534.ttf);  
+   
+   font-family:font534; 
+   
+   } 
+   
+    .p534{font-family: font534; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2535.ttf);  
+   
+   font-family:font535; 
+   
+   } 
+   
+    .p535{font-family: font535; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2536.ttf);  
+   
+   font-family:font536; 
+   
+   } 
+   
+    .p536{font-family: font536; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2537.ttf);  
+   
+   font-family:font537; 
+   
+   } 
+   
+    .p537{font-family: font537; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2538.ttf);  
+   
+   font-family:font538; 
+   
+   } 
+   
+    .p538{font-family: font538; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2539.ttf);  
+   
+   font-family:font539; 
+   
+   } 
+   
+    .p539{font-family: font539; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2540.ttf);  
+   
+   font-family:font540; 
+   
+   } 
+   
+    .p540{font-family: font540; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2541.ttf);  
+   
+   font-family:font541; 
+   
+   } 
+   
+    .p541{font-family: font541; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2542.ttf);  
+   
+   font-family:font542; 
+   
+   } 
+   
+    .p542{font-family: font542; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2543.ttf);  
+   
+   font-family:font543; 
+   
+   } 
+   
+    .p543{font-family: font543; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2544.ttf);  
+   
+   font-family:font544; 
+   
+   } 
+   
+    .p544{font-family: font544; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2545.ttf);  
+   
+   font-family:font545; 
+   
+   } 
+   
+    .p545{font-family: font545; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2546.ttf);  
+   
+   font-family:font546; 
+   
+   } 
+   
+    .p546{font-family: font546; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2547.ttf);  
+   
+   font-family:font547; 
+   
+   } 
+   
+    .p547{font-family: font547; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2548.ttf);  
+   
+   font-family:font548; 
+   
+   } 
+   
+    .p548{font-family: font548; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2549.ttf);  
+   
+   font-family:font549; 
+   
+   } 
+   
+    .p549{font-family: font549; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2550.ttf);  
+   
+   font-family:font550; 
+   
+   } 
+   
+    .p550{font-family: font550; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2551.ttf);  
+   
+   font-family:font551; 
+   
+   } 
+   
+    .p551{font-family: font551; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2552.ttf);  
+   
+   font-family:font552; 
+   
+   } 
+   
+    .p552{font-family: font552; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2553.ttf);  
+   
+   font-family:font553; 
+   
+   } 
+   
+    .p553{font-family: font553; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2554.ttf);  
+   
+   font-family:font554; 
+   
+   } 
+   
+    .p554{font-family: font554; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2555.ttf);  
+   
+   font-family:font555; 
+   
+   } 
+   
+    .p555{font-family: font555; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2556.ttf);  
+   
+   font-family:font556; 
+   
+   } 
+   
+    .p556{font-family: font556; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2557.ttf);  
+   
+   font-family:font557; 
+   
+   } 
+   
+    .p557{font-family: font557; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2558.ttf);  
+   
+   font-family:font558; 
+   
+   } 
+   
+    .p558{font-family: font558; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2559.ttf);  
+   
+   font-family:font559; 
+   
+   } 
+   
+    .p559{font-family: font559; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2560.ttf);  
+   
+   font-family:font560; 
+   
+   } 
+   
+    .p560{font-family: font560; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2561.ttf);  
+   
+   font-family:font561; 
+   
+   } 
+   
+    .p561{font-family: font561; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2562.ttf);  
+   
+   font-family:font562; 
+   
+   } 
+   
+    .p562{font-family: font562; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2563.ttf);  
+   
+   font-family:font563; 
+   
+   } 
+   
+    .p563{font-family: font563; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2564.ttf);  
+   
+   font-family:font564; 
+   
+   } 
+   
+    .p564{font-family: font564; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2565.ttf);  
+   
+   font-family:font565; 
+   
+   } 
+   
+    .p565{font-family: font565; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2566.ttf);  
+   
+   font-family:font566; 
+   
+   } 
+   
+    .p566{font-family: font566; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2567.ttf);  
+   
+   font-family:font567; 
+   
+   } 
+   
+    .p567{font-family: font567; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2568.ttf);  
+   
+   font-family:font568; 
+   
+   } 
+   
+    .p568{font-family: font568; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2569.ttf);  
+   
+   font-family:font569; 
+   
+   } 
+   
+    .p569{font-family: font569; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2570.ttf);  
+   
+   font-family:font570; 
+   
+   } 
+   
+    .p570{font-family: font570; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2571.ttf);  
+   
+   font-family:font571; 
+   
+   } 
+   
+    .p571{font-family: font571; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2572.ttf);  
+   
+   font-family:font572; 
+   
+   } 
+   
+    .p572{font-family: font572; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2573.ttf);  
+   
+   font-family:font573; 
+   
+   } 
+   
+    .p573{font-family: font573; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2574.ttf);  
+   
+   font-family:font574; 
+   
+   } 
+   
+    .p574{font-family: font574; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2575.ttf);  
+   
+   font-family:font575; 
+   
+   } 
+   
+    .p575{font-family: font575; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2576.ttf);  
+   
+   font-family:font576; 
+   
+   } 
+   
+    .p576{font-family: font576; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2577.ttf);  
+   
+   font-family:font577; 
+   
+   } 
+   
+    .p577{font-family: font577; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2578.ttf);  
+   
+   font-family:font578; 
+   
+   } 
+   
+    .p578{font-family: font578; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2579.ttf);  
+   
+   font-family:font579; 
+   
+   } 
+   
+    .p579{font-family: font579; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2580.ttf);  
+   
+   font-family:font580; 
+   
+   } 
+   
+    .p580{font-family: font580; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2581.ttf);  
+   
+   font-family:font581; 
+   
+   } 
+   
+    .p581{font-family: font581; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2582.ttf);  
+   
+   font-family:font582; 
+   
+   } 
+   
+    .p582{font-family: font582; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2583.ttf);  
+   
+   font-family:font583; 
+   
+   } 
+   
+    .p583{font-family: font583; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2584.ttf);  
+   
+   font-family:font584; 
+   
+   } 
+   
+    .p584{font-family: font584; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2585.ttf);  
+   
+   font-family:font585; 
+   
+   } 
+   
+    .p585{font-family: font585; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2586.ttf);  
+   
+   font-family:font586; 
+   
+   } 
+   
+    .p586{font-family: font586; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2587.ttf);  
+   
+   font-family:font587; 
+   
+   } 
+   
+    .p587{font-family: font587; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2588.ttf);  
+   
+   font-family:font588; 
+   
+   } 
+   
+    .p588{font-family: font588; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2589.ttf);  
+   
+   font-family:font589; 
+   
+   } 
+   
+    .p589{font-family: font589; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2590.ttf);  
+   
+   font-family:font590; 
+   
+   } 
+   
+    .p590{font-family: font590; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2591.ttf);  
+   
+   font-family:font591; 
+   
+   } 
+   
+    .p591{font-family: font591; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2592.ttf);  
+   
+   font-family:font592; 
+   
+   } 
+   
+    .p592{font-family: font592; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2593.ttf);  
+   
+   font-family:font593; 
+   
+   } 
+   
+    .p593{font-family: font593; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2594.ttf);  
+   
+   font-family:font594; 
+   
+   } 
+   
+    .p594{font-family: font594; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2595.ttf);  
+   
+   font-family:font595; 
+   
+   } 
+   
+    .p595{font-family: font595; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2596.ttf);  
+   
+   font-family:font596; 
+   
+   } 
+   
+    .p596{font-family: font596; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2597.ttf);  
+   
+   font-family:font597; 
+   
+   } 
+   
+    .p597{font-family: font597; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2598.ttf);  
+   
+   font-family:font598; 
+   
+   } 
+   
+    .p598{font-family: font598; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2599.ttf);  
+   
+   font-family:font599; 
+   
+   } 
+   
+    .p599{font-family: font599; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2600.ttf);  
+   
+   font-family:font600; 
+   
+   } 
+   
+    .p600{font-family: font600; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2601.ttf);  
+   
+   font-family:font601; 
+   
+   } 
+   
+    .p601{font-family: font601; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2602.ttf);  
+   
+   font-family:font602; 
+   
+   } 
+   
+    .p602{font-family: font602; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2603.ttf);  
+   
+   font-family:font603; 
+   
+   } 
+   
+    .p603{font-family: font603; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   @font-face{
+   
+    src:url(./fonts/QCF2604.ttf);  
+   
+   font-family:font604; 
+   
+   } 
+   
+    .p604{font-family: font604; 
+   
+    font-size: 3.5rem;
+   
+    font-weight: 100; 
+   
+    color: #000;
+   
+   }
+   
+   

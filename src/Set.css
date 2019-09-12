@@ -1,0 +1,20 @@
+.btn{
+    cursor: pointer;
+    font-size:14px
+ }
+  .sidenavright-upper {
+    
+    margin: 16px;
+    color: #ababab;
+    font-size: 14px;
+    }
+    .sidenavright-upper a{
+        text-decoration: none;
+        color: #ababab;
+        width: 20px;
+      }
+
+.arabic-size{
+  padding-top:20px;
+  font-size: 14px;
+}

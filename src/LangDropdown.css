@@ -1,0 +1,14 @@
+.stripe {
+  color: #56c0d0;
+}
+.stripe:hover {
+  background: #56c0d0;
+  color: white;
+}
+.css-1x9fbfe-Bubble {
+    min-width: 100px;
+    /* max-width: 150px; */
+    text-align: center;
+    padding: 5px !important;
+    border-radius: 5px !important;
+}

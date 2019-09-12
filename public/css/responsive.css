@@ -1,0 +1,238 @@
+/************************
+        Media Queries
+************************/
+/*Large devices*/
+/*Small Devices*/
+@media screen and (max-width: 767px) {
+  header.indexheader .navbar {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0px;
+  }
+  header.indexheader .navbar .navbar-nav .nav-item a.nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.indexheader .navbar .navbar-nav .nav-item a.nav-link i {
+    margin-left: 5px;
+  }
+  main.indexmain .container .herobis {
+    width: 50%;
+  }
+  main.indexmain .container .heroiqr {
+    width: 250px;
+  }
+  main.indexmain .container .searchbox {
+    width: 250px;
+  }
+  main.indexmain .container ul.quicklinks {
+    margin-bottom: 16px;
+    margin-left: 0px;
+  }
+  #surahs .container ul.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #surahs .container ul.nav li a.nav-link {
+    font-size: 12px !important;
+  }
+  #footer .container .footer-content-right .logo-social {
+    margin-top: 0px;
+  }
+  header.detailheader .nav-left .nav-left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header.detailheader .nav-left .nav-left-content a.toggler-detail {
+    height: 33px !important;
+    margin-top: 5px;
+    padding: 5px 7px 1px 7px;
+  }
+  header.detailheader .nav-left ul.navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header.detailheader .nav-left ul.navbar-nav li {
+    /* width: 50%;
+    display: none; */
+  }
+  header.detailheader .nav-left ul.navbar-nav form.form-inline {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 84vw;
+  }
+  header.detailheader .navbar2 {
+    padding-left: 0px;
+    display: inline-block;
+  }
+  header.detailheader .navbar2 ul.navbar-nav li:nth-of-type(1) {
+    /* display: none; */
+  }
+  header.detailheader .navbar2 ul.navbar-nav li:nth-of-type(2) {
+    /* padding-left: 0px;
+    position: absolute;
+    top: 100px;
+    right: 0px; */
+    padding: 0;
+  }
+  header.detailheader .navbar2 ul.navbar-nav li:nth-of-type(2) a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.detailmain .ayatboxouter .row .ayatrefbox {
+    margin: 20px 0px;
+  }
+  main.detailmain .ayatboxouter .row .ayatbox {
+    margin: 20px 0px;
+    padding: 0px 20px;
+  }
+  main.detailmain .ayatboxouter .row .ayatbox h1 span .arabic {
+    font-size: 40px;
+  }
+  main.detailmain .ayatboxouter .row .ayatbox a.bayyinah {
+    position: initial;
+  }
+  ul.navbar-nav.navbar1 .nav-item {
+    top: 110px;
+    left: 0;
+    position: absolute;
+    padding: 0;
+}
+ul.navbar-nav.navbar1 .nav-item:nth-child(1) {
+  width: 25%;
+}
+ul.navbar-nav.navbar1 .nav-item:nth-child(2) {
+  width: 20%;
+  left: 26%;
+}
+nav.navbar.navbar-expand.navbar2 {
+position: absolute;
+width: 100%;
+left: 0;
+padding: 0;
+top: 100px;
+}
+nav.navbar.navbar-expand.navbar2 li.nav-item.dropdown {
+padding: 0;
+}
+header .navbar ul li .dropdown-menu {
+left: 0;
+}
+.navbar-nav .dropdown-menu {
+ position: absolute; 
+ float: none; 
+ left: 0; 
+}
+nav.navbar.navbar-expand.navbar2 {
+  position: absolute;
+  width: 53%;
+    left: 45%;
+  padding: 0;
+  top: 110px;
+}
+header.detailheader.container-fluid {
+  padding-bottom: 50px;
+}
+.dropdown-toggle::after{
+
+  margin-left: 0;
+}
+a#navbardrop {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+i.fas.fa-cog {
+  padding-left: 3px;
+}
+/* .navbar-expand .navbar-nav .nav-link{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+} */
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: .5rem;
+}
+.arabic {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block !important;
+  text-align: center;
+  word-break: break-all;
+  direction: rtl;
+  margin: 0 !important;
+}
+.arabic {
+  font-family: font1;
+  font-size: 22px;
+  font-weight: 100;
+  color: #000;
+}
+.mainsurah .container-fluid h1 b {
+  letter-spacing: 0;
+}
+.next-previous-surah a {
+  
+  font-size: 12px;
+}
+.next-previous-surah a i {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+}
+
+@media screen and (max-width: 400px) {
+  header.detailheader .nav-left {
+    padding: .5rem 0.25rem .5rem .5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navbar-expand .navbar-nav .nav-link{
+    padding-right: 0 !important;
+    padding-left: 5px !important;
+  }
+  nav.navbar.navbar-expand.navbar2 {
+    position: absolute;
+    width: 56%;
+    left: 42%;
+    padding: 0;
+    top: 110px;
+}
+  ul.navbar-nav.navbar1 .nav-item:nth-child(2) {
+    width: 17%;
+    left: 21%;
+}
+ul.navbar-nav.navbar1 .nav-item:nth-child(1) {
+  width: 20%;
+}
+
+
+header .navbar .sidenavright {
+  width: 290px;
+}
+i.fas.fa-cog {
+  padding-left: 3px;
+}
+}
+
+/*# sourceMappingURL=responsive.css.map */

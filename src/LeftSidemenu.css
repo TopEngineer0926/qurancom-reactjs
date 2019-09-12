@@ -1,0 +1,61 @@
+/* Individual item */
+
+/* Change color on hover */
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  top: 25px;
+  border: 2 px solid #56c0d0;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #56c0d0;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #000000;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #ffffff;
+
+  padding: "16px";
+  font-size: 16px;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #ffffff;
+}
+.bm-item {
+  padding: 8px 8px 8px 15px;
+  font-size: 16px;
+  color: #ababab;
+  display: block;
+  text-decoration: none;
+}
+.Banner:hover {
+  background: #56c0d0;
+  color: white;
+  transition-duration: all 800ms;
+}
+/* Styling of overlay */

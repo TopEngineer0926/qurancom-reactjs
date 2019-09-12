@@ -1,0 +1,59 @@
+.primarycolor {
+    color: #56c0d0;
+  }
+  
+  .dullcolor {
+    color: color(dullcolor);
+  }
+
+#surahinfo .row div:nth-of-type(2) {
+  background-color: #e8e8e8;
+  padding: 20px;
+  padding-right: 5px;
+}
+
+#surahinfo .row div:nth-of-type(2) h6 {
+  color: #a6a6a6;
+  font-size: 0.95em;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+#surahinfo .row div:nth-of-type(2) p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#surahinfo .row div:nth-of-type(3) {
+  padding: 20px;
+}
+
+#surahinfo .row div:nth-of-type(3) a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+}
+
+#surahinfo .row div:nth-of-type(3) a i {
+  color: #323232;
+  margin-right: 28px;
+}
+
+#surahinfo .row div:nth-of-type(3) .container-fluid {
+  padding-left: 0px;
+}
+
+#surahinfo .row div:nth-of-type(3) .container-fluid h6 {
+  color: #7a7a7a;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#surahinfo .row div:nth-of-type(3) .container-fluid{
+  color: #a6a6a6;
+  font-size: 14px;
+}

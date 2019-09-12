@@ -1,0 +1,82 @@
+.mainsurah .container-fluid h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+  direction:rtl;
+}
+
+
+
+
+.mainsurah .container-fluid h1 b {
+  letter-spacing: 10px;
+}
+
+.fb-tw-share a {
+    margin-left: 5px;
+  }
+  
+  .fb-tw-share a i {
+    font-size: 20px;
+  }
+  
+  .fb-tw-share a .fa-facebook {
+    color: #3b5998;
+  }
+  
+  .fb-tw-share a .fa-twitter {
+    color: #1da1f2;
+  }
+  
+  .mainsurah .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arabic {
+    font-family: font1;
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: #000;
+  }
+  
+  .arabic-index {
+    font-family: font1;
+    font-size: 45px;
+    font-weight: 300;
+    color: #56c0d0;
+    float: right;
+  }
+  .next-previous-surah a {
+    margin: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #56c0d0;
+    border-color: #dbdbdb;
+    border-radius: 30px;
+    width: 200px;
+    font-weight: 500;
+  }
+  
+  .next-previous-surah a i {
+    margin-left: 20px;
+  }
+  
+  .next-previous-surah a:hover,
+  .next-previous-surah a:active,
+  .next-previous-surah a:focus,
+  .next-previous-surah .btn-outline-primary:not(:disabled):not(.disabled):active {
+    background-color: #56c0d0;
+    color: #fff;
+    border-color: #56c0d0;
+  }
+  .mainsurah.mtb-big .container .arabic b.pointer:hover{
+    color: #56c0d0;
+  }
