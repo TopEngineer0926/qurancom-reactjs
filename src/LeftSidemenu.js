@@ -27,7 +27,7 @@ const marg = {
 
 export default props => {
   return (
-    <Menu {...props}>
+    <Menu {...props} >
       <Link to="/">
       <img src={logo} alt="Islam Check" style={{width: "200px"}} />
       </Link >

@@ -27,8 +27,8 @@ function Modal(props){
                     <p><span class="primarycolor">{props.ChapData[index].pages[0]} <span class="dullcolor">:
                     </span>{props.ChapData[index].pages[1]} </span></p>
                 </div>
-                <div style={{backgroundColor:"#F4F4F4"}} class="col-8 col-md-8 col-lg-8 col-xl-8">
-                    <div style={{maxHeight:"500px",overflowY:"scroll"}}>
+                <div style={{backgroundColor:"#F4F4F4"}} class="col-8 col-md-8 col-lg-8 col-xl-8 pb-0">
+                    <div style={{maxHeight:"530px",overflowY:"scroll"}}>
                     <a style={{cursor:"pointer"}} onClick={()=>setStatus(!Status)}>
                         <i class="fas fa-times"></i>
                     </a>

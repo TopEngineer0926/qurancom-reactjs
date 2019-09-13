@@ -87,7 +87,7 @@ const changepage=()=>{
       <div
         className="ref-group d-flex justify-content-center align-items-center"
       >
-        <a href=""> {mem.verse_key} </a>
+        {mem.verse_key}
         
       </div>
     </div>

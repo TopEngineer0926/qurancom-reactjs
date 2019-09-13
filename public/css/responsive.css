@@ -199,6 +199,41 @@ i.fas.fa-cog {
   margin-left: 20px;
   margin-right: 20px;
 }
+.header_lang{
+  right: 0 !important;
+}
+footer .container {
+  padding: 0px 15px;
+}
+.middlebar_header{
+display: none;
+}
+.right_header{
+  display: none;
+}
+.middlebar_header_mobile{
+  display: block;
+  }
+  .right_header_mobile{
+    display: block;
+  }
+  .right_header_mobile a{
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .col-md-12.float-left.middlebar_header_mobile input {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dropdown-toggle::after {
+  vertical-align: 2px;
+}
+.dropdown-menu.show {
+  height: 50vw !important; 
+}
 }
 
 @media screen and (max-width: 400px) {
