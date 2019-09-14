@@ -48,7 +48,7 @@ const [off, setOff] = useContext(OffsetContext);
            }} 
            
             style={{textDecoration:"none"}}>
-        <DropdownItem className="stripe" ><span>{mem.id} {mem.name_simple}</span> </DropdownItem>
+        <DropdownItem className="stripe" ><span>{mem.id} &nbsp;&nbsp;{mem.name_simple}</span> </DropdownItem>
         </Link>
       ):"Waiting for Surahs..."}
       </DropdownMenu>

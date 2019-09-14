@@ -15,7 +15,7 @@ function Footer() {
     <footer id="footer">
       <div class="container">
         <div class="row d-flex justify-content-between">
-          <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-sm-12 col-md-12 col-lg-8">
             <div class="footer-content-left" id="mobileFooterContentLeft">
               <div class="row">
                 <div class="col-3 col-sm-3 col-md-3 col-lg-3">
@@ -57,7 +57,7 @@ function Footer() {
             </li>
                   </ul>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-2">
                   <p class="lead"><FormattedMessage id="Langs"/></p>
                   <ul>
                     <li style={cursor}>
@@ -79,7 +79,7 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-4 pl-0">
                   <p class="lead" />
                   <ul class="footer-content-left-last">
                     <li style={cursor}>
@@ -99,12 +99,12 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12">
             <div class="footer-content-right">
               <div class="row">
-                <div class="col-sm-12 col-md-12 offset-lg-4 col-lg-8">
+                <div class="col-sm-12 col-md-12 col-lg-12">
                   <div class="d-flex justify-content-between logo-social">
-                    <img src={logo} alt="Islam Check" style={{maxWidth:"300px"}}/>
+                    <img src={logo} alt="Islam Check" style={{width:128}} />
                     <ul class="social-icons d-flex">
                       <li>
                         <a href="">
@@ -127,7 +127,7 @@ function Footer() {
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-12 col-md-12 offset-lg-4 col-lg-8">
+              <div class="col-sm-12 col-md-12 col-lg-12 pt-3">
                 <p class="footer-text">
                 <FormattedMessage id="Footertext"/>
                 </p>
