@@ -6,6 +6,8 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext, Translit
   ,ChosenVerseFlagContext,OffsetContext,LoadingContext} from "./index";
 // import "./Dynamicfonts.css"
 import "./qfonts.css"
+import {Link} from "react-router-dom";
+import { goToTop } from 'react-scrollable-anchor'
 
 // import ReactAudioPlayer from 'react-audio-player';
 // import AudioPlayer from "react-h5-audio-player";
@@ -15,7 +17,7 @@ function Body(props){
 // console.log("Fetcher:" +props.data);
   // const [Verses, setVerses] = useState();
   const [endFlag, setFlag]= useContext(endFlagContext);
-  const [SurahNo]=useContext(SurahContext);
+  const [SurahNo,setSurah]=useContext(SurahContext);
   const[Currentpage,setCurrentPage]=useContext(CurrentPageContext);
   const [lastPage,setLast]=useContext(LastPageContext);
   const [TranslitShowing, setTrans]=useContext(TranslitContext);
@@ -145,18 +147,13 @@ const changepage=()=>{
                 : 
             <>
              <Tooltip  className="tooltipmaindiv" 
+               
              content= {
               (member.translation)? member.translation.translation.text: 
-              (member.chartype.name==="end")? "Verse "+mem.verse_number : member.chartype.name
-              
-                
-              
-              
+              (member.chartype.name==="end")? "Verse "+mem.verse_number : member.chartype.name  
              
                            }    
-            
-                          //  (mem.words.length=== index + 1)?   
-            
+  
             background= "#000"
             fontSize="12px"
             padding={11}
@@ -172,16 +169,18 @@ const changepage=()=>{
     </h1>
 
     {/* FETCH TRANSLATIONS */}
-
+    {/* { Array.isArray(props.Trans)? props.Trans.map((trans)=> */}
                 <div className="translation-box">
                   <a href=""> {mem.translations[0].resource_name}</a>
                   <p>
                   {mem.translations[0].text}
                   </p>
                 </div>
+    {/* :"Translations..."} */}
                 {/* <a href="#" className="bayyinah">Watch lecture by Bayyinah</a> */}
               </div>
-              </div> </div>):
+              </div> 
+              </div>):
       ""}
  
               
@@ -190,6 +189,32 @@ const changepage=()=>{
         </div>
         </InfiniteScroll>
         <hr />
+        <div class="container mb-5">
+        <div class="next-previous-surah d-flex justify-content-between align-items-center">
+        {(SurahNo!==1)?
+        <Link to={`/${SurahNo-1}`} onClick={()=>{setSurah(SurahNo-1);setLoading(true);
+            setCurrentPage(1);
+            setOff(1); 
+            setLast(0)}} 
+            class="btn btn-outline-primary btn-lg">Previous Surah <i class="fas fa-arrow-left"></i>
+            </Link>
+        :""}
+        
+            <Link to={`/${SurahNo}`} onClick={()=>{
+              goToTop()
+            }}  class="btn btn-outline-primary btn-lg">Beginning of Surah
+            </Link>
+              {(SurahNo!==114)?
+            <Link to={`/${SurahNo+1}`} onClick={()=>{setSurah(SurahNo+1);
+              setLoading(true);
+            setCurrentPage(1);
+            setOff(1); 
+            setLast(0)}} 
+            class="btn btn-outline-primary btn-lg">Next Surah <i class="fas fa-arrow-right"></i>
+            </Link>
+              :""}
+        </div>
+    </div>
                     </main>
        );
                     }

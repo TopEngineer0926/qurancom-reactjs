@@ -51,8 +51,8 @@ function Main() {
             <Link to="/67" onClick={()=>setSurahNo(67)} >Surah Al Mulk</Link> 
             </li>
             <li class="btn">
-      <Link to="/2" onClick={()=>{setSurahNo(2); } } >
-        Ayatul Kursi</Link> 
+      <Link to="/18" onClick={()=>{setSurahNo(18); } } >
+        Surah Al Kahf</Link> 
             </li>
           </ul>
         </div>

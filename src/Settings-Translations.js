@@ -15,6 +15,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import {CheckedContext} from "./index"
+import If from 'react-control-statements/dist/If';
 
 const color={
     color: '#ABABAB'
@@ -37,17 +38,17 @@ export default function NestedList() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [Translators,setTranslators]= useState();
+  
   //cHECKBOXES
 const[check, setCheck]=useContext(CheckedContext);
 
-  const handleChange = (name,ID) => event => {
-    setCheck({ ...check,
-    [name]: event.target.checked,
-    'id': ID
-  }
-     );
+  const handleChange = (ID) => event => {
+    
+    setCheck({...check,[ID]:event.target.checked});
+   
     console.log(check);
-  };
+  }
+ 
   
   useEffect(() => {  
     const fetchData = async() => {
@@ -63,7 +64,7 @@ const[check, setCheck]=useContext(CheckedContext);
       }
      fetchData();
   
-    },[]);
+    },[check]);
 
     function handleClick(){
       setOpen(!open);
@@ -90,21 +91,23 @@ const[check, setCheck]=useContext(CheckedContext);
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>     
           
-         {(Translators)?Translators.translations.map((translator)=>
+         {(Translators)?Translators.translations.map((translator,index)=>
      
                 <ListItem button className={classes.nested}>
-            
-          <FormControlLabel
-            control={
-            <Checkbox 
-              
-          
-            onChange={handleChange(`checked${translator.id}`,translator.id)} 
-            value={`checked${translator.id}`} />
-          }
-            label={translator.name}
-            
-          />
+{/*                    
+                    {console.log(index)}
+                    {console.log(check[index])} */}
+                        <FormControlLabel
+                          control={
+                          <Checkbox 
+                          
+                          onChange={handleChange(translator.id)} 
+                          value={`checked${translator.id}`} />
+                        }
+                          label={translator.name}
+                          
+                        />
+                     
          </ListItem>
           ):"Loading"}
 

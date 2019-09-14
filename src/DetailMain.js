@@ -7,8 +7,8 @@ import Body from "./DetailVersesFetcher";
 import { If} from 'react-control-statements';
 //----------------
 import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
-  OffsetContext,ChosenVerseAndPageContext,ChosenVerseFlagContext,LoadingContext} from "./index";
-import mergeByKey from "array-merge-by-key";
+  OffsetContext,ChosenVerseAndPageContext,ChosenVerseFlagContext,LoadingContext,CheckedContext} from "./index";
+
 
 
   function Main(props){
@@ -26,14 +26,17 @@ import mergeByKey from "array-merge-by-key";
   const [isChosen, setChosen] = useContext(ChosenVerseFlagContext);
   const [off, setOff] = useContext(OffsetContext);
   //For Translations...................
-  const [Translations, setTranslations]=useState();
+  const [Translations, setTranslations]=useState([]);
   //Loading COntext
 
   const [isLoading, setLoading]=useContext(LoadingContext);
+  const [check, setChecked]=useContext(CheckedContext);
   
 
   useEffect(() => {  
     var result=[];
+    var TransTemp=[]; 
+    var count=0;
     const fetchData = async() => {
 
       console.log("Fetch entered...")
@@ -44,17 +47,34 @@ import mergeByKey from "array-merge-by-key";
           console.log("in If, Page:"+OffsetandPage.Chosenpage+ "offset:"+OffsetandPage.offset);
           console.log("in If, CurrentPage:"+Currentpage+ "Myoff:"+ off);
 
-    fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=17`)
-       .then(res =>res.json())
-       .then(dat=>{setVerses(dat.verses.data);setLast(dat.verses.last_page); setLoading(false)});
-
-       
-          
+                // for(var prop in check){
+                //   //count=count+1;
+                //   if(check[prop]===true){
+                    // console.log("for prop val:" +prop)
+                    fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=20`)
+                      .then(res =>res.json())
+                      .then(dat=>{
+                        setVerses(dat.verses.data);
+                                        // Array.isArray(dat.verses.data)? dat.verses.data.map((verse,index)=>{
+                                        // TransTemp=[...Translations,...verse.translations] 
+                                        // console.log("data map id:"+index,verse.translations)
+                                        // }
+                                        //   ):console.log("waiting for Verses...");
+                        
+                        // setTranslations(TransTemp);             
+                        setLast(dat.verses.last_page); 
+                        setLoading(false)
+                      });
+                        
+                  
+                        
+        // Array.isArray(Verses)?console.log("Translations:"+Translations[9].text ):console.log("waiting....");
+        
                 }
         else{
        
 
-      fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=17`)
+      fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=20`)
             .then(res =>res.json())
             .then(dat=> {
            
@@ -62,7 +82,7 @@ import mergeByKey from "array-merge-by-key";
              alert("Waiting for Verses!");
                 setVerses(result);
                 setLoading(false);
-                console.log("dat:"+dat);
+               
           
                 });
              
@@ -81,7 +101,7 @@ import mergeByKey from "array-merge-by-key";
       }
      fetchData();
   
-    },[SurahNo,Currentpage,lastPage,off]);
+    },[SurahNo,Currentpage,lastPage,off]);//,check
 
 
   
@@ -102,7 +122,7 @@ import mergeByKey from "array-merge-by-key";
              </If>
              <If condition={ReadStatus===false}>
            
-             <Body data={Verses}/>
+             <Body data={Verses} Trans={Translations}/>
              </If>
           </>
              

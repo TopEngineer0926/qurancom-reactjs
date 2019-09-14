@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext } from 'react';
 import {Link} from "react-router-dom";
-
+import { FormattedMessage } from "react-intl";
 import { If} from 'react-control-statements';
 import {SurahContext,CurrentPageContext,OffsetContext,ChosenVerseAndPageContext,ChosenVerseFlagContext,LoadingContext,LangContext} from "./index";
 
@@ -68,21 +68,21 @@ function Surahs() {
          {/* <span>{index1.map((indix)=>Array.isArray(Content)? Content[indix]["id"] : "Loading")}</span> */}
         <ul className="nav align-items-center">
         <li className="nav-item" onClick={()=>{ShowMadni(false); ShowMakki(false)}} style={{cursor:"pointer"}}>
-           <a className="nav-link active" data-toggle="tab">
-              All
+           <a className={`nav-link  ${!Makkiflag && !Madniflag && `active`}`} data-toggle="tab">
+           <FormattedMessage id="All"/>
             </a>
           </li>
           |
-          <li className="nav-item" onClick={()=>{ShowMakki(true); ShowMadni(false)}} style={{cursor:"pointer"}}>
-            <a className="nav-link" data-toggle="tab">
-              Makki Surahs of Quran <span className="badge">88</span>
+          <li className="nav-item " onClick={()=>{ShowMakki(true); ShowMadni(false); }} style={{cursor:"pointer"}}>
+            <a className={`nav-link  ${Makkiflag && !Madniflag && `active`}`} data-toggle="tab">
+            <FormattedMessage id="Makki"/><span className="badge">88</span>
             </a>
           </li>
           |
           
           <li className="nav-item" onClick={()=>{ShowMadni(true); ShowMakki(false)}} style={{cursor:"pointer"}}>
-            <a className="nav-link" data-toggle="tab">
-              Madini Surahs of Quran <span className="badge">28</span>
+            <a className={`nav-link  ${!Makkiflag && Madniflag && `active`}`} data-toggle="tab">
+            <FormattedMessage id="Madni"/> <span className="badge">28</span>
             </a>
           </li>
           
@@ -106,7 +106,7 @@ function Surahs() {
                 <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
-                      <b>0{Array.isArray(Content)? Content[indix]["id"] : "Loading"}</b>
+                      <b>{Array.isArray(Content)? "0"+Content[indix]["id"] : "Loading"}</b>
                       <p>
                         <span className="lead">{Array.isArray(Content)? Content[indix]["name_simple"] : "Loading"}</span>
                         <br />
@@ -135,7 +135,7 @@ function Surahs() {
                 <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
-                      <b>0{Array.isArray(Content)? Content[indix]["id"] : "Loading"}</b>
+                      <b>{Array.isArray(Content)? "0"+Content[indix]["id"] : "Loading"}</b>
                       <p>
                         <span className="lead">{Array.isArray(Content)? Content[indix]["name_simple"] : "Loading"}</span>
                         <br />

@@ -5,6 +5,7 @@ import { If} from 'react-control-statements';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import {CurrentPageContext,LastPageContext,SurahContext,endFlagContext,TranslitContext,LoadingContext,OffsetContext} from "./index";
 import {Link} from "react-router-dom";
+import { goToTop } from 'react-scrollable-anchor'
 
 import "./qfonts.css"
 // import "./Dynamicfonts.css"
@@ -19,7 +20,12 @@ function Reading(props){
     const [off, setOff] = useContext(OffsetContext);
     const [Loading,setLoading]=useContext(LoadingContext);
 
-    
+    //Encoder
+const Entities = require('html-entities').AllHtmlEntities;
+
+
+const entities = new Entities();
+
     var id=SurahNo;
     const changepage=()=>{
 
@@ -39,7 +45,7 @@ return(
     
 <main class="readingmain">
 <InfiniteScroll
-          dataLength={Array.isArray(props.data)?props.data.length:0}
+          dataLength={props.data.length}
           next={changepage}
           hasMore={endFlag}
           loader={<div className="loader"></div>}
@@ -80,32 +86,26 @@ return(
                 
                 >
                   <b className={"pointer "+member.class_name} >
-                     {member.code_hex}  </b>
+                  {entities.decode(member.code_hex)} </b>
                      </Tooltip> 
                      </>
                      : 
                  <>
                   <Tooltip  className="tooltipmaindiv" 
+                
                   content= {
                    (member.translation)? member.translation.translation.text: 
                    (member.chartype.name==="end")? "Verse "+mem.verse_number : member.chartype.name
-                   
-                     
-                   
-                   
-                  
                                 }    
-                 
-                               //  (mem.words.length=== index + 1)?   
-                 
-                 background= "#000"
-                 fontSize="12px"
-                 padding={11}
-                 fadeEasing="linear"
-                
+
+                    background= "#000"
+                    fontSize="12px"
+                    padding={11}
+                    fadeEasing="linear"
+                    
                 >
                   <b className={"pointer "+member.class_name} >
-                     {member.code_hex}  </b>
+                  {entities.decode(member.code_hex)}</b>
                      </Tooltip> 
                      </>        
                
@@ -118,7 +118,8 @@ return(
     </InfiniteScroll>
     <div class="container mb-5">
         <div class="next-previous-surah d-flex justify-content-between align-items-center">
-            <a href="javascript:void(0);" class="btn btn-outline-primary btn-lg">Beginning of Surah</a>
+        <Link to={`/${SurahNo}`} onClick={()=>{
+              goToTop()}}  class="btn btn-outline-primary btn-lg">Beginning of Surah</Link>
             <Link to={`/${id+1}`} onClick={()=>{setSurah(SurahNo+1);setLoading(true);
             setCurrentPage(1);
             setOff(1); 

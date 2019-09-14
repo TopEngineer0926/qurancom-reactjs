@@ -45,11 +45,7 @@ const Index=()=>{
     const [off,setoff]=useState();
 
     const [Loading,setLoading]=useState(true);
-    const [check, setCheck] = useState(
-        { 
-        
-    }
-    );
+    const [check, setCheck] = useState( {20:true}   );
     
 return(
    

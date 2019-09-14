@@ -33,7 +33,7 @@ const [off, setOff] = useContext(OffsetContext);
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={Style}>
-      {Array.isArray(props.ChapData)? props.ChapData[id]["name_simple"]:""}
+      {Array.isArray(props.ChapData)? props.ChapData[id]["name_simple"]:"Surahs"}
       
       </DropdownToggle>
       <DropdownMenu style={{height: "12vw", overflowY: "scroll"}}>

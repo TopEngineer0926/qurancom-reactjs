@@ -2,12 +2,15 @@ import React,{useContext} from "react";
 import logo from "./img/logo.png";
 import {LangContext} from "./index";
 import {FormattedMessage} from "react-intl";
+import {SurahContext} from "./index"
+import {Link} from "react-router-dom";
 
 const cursor={
   cursor: "pointer",
 }
 function Footer() {
   const [lang, setLang]=useContext(LangContext);
+  const [Surah, setSurahNo]=useContext(SurahContext);
   return (
     <footer id="footer">
       <div class="container">
@@ -19,9 +22,9 @@ function Footer() {
                   <p class="lead"><FormattedMessage id="Site"/></p>
                   <ul>
                     <li>
-                      <a  class="small">
+                      {/* <a  class="small">
                         <FormattedMessage id="Prayer"/>
-                      </a>
+                      </a> */}
                     </li>
                     <li>
                       <a  class="small">
@@ -38,26 +41,20 @@ function Footer() {
                 <div class="col-3 col-sm-3 col-md-3 col-lg-3">
                   <p class="lead"><FormattedMessage id="Quick"/></p>
                   <ul>
-                    <li>
-                      <a  class="small">
-                        Surah Yaseen
-                      </a>
-                    </li>
-                    <li>
-                      <a  class="small">
-                        Surah Rahman
-                      </a>
-                    </li>
-                    <li>
-                      <a  class="small">
-                        Surah Mulak
-                      </a>
-                    </li>
-                    <li>
-                      <a  class="small">
-                        Ayatul Kursi
-                      </a>
-                    </li>
+                    <li class="btn">
+                  <Link to="/36" onClick={()=>setSurahNo(36)}>Surah Yaseen</Link> 
+              </li>
+            <li class="btn">
+            <Link to="/55"  onClick={()=>setSurahNo(55)}>Surah Rahman</Link> 
+            </li>
+            <li class="btn">
+            <Link to="/67" onClick={()=>setSurahNo(67)} >Surah Al Mulk</Link> 
+            </li>
+            <li class="btn">
+      <Link to="/18" onClick={()=>{setSurahNo(18); } } >
+        Surah Al Kahf
+        </Link> 
+            </li>
                   </ul>
                 </div>
                 <div class="col-3 col-sm-3 col-md-3 col-lg-3">
