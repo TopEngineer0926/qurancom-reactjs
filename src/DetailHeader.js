@@ -36,15 +36,15 @@ return (
       <div  className="col-md-2 float-left">
         <Verse VerseTotal={props.VerseTotal}/>
       </div>
-      <div className="col-md-4 float-left p-0 ">
+      <div className="col-md-8 float-left p-0 ">
         <Search />
       </div>
     </div>
     <div className="col-md-3 float-left right_header">
-      <div  className="col-md-7 float-left text-right">
+      <div  className="col-md-6 float-left text-right">
         <Languages />
       </div>
-      <div  className="col-md-5 float-left text-right">
+      <div  className="col-md-6 float-left text-right">
         <Settings />
       </div>
     </div>
@@ -54,17 +54,17 @@ return (
         <Search />
       </div>
     </div>
-    <div className="col-md-3 float-left right_header_mobile  p-0">
-      <div className="col-3 float-left p-0 pr-1">
+    <div className="col-md-3 float-left right_header_mobile  p-0 ">
+      <div className="col-4 float-left p-0 pr-1 surah_dropdown">
         <SurahName ChapData={props.ChapData}/>
       </div>
-      <div  className="col-2 float-left p-0 pr-1">
+      <div  className="col-3 float-left p-0 pr-1 verse_dropdown">
         <Verse VerseTotal={props.VerseTotal}/>
       </div>
       <div  className="col-4 float-left p-0 pr-1">
         <Languages />
       </div>
-      <div  className="col-3 float-left p-0">
+      <div  className="col-1 float-left p-0 setting_popup">
         <Settings />
       </div>
     </div>

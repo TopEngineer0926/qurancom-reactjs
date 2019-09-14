@@ -125,7 +125,7 @@ export default function TemporaryDrawer() {
     <div className="NightM">
         
        
-    <a className="btn" onClick={toggleDrawer('right', true)}> Settings <i class="fas fa-cog"></i></a>
+    <a className="btn " onClick={toggleDrawer('right', true)}> <span className="mobilehidesetting">Settings</span>  <i class="fas fa-cog"></i></a>
     
             <Drawer transitionDuration={800} anchor="right" open={Drawerstate.right} onClose={toggleDrawer('right',false)} 
            >

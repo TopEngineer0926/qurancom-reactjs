@@ -155,7 +155,7 @@ header.detailheader.container-fluid {
 }
 .dropdown-toggle::after{
 
-  margin-left: 0;
+  margin-left: 5px;
 }
 a#navbardrop {
   white-space: nowrap;
@@ -233,6 +233,69 @@ display: none;
 }
 .dropdown-menu.show {
   height: 50vw !important; 
+}
+header.detailheader {
+  padding: 15px 5px !important;
+}
+/* .dropdown-toggle::after {
+  vertical-align: 2px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+} */
+.loader {
+  margin-top: 60%;
+}
+/* .verse_dropdown .dropdown-toggle::after {
+  right: -10px;
+}
+.surah_dropdown .dropdown-toggle::after {
+  right: -5px;
+} */
+.bism {
+  font-size: 40px !important;
+}
+main.detailmain.mt-5 {
+  margin-top: 35% !important;
+}
+b.pointer {
+  font-size: 30px !important;
+  line-height: 35px !important;
+}
+.translation-box p {
+  font-size: 12px !important;
+  line-height: 20px;
+}
+#hd .header_lang {
+  right: 15px !important;
+}
+#hd .dropdown-toggle::after {
+  vertical-align: 2px;
+  z-index: 9999;
+  position: absolute;
+  right: 0px;
+  top: 17px;
+}
+main.detailmain .ayatboxouter .ayatrefbox .ref {
+  padding: 0;
+}
+main.detailmain .ayatboxouter .ayatrefbox {
+  min-width: 70px;
+}
+main.detailmain .ayatboxouter .ayatrefbox .plycpy {
+  padding: 5px 0px;
+}
+main.detailmain .ayatboxouter .ayatrefbox .social {
+  padding: 0 0px 10px 0;
+}
+main.detailmain .ayatboxouter .ayatrefbox .social .social-group {
+  margin: 5px;
+}
+main.detailmain .ayatboxouter .ayatrefbox .plycpy a{
+  font-size: 12px;
+}
+span.mobilehidesetting {
+  display: none;
 }
 }
 

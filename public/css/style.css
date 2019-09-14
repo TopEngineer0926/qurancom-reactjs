@@ -676,12 +676,12 @@ main.indexmain .container ul.quicklinks .disabled {
   color: #56c0d0;
   margin-top: 10px;
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-left p .lead {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-right {
@@ -1149,3 +1149,17 @@ p.MuiTypography-root.MuiTypography-body1 {
     .right_header_mobile{
       display: none;
     }
+
+  #hd .bm-burger-button {
+    top: 15px !important;
+  }
+  span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
+    font-size: 15px;
+    color: #ababab;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: #56c0d0 !important;
+}
+.MuiCheckbox-colorSecondary:hover {
+  background-color: #56c0d038 !important;
+}
