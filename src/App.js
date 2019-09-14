@@ -18,21 +18,19 @@ background: ${props => props.theme.background};
   
 }
 b.pointer {
-  color: white;
+  color: ${props => props.theme.body};
 }
 .bism {
-  color: white;
+  color: ${props => props.theme.body};
 }
 main.detailmain .ayatboxouter .ayatrefbox {
-  background-color: #161617;
+  background-color: ${props => props.theme.background};
 }
 main.indexmain .container ul.quicklinks li {
-  font-size: 12px;
-  font-weight: 500;
-  color: #ababab;
+  color: ${props => props.theme.quicklink};
 }
 main.readingmain {
-  background-color: #161617;
+  background-color: ${props => props.theme.background};
 }
 `;
 

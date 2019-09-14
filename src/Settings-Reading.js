@@ -102,7 +102,7 @@ return(
                     fontSize="12px"
                     padding={11}
                     fadeEasing="linear"
-                    fixed={true}
+                    // fixed={true}
                 >
                   <b className={"pointer "+member.class_name} >
                   {entities.decode(member.code_hex)}</b>
