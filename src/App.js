@@ -7,15 +7,31 @@ import {IntlProvider} from "react-intl";
 import Home from "./Homepage";
 import { Suspense } from 'react';
 import messages from "./LocalizationText"
-   
-   
 const Wrapper = styled("div")`
 background: ${props => props.theme.background};
 .body {
   color: ${props => props.theme.body};
+  background: #161617;
 }
 .arabic{
   color: ${props => props.theme.body};
+}
+b.pointer {
+  color: white;
+}
+.bism {
+  color: white;
+}
+main.detailmain .ayatboxouter .ayatrefbox {
+  background-color: #161617;
+}
+main.indexmain .container ul.quicklinks li {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ababab;
+}
+main.readingmain {
+  background-color: #161617;
 }
 `;
 
