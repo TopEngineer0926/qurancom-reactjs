@@ -48,7 +48,9 @@ return(
           dataLength={props.data.length}
           next={changepage}
           hasMore={endFlag}
-          loader={<div className="loader"></div>}
+          loader={<div class="wraper_laader">
+          <div class="loader"></div>
+          </div>}
           scrollThreshold={0.7}  //executes after 100%-pixelamount
         >
    <div class="container mt-5">
@@ -62,7 +64,7 @@ return(
         </div>
     </div>
     <If condition={SurahNo!==1}>
-                <div  class="bism" style={{textAlign:"center"}}>   ﷽ </div>
+    <div  class="p1" style={{textAlign:"center"}}>  ﭑﭒﭓﭔ </div>
                 </If>
     <div class="mainsurah mtb-big mt-0" >
         <div className="container" >
@@ -91,22 +93,20 @@ return(
                      </>
                      : 
                  <>
-                  <Tooltip  className="tooltipmaindiv" 
+                  <Tooltip  className="tooltipmaindiv hamza" 
                 
-                  content= {
-                   (member.translation)? member.translation.translation.text: 
-                   (member.chartype.name==="end")? "Verse "+mem.verse_number : member.chartype.name
-                                }    
-
+                content= {
+                    (member.translation)? member.translation.translation.text: 
+                    (member.chartype.name==="end")? "Verse "+mem.verse_number : member.chartype.name }    
                     background= "#000"
                     fontSize="12px"
                     padding={11}
                     fadeEasing="linear"
-                    
+                    fixed={true}
                 >
                   <b className={"pointer "+member.class_name} >
                   {entities.decode(member.code_hex)}</b>
-                     </Tooltip> 
+                  </Tooltip> 
                      </>        
                
                    ):  "Loading"}   

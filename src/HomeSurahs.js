@@ -98,7 +98,7 @@ function Surahs() {
     
   
                  <p className="manzil-text">
-                <b>Manzil 01</b>
+                <b>    <FormattedMessage id="Manzil"/> 01</b>
               </p>
               <div className="row" >
   {index1.map((indix)=>
@@ -122,12 +122,12 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 01 End */}
+            {/* <FormattedMessage id="Manzil"/>01 End */}
 
 
 
                 <p className="manzil-text">
-                <b>Manzil 02</b>
+                <b><FormattedMessage id="Manzil"/> 02</b>
               </p>
               <div className="row" >
   {index2.map((indix)=>
@@ -151,10 +151,10 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 02 End */}
+            {/* <FormattedMessage id="Manzil"/>02 End */}
           
               <p className="manzil-text">
-                     <b>Manzil 03</b>
+                     <b><FormattedMessage id="Manzil"/> 03</b>
                   </p>
                   <div className="row" >
   {index3.map((indix)=>
@@ -178,9 +178,9 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 03 End */}
+            {/* <FormattedMessage id="Manzil"/>03 End */}
                   <p className="manzil-text">
-                     <b>Manzil 04</b>
+                     <b><FormattedMessage id="Manzil"/>04</b>
                   </p>
                   <div className="row" >
   {index4.map((indix)=>
@@ -204,9 +204,9 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 04 End */}
+            {/* <FormattedMessage id="Manzil"/>04 End */}
                   <p className="manzil-text">
-                     <b>Manzil 05</b>
+                     <b><FormattedMessage id="Manzil"/>05</b>
                   </p>
                   <div className="row" >
   {index5.map((indix)=>
@@ -230,9 +230,9 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 05 End */}
+            {/* <FormattedMessage id="Manzil"/>05 End */}
                   <p className="manzil-text">
-                     <b>Manzil 06</b>
+                     <b><FormattedMessage id="Manzil"/>06</b>
                   </p>
                   <div className="row" >
   {index6.map((indix)=>
@@ -256,9 +256,9 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 06 End */}
+            {/* <FormattedMessage id="Manzil"/>06 End */}
             <p className="manzil-text">
-                     <b>Manzil 07</b>
+                     <b><FormattedMessage id="Manzil"/>07</b>
                   </p>
 
             <div className="row" >
@@ -283,7 +283,7 @@ function Surahs() {
               </div>
             )}
             </div>
-            {/* Manzil 07 End */}
+            {/* <FormattedMessage id="Manzil"/>07 End */}
                
            
           </div>
@@ -296,7 +296,7 @@ function Surahs() {
     
     
     <p className="manzil-text">
-   <b>Manzil 01</b>
+   <b><FormattedMessage id="Manzil"/>01</b>
  </p>
  <div className="row" >
 {index1.map((indix)=>
@@ -328,12 +328,12 @@ function Surahs() {
 
 )}
 </div>
-{/* Manzil 01 End */}
+{/* <FormattedMessage id="Manzil"/>01 End */}
 
 
 
    <p className="manzil-text">
-   <b>Manzil 02</b>
+   <b><FormattedMessage id="Manzil"/>02</b>
  </p>
  <div className="row" >
 {index2.map((indix)=>
@@ -364,10 +364,10 @@ function Surahs() {
 
 )}
 </div>
-{/* Manzil 02 End */}
+{/* <FormattedMessage id="Manzil"/>02 End */}
 
  <p className="manzil-text">
-        <b>Manzil 03</b>
+        <b><FormattedMessage id="Manzil"/>03</b>
      </p>
      <div className="row" >
 {index3.map((indix)=>
@@ -395,10 +395,10 @@ function Surahs() {
 
 )}
 </div>
-{/* Manzil 03 End */}
+{/* <FormattedMessage id="Manzil"/>03 End */}
 
      <p className="manzil-text">
-        <b>Manzil 04</b>
+        <b><FormattedMessage id="Manzil"/>04</b>
      </p>
      <div className="row" >
 {index4.map((indix)=>
@@ -426,9 +426,9 @@ function Surahs() {
     </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 04 End */}
+{/* <FormattedMessage id="Manzil"/>04 End */}
      <p className="manzil-text">
-        <b>Manzil 05</b>
+        <b><FormattedMessage id="Manzil"/>05</b>
      </p>
      <div className="row" >
 {index5.map((indix)=>
@@ -454,9 +454,9 @@ function Surahs() {
  </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 05 End */}
+{/* <FormattedMessage id="Manzil"/>05 End */}
      <p className="manzil-text">
-        <b>Manzil 06</b>
+        <b><FormattedMessage id="Manzil"/>06</b>
      </p>
      <div className="row" >
 {index6.map((indix)=>
@@ -482,9 +482,9 @@ function Surahs() {
    </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 06 End */}
+{/* <FormattedMessage id="Manzil"/>06 End */}
 <p className="manzil-text">
-        <b>Manzil 07</b>
+        <b><FormattedMessage id="Manzil"/>07</b>
      </p>
 
 <div className="row" >
@@ -511,7 +511,7 @@ function Surahs() {
    </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 07 End */}
+{/* <FormattedMessage id="Manzil"/>07 End */}
   
 
 </div>
@@ -525,7 +525,7 @@ function Surahs() {
     
     
     <p className="manzil-text">
-   <b>Manzil 01</b>
+   <b><FormattedMessage id="Manzil"/>01</b>
  </p>
  <div className="row" >
 {index1.map((indix)=>
@@ -557,12 +557,12 @@ function Surahs() {
 
 )}
 </div>
-{/* Manzil 01 End */}
+{/* <FormattedMessage id="Manzil"/>01 End */}
 
 
 
    <p className="manzil-text">
-   <b>Manzil 02</b>
+   <b><FormattedMessage id="Manzil"/>02</b>
  </p>
  <div className="row" >
 {index2.map((indix)=>
@@ -593,10 +593,10 @@ function Surahs() {
 
 )}
 </div>
-{/* Manzil 02 End */}
+{/* <FormattedMessage id="Manzil"/>02 End */}
 
  <p className="manzil-text">
-        <b>Manzil 03</b>
+        <b><FormattedMessage id="Manzil"/>03</b>
      </p>
      <div className="row" >
 {index3.map((indix)=>
@@ -624,10 +624,10 @@ function Surahs() {
 
 )}
 </div>
-{/* Manzil 03 End */}
+{/* <FormattedMessage id="Manzil"/>03 End */}
 
      <p className="manzil-text">
-        <b>Manzil 04</b>
+        <b><FormattedMessage id="Manzil"/>04</b>
      </p>
      <div className="row" >
 {index4.map((indix)=>
@@ -655,9 +655,9 @@ function Surahs() {
     </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 04 End */}
+{/* <FormattedMessage id="Manzil"/>04 End */}
      <p className="manzil-text">
-        <b>Manzil 05</b>
+        <b><FormattedMessage id="Manzil"/>05</b>
      </p>
      <div className="row" >
 {index5.map((indix)=>
@@ -683,9 +683,9 @@ function Surahs() {
  </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 05 End */}
+{/* <FormattedMessage id="Manzil"/>05 End */}
      <p className="manzil-text">
-        <b>Manzil 06</b>
+        <b><FormattedMessage id="Manzil"/>06</b>
      </p>
      <div className="row" >
 {index6.map((indix)=>
@@ -711,9 +711,9 @@ function Surahs() {
    </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 06 End */}
+{/* <FormattedMessage id="Manzil"/>06 End */}
 <p className="manzil-text">
-        <b>Manzil 07</b>
+        <b><FormattedMessage id="Manzil"/>07</b>
      </p>
 
 <div className="row" >
@@ -740,7 +740,7 @@ function Surahs() {
    </div>:"":"Loading"
 )}
 </div>
-{/* Manzil 07 End */}
+{/* <FormattedMessage id="Manzil"/>07 End */}
   
 
 </div>

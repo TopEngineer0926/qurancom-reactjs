@@ -66,12 +66,12 @@ export default function TemporaryDrawer() {
       <List>
       
     
-        <ListItem button onClick={()=>setShow(!Showing)}>
+        <ListItem button onClick={()=>{setShow(!Showing); localStorage.setItem('InfoStatus', !Showing)}}>
                   <ListItemIcon style={color}> < i  class="fas fa-info-circle" ></i></ListItemIcon>
         <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Surah Info</Typography>}/>
         </ListItem>
 
-          <ListItem button onClick={()=>setRead(!ShowRead)}>
+          <ListItem button onClick={()=>{setRead(!ShowRead);localStorage.setItem('ReadStatus',!ShowRead) }}>
         <ListItemIcon style={color}><i class="fas fa-book-open"></i></ListItemIcon>
         <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Reading</Typography>}/>
           </ListItem>

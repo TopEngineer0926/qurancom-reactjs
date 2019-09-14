@@ -16,7 +16,9 @@ background: ${props => props.theme.background};
 }
 .arabic{
   color: ${props => props.theme.body};
+  
 }
+
 `;
 
   function App() {

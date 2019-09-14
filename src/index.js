@@ -4,9 +4,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ThemeProvider } from "./Nightmode/ThemeContext";
 
+
+
 export const InfoContext=React.createContext();
 export const ReadingContext=React.createContext();
-export const LangContext=React.createContext("en");
+export const LangContext=React.createContext();
 export const SurahContext=React.createContext();
 export const TranslitContext=React.createContext();
 export const CurrentPageContext=React.createContext();
@@ -26,9 +28,10 @@ export const CheckedContext=React.createContext();
 
     
 const Index=()=>{
- 
-    const [lang,setlang]=useState("en");
-    const [Show,setShow]=useState(false);
+   
+    console.log("RaedStatus:"+localStorage.getItem('ReadStatus'),localStorage.getItem('InfoStatus'))
+    const [lang,setlang]=useState("en");//localStorage.getItem('lang')
+    const [ShowInfo,setShow]=useState(false);
     const [ShowReading,setReading]=useState(false);
     const [SurahNo,setSurahNo]=useState(window.location.href.substring(window.location.href.indexOf("/#/")+3,window.location.href.length));
     
@@ -50,9 +53,8 @@ const Index=()=>{
 return(
    
     <ThemeProvider>
-   
-    <ReadingContext.Provider value={[ShowReading,setReading]}>
-    <InfoContext.Provider value={[Show,setShow]}>
+     <ReadingContext.Provider value={[ShowReading,setReading]}>
+    <InfoContext.Provider value={[ShowInfo,setShow]}>
     <LangContext.Provider value={[lang,setlang]}>
     <SurahContext.Provider value={[SurahNo,setSurahNo]}>
     <TranslitContext.Provider value={[Trans,setTrans]}>

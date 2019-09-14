@@ -50,18 +50,12 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
                 // for(var prop in check){
                 //   //count=count+1;
                 //   if(check[prop]===true){
-                    // console.log("for prop val:" +prop)
-                    fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=20`)
+                //     console.log("for prop val:" +prop)
+                    fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=20&translations[]=21`)
                       .then(res =>res.json())
                       .then(dat=>{
                         setVerses(dat.verses.data);
-                                        // Array.isArray(dat.verses.data)? dat.verses.data.map((verse,index)=>{
-                                        // TransTemp=[...Translations,...verse.translations] 
-                                        // console.log("data map id:"+index,verse.translations)
-                                        // }
-                                        //   ):console.log("waiting for Verses...");
-                        
-                        // setTranslations(TransTemp);             
+                                      
                         setLast(dat.verses.last_page); 
                         setLoading(false)
                       });
@@ -85,19 +79,11 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
                
           
                 });
-             
-        
 
-            
             } 
-       
-         
-             
+    
         console.log("last:"+lastPage);
 
-        
-      
-  
       }
      fetchData();
   
@@ -108,7 +94,9 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
   return (
    <> 
    {(isLoading)? <>
-   <div className="loader"></div> 
+    <div class="wraper_laader">
+<div class="loader"></div>
+</div>
     {console.log("Loading: "+isLoading) }
               </> 
      :
@@ -122,7 +110,7 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
              </If>
              <If condition={ReadStatus===false}>
            
-             <Body data={Verses} Trans={Translations}/>
+             <Body data={Verses} />
              </If>
           </>
              

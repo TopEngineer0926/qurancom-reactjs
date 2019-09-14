@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Main from "./DetailMain";
 import {SurahContext,LoadingContext} from "./index";
 import { If} from 'react-control-statements';
+import { Helmet } from 'react-helmet';
 
 window.isLoading =true;
 function Homepage() {
@@ -44,6 +45,11 @@ const [isLoading, setLoading]=useContext(LoadingContext);
    
   // <div className="loader"></div> :
   <>
+ <Helmet>
+   <title> Islam Check | {(ChapData)?ChapData[SurahNo-1]["name_simple"]:""}</title>
+   </Helmet>
+
+
   <Header ChapData={ChapData} VerseTotal={(Verses)? Verses.total:""}/>
   <Main info={info} Content={(Verses)? Verses:""} ChapData={ChapData}/>
 <Footer/> 

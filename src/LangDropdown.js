@@ -30,13 +30,14 @@ function Drop() {
    
       </DropdownToggle>
       <DropdownMenu right>
-        <DropdownItem className="stripe"  onClick={()=>{console.log(lang); setLang('en')}}>English</DropdownItem>
-        <DropdownItem className="stripe"  onClick={()=>{console.log(lang); setLang('de')}} >Deutsch</DropdownItem>
-        <DropdownItem className="stripe" onClick={()=>{console.log(lang); setLang('indo')}}>Bahasa Indonesia</DropdownItem>
-        <DropdownItem className="stripe"onClick={()=>{console.log(lang); setLang('ar')}}>عربى</DropdownItem>
-        <DropdownItem className="stripe"onClick={()=>{console.log(lang); setLang('tr')}}>Türk</DropdownItem>
-        <DropdownItem className="stripe" onClick={()=>{console.log(lang); setLang('fr')}} >Francais</DropdownItem>
-        <DropdownItem className="stripe"onClick={()=>{console.log(lang); setLang('ur')}}>اردو</DropdownItem>
+        <DropdownItem className="stripe"  onClick={()=>{ setLang('en'); localStorage.setItem('lang','en')  }}>English</DropdownItem>
+        <DropdownItem className="stripe"  onClick={()=>{setLang('de'); localStorage.setItem('lang','de'); 
+        console.log("lang:"+localStorage.getItem('lang')) }} >Deutsch</DropdownItem>
+        <DropdownItem className="stripe" onClick={()=>{ localStorage.setItem('lang','indo'); setLang('indo')}}>Bahasa Indonesia</DropdownItem>
+        <DropdownItem className="stripe"onClick={()=>{ localStorage.setItem('lang','ar'); setLang('ar')}}>عربى</DropdownItem>
+        <DropdownItem className="stripe"onClick={()=>{ localStorage.setItem('lang','tr'); setLang('tr')}}>Türk</DropdownItem>
+        <DropdownItem className="stripe" onClick={()=>{localStorage.setItem('lang','fr'); setLang('fr')}} >Francais</DropdownItem>
+        <DropdownItem className="stripe"onClick={()=>{ localStorage.setItem('lang','ur'); setLang('ur')}}>اردو</DropdownItem>
       </DropdownMenu>
     
     </UncontrolledDropdown>

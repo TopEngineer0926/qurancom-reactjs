@@ -14,8 +14,9 @@ import { goToTop } from 'react-scrollable-anchor'
 // import file from "./verses/file.mp3";
 
 function Body(props){
-// console.log("Fetcher:" +props.data);
-  // const [Verses, setVerses] = useState();
+  const [Load, setLoading]= useContext(LoadingContext);
+  const [offset, setOff]= useContext(OffsetContext);
+
   const [endFlag, setFlag]= useContext(endFlagContext);
   const [SurahNo,setSurah]=useContext(SurahContext);
   const[Currentpage,setCurrentPage]=useContext(CurrentPageContext);
@@ -23,14 +24,15 @@ function Body(props){
   const [TranslitShowing, setTrans]=useContext(TranslitContext);
   const [OffsetandPage, setPageandOffset] = useContext(ChosenVerseAndPageContext);
   const [isChosen, setChosen] = useContext(ChosenVerseFlagContext);
+const [Translations,setTranslations]=useState([]);
 
-  const [off, setOff] = useContext(OffsetContext);
-  const [isLoading, setLoading]=useContext(LoadingContext);
 //Encoder
 const Entities = require('html-entities').AllHtmlEntities;
 
 
 const entities = new Entities();
+
+    
 
 useEffect(() => { 
 if(isChosen){
@@ -39,6 +41,7 @@ setCurrentPage(OffsetandPage.Chosenpage);
 setOff(OffsetandPage.offset);
 setLoading(true);
 }
+
 
    },[OffsetandPage]);
     
@@ -58,12 +61,16 @@ const changepage=()=>{
 
          return(
 <main className="detailmain mt-5">
+  
+
 <InfiniteScroll
           dataLength={Array.isArray(props.data)?props.data.length:0}
           next={changepage}
           hasMore={endFlag}
           
-          loader={<div className="loader"></div>}
+          loader={<div class="wraper_laader">
+          <div class="loader"></div>
+          </div>}
         >
           <div className="container">
         <div className="ayatboxouter">
@@ -75,7 +82,7 @@ const changepage=()=>{
                   />    */}
                 
                <If condition={SurahNo!==1 && SurahNo !==9} >
-                <div  class="bism" style={{textAlign:"center"}}>   ﷽ </div>
+                <div  class="p1" style={{textAlign:"center"}}>  ﭑﭒﭓﭔ </div>
                 </If>
 
 { Array.isArray(props.data)? props.data.map((mem)=>
@@ -158,7 +165,7 @@ const changepage=()=>{
             fontSize="12px"
             padding={11}
             fadeEasing="linear"
-           
+            fixed={true}
            >
              <b className={"pointer "+member.class_name} >
              {entities.decode(member.code_hex)}  </b>
@@ -169,14 +176,14 @@ const changepage=()=>{
     </h1>
 
     {/* FETCH TRANSLATIONS */}
-    {/* { Array.isArray(props.Trans)? props.Trans.map((trans)=> */}
+    { Array.isArray(mem.translations)? mem.translations.map((trans)=>
                 <div className="translation-box">
-                  <a href=""> {mem.translations[0].resource_name}</a>
+                  <a href=""> {trans.resource_name}</a>
                   <p>
-                  {mem.translations[0].text}
+                  {trans.text}
                   </p>
-                </div>
-    {/* :"Translations..."} */}
+                </div>)
+            :"Translations..."} 
                 {/* <a href="#" className="bayyinah">Watch lecture by Bayyinah</a> */}
               </div>
               </div> 
