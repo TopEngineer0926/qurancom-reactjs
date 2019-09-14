@@ -47,11 +47,11 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
           console.log("in If, Page:"+OffsetandPage.Chosenpage+ "offset:"+OffsetandPage.offset);
           console.log("in If, CurrentPage:"+Currentpage+ "Myoff:"+ off);
 
-                // for(var prop in check){
-                //   //count=count+1;
-                //   if(check[prop]===true){
-                //     console.log("for prop val:" +prop)
-                    fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=20&translations[]=21`)
+                for(var prop in check){
+                  //count=count+1;
+                  if(check[prop]===true){
+                    console.log("for prop val:" +prop)
+fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=${prop}`)
                       .then(res =>res.json())
                       .then(dat=>{
                         setVerses(dat.verses.data);
@@ -59,7 +59,8 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
                         setLast(dat.verses.last_page); 
                         setLoading(false)
                       });
-                        
+                    }
+                  }
                   
                         
         // Array.isArray(Verses)?console.log("Translations:"+Translations[9].text ):console.log("waiting....");

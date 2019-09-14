@@ -203,7 +203,7 @@ const changepage=()=>{
             setCurrentPage(1);
             setOff(1); 
             setLast(0)}} 
-            class="btn btn-outline-primary btn-lg">Previous Surah <i class="fas fa-arrow-left"></i>
+            class="btn btn-outline-primary btn-lg prev_btn_btm">Previous Surah <i class="fas fa-arrow-left"></i>
             </Link>
         :""}
         
@@ -217,7 +217,7 @@ const changepage=()=>{
             setCurrentPage(1);
             setOff(1); 
             setLast(0)}} 
-            class="btn btn-outline-primary btn-lg">Next Surah <i class="fas fa-arrow-right"></i>
+            class="btn btn-outline-primary btn-lg next_btn_btm">Next Surah <i class="fas fa-arrow-right"></i>
             </Link>
               :""}
         </div>

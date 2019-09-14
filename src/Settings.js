@@ -14,8 +14,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import "./Set.css";
-
-
 const useStyles = makeStyles({
   list: {
     width: "350px",

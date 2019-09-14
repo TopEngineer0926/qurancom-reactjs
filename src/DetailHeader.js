@@ -30,21 +30,21 @@ return (
       </Link>
     </div>
     <div className="col-md-7 float-left middlebar_header">
-      <div className="col-md-2 float-left">
+      <div className="col-md-3 float-left text-center">
         <SurahName ChapData={props.ChapData}/>
       </div>
       <div  className="col-md-2 float-left">
         <Verse VerseTotal={props.VerseTotal}/>
       </div>
-      <div className="col-md-8 float-left p-0 ">
+      <div className="col-md-7 float-left p-0 ">
         <Search />
       </div>
     </div>
     <div className="col-md-3 float-left right_header">
-      <div  className="col-md-6 float-left text-right">
+      <div  className="col-md-6 float-left text-right language_web p-0">
         <Languages />
       </div>
-      <div  className="col-md-6 float-left text-right">
+      <div  className="col-md-6 float-left  text-center p-0">
         <Settings />
       </div>
     </div>

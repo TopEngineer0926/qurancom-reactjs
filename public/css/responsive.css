@@ -66,10 +66,10 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  header.detailheader .nav-left ul.navbar-nav li {
+  /* header.detailheader .nav-left ul.navbar-nav li { */
     /* width: 50%;
     display: none; */
-  }
+  /* } */
   header.detailheader .nav-left ul.navbar-nav form.form-inline {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -81,9 +81,9 @@
     padding-left: 0px;
     display: inline-block;
   }
-  header.detailheader .navbar2 ul.navbar-nav li:nth-of-type(1) {
+  /* header.detailheader .navbar2 ul.navbar-nav li:nth-of-type(1) { */
     /* display: none; */
-  }
+  /* } */
   header.detailheader .navbar2 ul.navbar-nav li:nth-of-type(2) {
     /* padding-left: 0px;
     position: absolute;
