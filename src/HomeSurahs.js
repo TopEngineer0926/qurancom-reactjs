@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import { If} from 'react-control-statements';
 import {SurahContext,CurrentPageContext,OffsetContext,ChosenVerseAndPageContext,ChosenVerseFlagContext,LoadingContext,LangContext} from "./index";
+import { goToTop } from 'react-scrollable-anchor'
 
 function Surahs() {
   const [Surah, setSurahNo]=useContext(SurahContext);
@@ -296,7 +297,7 @@ function Surahs() {
     
     
     <p className="manzil-text">
-   <b><FormattedMessage id="Manzil"/>01</b>
+   <b><FormattedMessage id="Manzil"/> 01</b>
  </p>
  <div className="row" >
 {index1.map((indix)=>
@@ -333,7 +334,7 @@ function Surahs() {
 
 
    <p className="manzil-text">
-   <b><FormattedMessage id="Manzil"/>02</b>
+   <b><FormattedMessage id="Manzil"/> 02</b>
  </p>
  <div className="row" >
 {index2.map((indix)=>
@@ -367,7 +368,7 @@ function Surahs() {
 {/* <FormattedMessage id="Manzil"/>02 End */}
 
  <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>03</b>
+        <b><FormattedMessage id="Manzil"/> 03</b>
      </p>
      <div className="row" >
 {index3.map((indix)=>
@@ -398,7 +399,7 @@ function Surahs() {
 {/* <FormattedMessage id="Manzil"/>03 End */}
 
      <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>04</b>
+        <b><FormattedMessage id="Manzil"/> 04</b>
      </p>
      <div className="row" >
 {index4.map((indix)=>
@@ -428,7 +429,7 @@ function Surahs() {
 </div>
 {/* <FormattedMessage id="Manzil"/>04 End */}
      <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>05</b>
+        <b><FormattedMessage id="Manzil"/> 05</b>
      </p>
      <div className="row" >
 {index5.map((indix)=>
@@ -456,7 +457,7 @@ function Surahs() {
 </div>
 {/* <FormattedMessage id="Manzil"/>05 End */}
      <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>06</b>
+        <b><FormattedMessage id="Manzil"/> 06</b>
      </p>
      <div className="row" >
 {index6.map((indix)=>
@@ -484,7 +485,7 @@ function Surahs() {
 </div>
 {/* <FormattedMessage id="Manzil"/>06 End */}
 <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>07</b>
+        <b><FormattedMessage id="Manzil"/> 07</b>
      </p>
 
 <div className="row" >
@@ -525,7 +526,7 @@ function Surahs() {
     
     
     <p className="manzil-text">
-   <b><FormattedMessage id="Manzil"/>01</b>
+   <b><FormattedMessage id="Manzil"/> 01</b>
  </p>
  <div className="row" >
 {index1.map((indix)=>
@@ -562,7 +563,7 @@ function Surahs() {
 
 
    <p className="manzil-text">
-   <b><FormattedMessage id="Manzil"/>02</b>
+   <b><FormattedMessage id="Manzil"/> 02</b>
  </p>
  <div className="row" >
 {index2.map((indix)=>
@@ -596,7 +597,7 @@ function Surahs() {
 {/* <FormattedMessage id="Manzil"/>02 End */}
 
  <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>03</b>
+        <b><FormattedMessage id="Manzil"/> 03</b>
      </p>
      <div className="row" >
 {index3.map((indix)=>
@@ -627,7 +628,7 @@ function Surahs() {
 {/* <FormattedMessage id="Manzil"/>03 End */}
 
      <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>04</b>
+        <b><FormattedMessage id="Manzil"/> 04</b>
      </p>
      <div className="row" >
 {index4.map((indix)=>
@@ -657,7 +658,7 @@ function Surahs() {
 </div>
 {/* <FormattedMessage id="Manzil"/>04 End */}
      <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>05</b>
+        <b><FormattedMessage id="Manzil"/> 05</b>
      </p>
      <div className="row" >
 {index5.map((indix)=>
@@ -685,7 +686,7 @@ function Surahs() {
 </div>
 {/* <FormattedMessage id="Manzil"/>05 End */}
      <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>06</b>
+        <b><FormattedMessage id="Manzil"/> 06</b>
      </p>
      <div className="row" >
 {index6.map((indix)=>
@@ -713,7 +714,7 @@ function Surahs() {
 </div>
 {/* <FormattedMessage id="Manzil"/>06 End */}
 <p className="manzil-text">
-        <b><FormattedMessage id="Manzil"/>07</b>
+        <b><FormattedMessage id="Manzil"/> 07</b>
      </p>
 
 <div className="row" >

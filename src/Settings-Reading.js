@@ -6,6 +6,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import {CurrentPageContext,LastPageContext,SurahContext,endFlagContext,TranslitContext,LoadingContext,OffsetContext} from "./index";
 import {Link} from "react-router-dom";
 import { goToTop } from 'react-scrollable-anchor'
+import { FormattedMessage } from "react-intl";
 
 import "./qfonts.css"
 // import "./Dynamicfonts.css"
@@ -118,13 +119,28 @@ return(
     </InfiniteScroll>
     <div class="container mb-5">
         <div class="next-previous-surah d-flex justify-content-between align-items-center">
-        <Link to={`/${SurahNo}`} onClick={()=>{
-              goToTop()}}  class="btn btn-outline-primary btn-lg">Beginning of Surah</Link>
-            <Link to={`/${id+1}`} onClick={()=>{setSurah(SurahNo+1);setLoading(true);
+        {(SurahNo!==1)?
+        <Link to={`/${SurahNo-1}`} onClick={()=>{setSurah(SurahNo-1);setLoading(true);
             setCurrentPage(1);
             setOff(1); 
             setLast(0)}} 
-            class="btn btn-outline-primary btn-lg">Next Surah <i class="fas fa-arrow-right"></i></Link>
+            class="btn btn-outline-primary btn-lg prev_btn_btm"><FormattedMessage id="Previous Surah"/> <i class="fas fa-arrow-left"></i>
+            </Link>
+        :""}
+        
+            <Link to={`/${SurahNo}`} onClick={()=>{
+              goToTop()
+            }}  class="btn btn-outline-primary btn-lg"><FormattedMessage id="BeginningofSurah"/>
+            </Link>
+              {(SurahNo!==114)?
+            <Link to={`/${SurahNo+1}`} onClick={()=>{setSurah(SurahNo+1);
+              setLoading(true);
+            setCurrentPage(1);
+            setOff(1); 
+            setLast(0)}} 
+            class="btn btn-outline-primary btn-lg next_btn_btm"><FormattedMessage id="NextSurah"/> <i class="fas fa-arrow-right"></i>
+            </Link>
+              :""}
         </div>
     </div>
 

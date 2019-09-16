@@ -8,10 +8,11 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext, Translit
 import "./qfonts.css"
 import {Link} from "react-router-dom";
 import { goToTop } from 'react-scrollable-anchor'
-
+import { FormattedMessage } from "react-intl";
 // import ReactAudioPlayer from 'react-audio-player';
 // import AudioPlayer from "react-h5-audio-player";
 // import file from "./verses/file.mp3";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 function Body(props){
   const [Load, setLoading]= useContext(LoadingContext);
@@ -82,7 +83,7 @@ const changepage=()=>{
                   />    */}
                 
                <If condition={SurahNo!==1 && SurahNo !==9} >
-                <div  class="p1" style={{textAlign:"center"}}>  ﭑﭒﭓﭔ </div>
+                <div  class="p1 bism" style={{textAlign:"center"}}>  ﭑﭒﭓﭔ </div>
                 </If>
 
 { Array.isArray(props.data)? props.data.map((mem)=>
@@ -108,9 +109,12 @@ const changepage=()=>{
 
         </a>
         <br />
-        <a href="">
+        <CopyToClipboard
+        text='Hello'>
+        <a href="javascript:void(0)">
           <i className="fas fa-paperclip"></i> Copy
         </a>
+        </CopyToClipboard>
       </div>
     </div>
     <div className="social">
@@ -132,7 +136,7 @@ const changepage=()=>{
        {mem.words.map((member)=>
  
       (TranslitShowing)?
-      <>
+      <span id={mem.verse_number}>
              <Tooltip  className="tooltipmaindiv" 
              content= {
               (member.transliteration) ? member.transliteration.transliteration.text: 
@@ -145,12 +149,12 @@ const changepage=()=>{
             fadeEasing="linear"
            
            >
-             <b className={"pointer ArabicFontChange"+member.class_name} >
+             <b className={"pointer ArabicFontChange "+member.class_name} >
              
              {entities.decode(member.code_hex)}  </b>
              
                 </Tooltip> 
-                </>
+                </span>
                 : 
             <>
              <Tooltip  className="tooltipmaindiv" 
@@ -203,13 +207,13 @@ const changepage=()=>{
             setCurrentPage(1);
             setOff(1); 
             setLast(0)}} 
-            class="btn btn-outline-primary btn-lg prev_btn_btm">Previous Surah <i class="fas fa-arrow-left"></i>
+            class="btn btn-outline-primary btn-lg prev_btn_btm"><FormattedMessage id="PreviousSurah"/> <i class="fas fa-arrow-left"></i>
             </Link>
         :""}
         
             <Link to={`/${SurahNo}`} onClick={()=>{
               goToTop()
-            }}  class="btn btn-outline-primary btn-lg">Beginning of Surah
+            }}  class="btn btn-outline-primary btn-lg"><FormattedMessage id="BeginningofSurah"/>
             </Link>
               {(SurahNo!==114)?
             <Link to={`/${SurahNo+1}`} onClick={()=>{setSurah(SurahNo+1);
@@ -217,7 +221,7 @@ const changepage=()=>{
             setCurrentPage(1);
             setOff(1); 
             setLast(0)}} 
-            class="btn btn-outline-primary btn-lg next_btn_btm">Next Surah <i class="fas fa-arrow-right"></i>
+            class="btn btn-outline-primary btn-lg next_btn_btm"><FormattedMessage id="NextSurah"/> <i class="fas fa-arrow-right"></i>
             </Link>
               :""}
         </div>
