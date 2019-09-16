@@ -145,9 +145,9 @@ const changepage=()=>{
             fadeEasing="linear"
            
            >
-             <b className={"pointer "+member.class_name} >
+             <b className={"pointer ArabicFontChange"+member.class_name} >
              
-              {member.code_hex}  </b>
+             {entities.decode(member.code_hex)}  </b>
              
                 </Tooltip> 
                 </>
@@ -167,7 +167,7 @@ const changepage=()=>{
             fadeEasing="linear"
             // fixed={true}
            >
-             <b className={"pointer "+member.class_name} >
+             <b className={"pointer ArabicFontChange "+member.class_name} >
              {entities.decode(member.code_hex)}  </b>
                 </Tooltip> 
                 </>
@@ -177,7 +177,7 @@ const changepage=()=>{
 
     {/* FETCH TRANSLATIONS */}
     { Array.isArray(mem.translations)? mem.translations.map((trans)=>
-                <div className="translation-box">
+                <div className="translation-box TranslationFontChanger">
                   <a href=""> {trans.resource_name}</a>
                   <p>
                   {trans.text}

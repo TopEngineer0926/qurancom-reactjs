@@ -14,6 +14,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import "./Set.css";
+import FontSizeChanger from 'react-font-size-changer';
+
 const useStyles = makeStyles({
   list: {
     width: "350px",
@@ -30,7 +32,8 @@ const useStyles = makeStyles({
    
 });
 const color={
-  color: '#ABABAB'
+  color: '#ABABAB',
+  border: 'none'
 };
 
 export default function TemporaryDrawer() {
@@ -89,28 +92,98 @@ export default function TemporaryDrawer() {
 
       <Divider />
       <List subheader={<Typography style={{ color: '#ABABAB', marginLeft:"10px" }}>Font Size</Typography>}>
+     
               <div className="sidenavright-lower">
                                   <div
                     className="arabic-size d-flex justify-content-between ml-4 mr-4 align-items-center"
                   >
-                    <a href="javascript:void(0);">
+                    {/* Arabic fontsize changer */}
+
+<FontSizeChanger
+          targets={['.ArabicFontChange']}
+          onChange={(element, newValue, oldValue) => {
+            console.log(element, newValue, oldValue);
+          }}
+          options={{
+            stepSize: 2,
+            range: 100
+          }}
+          customButtons={{
+                      down:  <a href="javascript:void(0);">
+            <i class="fas fa-minus" style={color}></i>
+          </a>,
+          
+          }}          
+       />
+          
+              {/* <a href="javascript:void(0);">
                       <i class="fas fa-minus" style={color}></i>
-                    </a>
+                    </a> */}
                     <h6 style={color}>Arabic</h6>
-                    <a href="javascript:void(0);">
+                    <FontSizeChanger
+          targets={['.ArabicFontChange']}
+          onChange={(element, newValue, oldValue) => {
+            console.log(element, newValue, oldValue);
+          }}
+          options={{
+            stepSize: 2,
+            range: 100
+          }}
+          customButtons={{
+                      up:  <a href="javascript:void(0);">
+            <i class="fas fa-plus" style={color}></i>
+          </a>,
+          
+          }}          
+        />
+                    {/* <a href="javascript:void(0);">
                       <i class="fas fa-plus" style={color}></i>
-                    </a>
+                    </a> */}
+                    
                   </div>
+
+
+                  {/* TRANSLATIONS FONT SIZE CHANGER*/}
                   <div
                     className="arabic-size d-flex justify-content-between ml-4 mr-4 align-items-center"
                   >
-                     <a href="javascript:void(0);">
+                   <FontSizeChanger
+          targets={['.TranslationFontChanger']}
+          onChange={(element, newValue, oldValue) => {
+            console.log(element, newValue, oldValue);
+          }}
+          options={{
+            stepSize: 2,
+            range: 100
+          }}
+          customButtons={{
+                      down:  <a href="javascript:void(0);">
+            <i class="fas fa-minus" style={color}></i>
+          </a>,
+          
+          }}          
+       />
+          
+              {/* <a href="javascript:void(0);">
                       <i class="fas fa-minus" style={color}></i>
-                    </a>
+                    </a> */}
                     <h6 style={color}>Translation</h6>
-                    <a href="javascript:void(0);">
-                      <i class="fas fa-plus" style={color}></i>
-                    </a>
+                    <FontSizeChanger
+          targets={['.TranslationFontChanger']}
+          onChange={(element, newValue, oldValue) => {
+            console.log(element, newValue, oldValue);
+          }}
+          options={{
+            stepSize: 2,
+            range: 100
+          }}
+          customButtons={{
+                      up:  <a href="javascript:void(0);">
+            <i class="fas fa-plus" style={color}></i>
+          </a>,
+          
+          }}          
+        />
                   </div>
                 </div>
                 

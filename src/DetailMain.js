@@ -46,12 +46,22 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
 
           console.log("in If, Page:"+OffsetandPage.Chosenpage+ "offset:"+OffsetandPage.offset);
           console.log("in If, CurrentPage:"+Currentpage+ "Myoff:"+ off);
+         
+         
+         console.log( Object.keys(check).map(function(key, index){
+         if(check[key]===true)
+            return (`&translations[]=${key}`)
+          
+          }).join(''))
 
-                for(var prop in check){
-                  //count=count+1;
-                  if(check[prop]===true){
-                    console.log("for prop val:" +prop)
-fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=${prop}`)
+                // for(var prop in check){
+                //   //count=count+1;
+                //   if(check[prop]===true){
+                //     console.log("for prop val:" +prop)
+fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}${Object.keys(check).map(function(prop, index){
+  if(check[prop]===true) 
+return `&translations[]=${prop}`
+}).join('')}`)
                       .then(res =>res.json())
                       .then(dat=>{
                         setVerses(dat.verses.data);
@@ -59,8 +69,8 @@ fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/ver
                         setLast(dat.verses.last_page); 
                         setLoading(false)
                       });
-                    }
-                  }
+                  //   }
+                  // }
                   
                         
         // Array.isArray(Verses)?console.log("Translations:"+Translations[9].text ):console.log("waiting....");
@@ -69,7 +79,10 @@ fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/ver
         else{
        
 
-      fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}&translations[]=20`)
+      fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}${Object.keys(check).map(function(prop, index){
+        if(check[prop]===true) 
+      return `&translations[]=${prop}`
+      }).join('')}`)
             .then(res =>res.json())
             .then(dat=> {
            
@@ -88,7 +101,7 @@ fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/ver
       }
      fetchData();
   
-    },[SurahNo,Currentpage,lastPage,off]);//,check
+    },[SurahNo,Currentpage,lastPage,off,check]);//,check
 
 
   
