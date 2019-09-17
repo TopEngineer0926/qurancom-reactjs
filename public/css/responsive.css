@@ -297,17 +297,11 @@ main.detailmain .ayatboxouter .ayatrefbox .plycpy a{
 span.mobilehidesetting {
   display: none;
 }
+
 .next-previous-surah a {
-  margin: 20px;
-  margin-bottom: 0px;
-  font-size: 9px;
-  color: #56c0d0;
-  border-color: #dbdbdb;
-  border-radius: 30px;
-  width: 200px;
-  font-weight: 500;
-  margin: 5px;
-  padding: 10px 5px;
+  margin: 0 5px 0 0!important;
+  font-size: 10px !important;
+  padding:5px;
 }
 .next-previous-surah a i {
   display: none;
@@ -324,6 +318,18 @@ span.mobilehidesetting {
 }
 div#surahinfo {
   width: 100vw !important;
+  padding-left: 15px;
+  padding-right: 15px
+}
+.surahinfo_right_txt,.surahinfo_middle_txt ,.surahinfo_img{
+  width: 100%;
+}
+.col-md-3.col-lg-3.col-xl-3.d-flex.align-items-center.surahinfo_img {
+  padding-right: 0;
+  padding-left: 0;
+}
+div#surahinfo {
+  margin-bottom: -200px;
 }
 }
 

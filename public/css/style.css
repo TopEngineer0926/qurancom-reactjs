@@ -1065,7 +1065,18 @@ header#hd .dropdown a {
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   margin: auto;
-  
+  overflow: hidden;
+  display: block;
+}
+.loader.loadersmall {
+  border: 10px solid #3061a7;
+  border-radius: 50%;
+  border-top: 10px solid #56c0d0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
   overflow: hidden;
   display: block;
 }
@@ -1188,4 +1199,28 @@ body {
 }
 .detailheader .NightM a:hover{
   color: #56c0d0;
+}
+.page404.position-ref {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+}
+.page404.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.page404.full-height {
+  height: 100vh;
+}
+.page404 .content {
+  text-align: center;
+}
+.page404 .m-b-md {
+  margin-bottom: 30px;
+}
+.page404 .title {
+  font-size: 84px;
+}
+b.pointer.ArabicFontChange {
+  padding: 0 2px;
 }
