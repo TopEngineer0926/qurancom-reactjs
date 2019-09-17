@@ -92,14 +92,10 @@ export default function TemporaryDrawer() {
 
       <Divider />
       <List subheader={<Typography style={{ color: '#ABABAB', marginLeft:"10px" }}>Font Size</Typography>}>
-     
-              <div className="sidenavright-lower">
-                                  <div
-                    className="arabic-size d-flex justify-content-between ml-4 mr-4 align-items-center"
-                  >
-                    {/* Arabic fontsize changer */}
-
-<FontSizeChanger
+        <div className="sidenavright-lower">
+        <div className="arabic-size arabictxt_size d-flex justify-content-between ml-4 mr-4 align-items-center" >
+        {/* Arabic fontsize changer */}
+        <FontSizeChanger
           targets={['.ArabicFontChange']}
           onChange={(element, newValue, oldValue) => {
             console.log(element, newValue, oldValue);
@@ -108,19 +104,13 @@ export default function TemporaryDrawer() {
             stepSize: 2,
             range: 100
           }}
+          className="arabictxt_size"
           customButtons={{
-                      down:  <a href="javascript:void(0);">
-            <i class="fas fa-minus" style={color}></i>
-          </a>,
-          
+            down:  <a href="javascript:void(0);"> <i class="fas fa-minus" style={color}></i> </a>,
           }}          
-       />
-          
-              {/* <a href="javascript:void(0);">
-                      <i class="fas fa-minus" style={color}></i>
-                    </a> */}
-                    <h6 style={color}>Arabic</h6>
-                    <FontSizeChanger
+          />
+        <h6 style={color}>Arabic</h6>
+        <FontSizeChanger
           targets={['.ArabicFontChange']}
           onChange={(element, newValue, oldValue) => {
             console.log(element, newValue, oldValue);
@@ -129,25 +119,15 @@ export default function TemporaryDrawer() {
             stepSize: 2,
             range: 100
           }}
+          className="arabictxt_size"
           customButtons={{
-                      up:  <a href="javascript:void(0);">
-            <i class="fas fa-plus" style={color}></i>
-          </a>,
-          
+            up:  <a href="javascript:void(0);"> <i class="fas fa-plus" style={color}></i> </a>,
           }}          
         />
-                    {/* <a href="javascript:void(0);">
-                      <i class="fas fa-plus" style={color}></i>
-                    </a> */}
-                    
-                  </div>
-
-
-                  {/* TRANSLATIONS FONT SIZE CHANGER*/}
-                  <div
-                    className="arabic-size d-flex justify-content-between ml-4 mr-4 align-items-center"
-                  >
-                   <FontSizeChanger
+        </div>
+        {/* TRANSLATIONS FONT SIZE CHANGER*/}
+        <div className="arabic-size transtxt_size d-flex justify-content-between ml-4 mr-4 align-items-center" >
+          <FontSizeChanger
           targets={['.TranslationFontChanger']}
           onChange={(element, newValue, oldValue) => {
             console.log(element, newValue, oldValue);
@@ -156,19 +136,15 @@ export default function TemporaryDrawer() {
             stepSize: 2,
             range: 100
           }}
+          className="transtxt_size"
           customButtons={{
                       down:  <a href="javascript:void(0);">
             <i class="fas fa-minus" style={color}></i>
           </a>,
-          
           }}          
-       />
-          
-              {/* <a href="javascript:void(0);">
-                      <i class="fas fa-minus" style={color}></i>
-                    </a> */}
-                    <h6 style={color}>Translation</h6>
-                    <FontSizeChanger
+          />
+          <h6 style={color}>Translation</h6>
+          <FontSizeChanger
           targets={['.TranslationFontChanger']}
           onChange={(element, newValue, oldValue) => {
             console.log(element, newValue, oldValue);
@@ -177,17 +153,16 @@ export default function TemporaryDrawer() {
             stepSize: 2,
             range: 100
           }}
+          className="transtxt_size"
           customButtons={{
                       up:  <a href="javascript:void(0);">
             <i class="fas fa-plus" style={color}></i>
           </a>,
-          
           }}          
-        />
-                  </div>
-                </div>
-                
-                </List>
+          />
+          </div>
+          </div>
+        </List>
     </div>
   );
 

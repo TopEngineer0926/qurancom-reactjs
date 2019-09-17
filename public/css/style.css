@@ -1224,3 +1224,32 @@ body {
 b.pointer.ArabicFontChange {
   padding: 0 2px;
 }
+.arabictxt_size .font-size-changer:nth-child(1) .font-size-changer-buttons .font-size-up {
+  display: none;
+}
+.arabictxt_size .font-size-changer:last-child .font-size-changer-buttons .font-size-down {
+  display: none;
+}
+.transtxt_size .font-size-changer:nth-child(1) .font-size-changer-buttons .font-size-up {
+  display: none;
+}
+.transtxt_size .font-size-changer:last-child .font-size-changer-buttons .font-size-down {
+  display: none;
+}
+
+.arabictxt_size .font-size-changer:nth-child(1) .font-size-changer-buttons{
+  width: 40px !important;
+  margin: auto;
+}
+.arabictxt_size .font-size-changer:last-child .font-size-changer-buttons{
+  width: 40px !important;
+  margin: auto;
+}
+.transtxt_size .font-size-changer:nth-child(1) .font-size-changer-buttons{
+  width: 40px !important;
+  margin: auto;
+}
+.transtxt_size .font-size-changer:last-child .font-size-changer-buttons {
+  width: 40px !important;
+  margin: auto;
+}
