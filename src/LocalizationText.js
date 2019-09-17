@@ -1,6 +1,13 @@
 export default {
 
   en: {
+  Verses: "Verses",
+  Surahs: "Surahs",
+  Play: "Play",
+  Copy: "Copy",
+  NextSurah: "Next Surah",
+  PreviousSurah: "Previous Surah",
+  BeginningofSurah: "Beginning of Surah",
       Home: "Home",
       Islam: 'Islam',
       Help: "Help",
@@ -27,6 +34,13 @@ export default {
       FootCopy:"2019 Al-Kitaab.com. All rights reserved."},
   
     de: {
+  Verses: "verzen",
+  Surahs: "Surahs",
+  Play: "spelen",
+  Copy: "Kopiëren",
+  NextSurah: "Volgende Surah",
+  PreviousSurah: "Vorige Surah",
+  BeginningofSurah: "Begin van Surah",
   Home: "Startpagina",
     Islam: 'Islam',
       Help: "Helpen",
@@ -53,6 +67,13 @@ export default {
       FootCopy: "2019 Al-Kitaab.com. Alle rechten voorbehouden."},
     
   indo:  {
+  Verses: "Ayat",
+  Surahs: "Surat",
+  Play: "Bermain",
+  Copy: "Salinan",
+  NextSurah: "Surah selanjutnya",
+  PreviousSurah: "Surah sebelumnya",
+  BeginningofSurah: "Awal dari Surat",
   Home: "Rumah",
   Islam: 'Islam',
       Help: "Membantu",
@@ -78,7 +99,14 @@ export default {
       Footertext: "Al-kitaab.com (juga dikenal sebagai quran mulia, al quran, quran suci, koran) adalah proyek pro bono.",
       FootCopy: "2019 Al-Kitaab.com. Seluruh hak cipta."},
     
-  ar:   {   
+  ar:   { 
+  Verses: "الآيات",
+  Surahs: "سورة",
+  Play: "لعب",
+  Copy: "نسخ",
+  NextSurah: "سورة المقبل",
+  PreviousSurah: "السورة السابقة",
+  BeginningofSurah: "بداية السورة",  
    Home: "الصفحة الرئيسية",
     Islam: 'الاسلام',
       Help: "مساعدة",
@@ -105,6 +133,13 @@ export default {
       FootCopy: "2019 كتاب. كل الحقوق محفوظة."},
       
    tr:   {
+  Verses: "ayetler",
+  Surahs: "Sureler",
+  Play: "Oyna",
+  Copy: "kopya",
+  NextSurah: "Sonraki Suresi",
+  PreviousSurah: "Önceki Suresi",
+  BeginningofSurah: "Surenin Başlangıcı",
   Home: "Ana Sayfa",	
   Islam: 'İslâm',
       Help: "yardım et",
@@ -131,6 +166,13 @@ export default {
       FootCopy: "2019 Al-Kitaab.com. Tüm hakları Saklıdır."},
   
   fr: {
+  Verses: "Vers",
+  Surahs: "Sourates",
+  Play: "Jouer",
+  Copy: "Copie",
+  NextSurah: "Prochaine Sourate",
+  PreviousSurah: "Sourate précédente",
+  BeginningofSurah: "Début de la sourate",
   Home: "d'accueil",
      Islam: 'Islam',
       Help: "Aidez-moi",
@@ -157,6 +199,13 @@ export default {
       FootCopy: "2019 Al-Kitaab.com. Tous les droits sont réservés."},
   
    ur:   {
+  Verses: "آیات",
+  Surahs: "سورتیں",
+  Play: "پلے",
+  Copy: "کاپی",
+  NextSurah: "اگلی سورہ",
+  PreviousSurah: "پچھلی سورہ",
+  BeginningofSurah: "سورہ کا آغاز",
   Home: "ہوم",
      Islam: 'اسلام',
       Help: "مدد",
@@ -183,4 +232,3 @@ export default {
       FootCopy: "2019 Al-Kitaab.com. جملہ حقوق محفوظ ہیں."},
     
     };
-  

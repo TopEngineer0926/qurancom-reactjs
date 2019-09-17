@@ -40,9 +40,10 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
     const fetchData = async() => {
 
       console.log("Fetch entered...")
-         if(isChosen || Currentpage===1){ 
+         if(isChosen || Currentpage===1){ //|| isChecked
           setFlag(true);//Has More flag setter for Inifinite Scroller...
           setChosen(false); //Flag for Verse Dropdown
+          //setCheckedFlag(false)
 
           console.log("in If, Page:"+OffsetandPage.Chosenpage+ "offset:"+OffsetandPage.offset);
           console.log("in If, CurrentPage:"+Currentpage+ "Myoff:"+ off);
@@ -69,12 +70,7 @@ return `&translations[]=${prop}`
                         setLast(dat.verses.last_page); 
                         setLoading(false)
                       });
-                  //   }
-                  // }
-                  
-                        
-        // Array.isArray(Verses)?console.log("Translations:"+Translations[9].text ):console.log("waiting....");
-        
+            
                 }
         else{
        
@@ -117,7 +113,8 @@ return `&translations[]=${prop}`
         <>  
         {Status && <Info data={props.info} ChapData={props.ChapData}/>}
  
-        <If condition={ReadStatus===true}>
+ {(ReadStatus)?<Reading data={Verses}/>: <Body data={Verses} /> }
+        {/* <If condition={ReadStatus===true}>
           
               <Reading data={Verses}/>
                             
@@ -125,7 +122,7 @@ return `&translations[]=${prop}`
              <If condition={ReadStatus===false}>
            
              <Body data={Verses} />
-             </If>
+             </If> */}
           </>
              
             }

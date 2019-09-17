@@ -1065,11 +1065,15 @@ header#hd .dropdown a {
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  
   overflow: hidden;
   display: block;
 }
+.wraper_laader {
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
 
 /* Safari */
 @-webkit-keyframes spin {
@@ -1181,4 +1185,7 @@ body {
 }
 #surahs .container .nav .nav-item .nav-link .badge {
   margin-left: 5px;
+}
+.detailheader .NightM a:hover{
+  color: #56c0d0;
 }

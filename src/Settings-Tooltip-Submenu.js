@@ -34,11 +34,11 @@ export default function NestedList() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [TranslitShowing, setTrans]=useContext(TranslitContext);
-  const [selectedValue, setSelectedValue] = React.useState('a');
+  // const [selectedValue, setSelectedValue] = React.useContext(TooltipSelectContext);
 
-  function handleRadioChange(event) {
-    setSelectedValue(event.target.value);
-  }
+  // function handleRadioChange(event) {
+  //   setSelectedValue(event.target.value);
+  // }
   function handleClick() {
     setOpen(!open);
   }
@@ -65,32 +65,39 @@ export default function NestedList() {
 
   {/* Tranlsation */}
           <ListItem button className={classes.nested} onClick={()=>setTrans(false)}>
-          <Radio 
+            
+          <FormControlLabel
+                          control={
+                          <Radio
+                          checked={!TranslitShowing}                   
+                           />
+                                  }
+                          label="Translations"
+                          color="default"
+                          
+                        />
+          {/* <Radio 
            onChange={handleRadioChange}
            value="a"
            checked={selectedValue === 'a'}
            color="default"
-          />
-            <ListItemIcon>
-             </ListItemIcon>
-            <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Translations</Typography>} />
+          /> */}
+          
+            {/* <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Translations</Typography>} /> */}
           </ListItem>
 
 {/* Tranliteration */}
          
         
        <ListItem  className={classes.nested} onClick={()=>{setTrans(true); console.log("Transliteration SHowing")} }>
-       <Radio 
-           button onChange={handleRadioChange}
-           value="b"
-           checked={selectedValue === 'b'}
-           color="default"
-           
-      />
-            <ListItemIcon>
-      
-             </ListItemIcon>
-            <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Transliteration</Typography>} />
+       <FormControlLabel
+                          control={
+                          <Radio checked={TranslitShowing}/>
+                                  }
+                          label="Transliteration"
+                          color="default"
+                          
+                        />
           
           </ListItem>
 

@@ -8,6 +8,7 @@ import {
   DropdownItem
 } from "reactstrap";
 import "./LangDropdown.css";
+import {useLocalState} from "./customhooks"
 
 
 
@@ -21,6 +22,7 @@ const Style = {
 function Drop() {
   
   const [lang, setLang]=useContext(LangContext);
+  
   return (
     
     <UncontrolledDropdown>
@@ -30,14 +32,13 @@ function Drop() {
    
       </DropdownToggle>
       <DropdownMenu right>
-        <DropdownItem className="stripe"  onClick={()=>{ setLang('en'); localStorage.setItem('lang','en')  }}>English</DropdownItem>
-        <DropdownItem className="stripe"  onClick={()=>{setLang('de'); localStorage.setItem('lang','de'); 
-        console.log("lang:"+localStorage.getItem('lang')) }} >Deutsch</DropdownItem>
-        <DropdownItem className="stripe" onClick={()=>{ localStorage.setItem('lang','indo'); setLang('indo')}}>Bahasa Indonesia</DropdownItem>
-        <DropdownItem className="stripe"onClick={()=>{ localStorage.setItem('lang','ar'); setLang('ar')}}>عربى</DropdownItem>
-        <DropdownItem className="stripe"onClick={()=>{ localStorage.setItem('lang','tr'); setLang('tr')}}>Türk</DropdownItem>
-        <DropdownItem className="stripe" onClick={()=>{localStorage.setItem('lang','fr'); setLang('fr')}} >Francais</DropdownItem>
-        <DropdownItem className="stripe"onClick={()=>{ localStorage.setItem('lang','ur'); setLang('ur')}}>اردو</DropdownItem>
+        <DropdownItem className="stripe"  onClick={()=>{ setLang('en');  }}>English</DropdownItem>
+        {/* <DropdownItem className="stripe"  onClick={()=>{setLang('de');  }} >Deutsch</DropdownItem> */}
+        {/* <DropdownItem className="stripe" onClick={()=>{ setLang('indo')}}>Bahasa Indonesia</DropdownItem> */}
+        <DropdownItem className="stripe"onClick={()=>{ setLang('ar')}}>عربى</DropdownItem>
+        <DropdownItem className="stripe"onClick={()=>{  setLang('tr')}}>Türk</DropdownItem>
+        <DropdownItem className="stripe" onClick={()=>{setLang('fr')}} >Francais</DropdownItem>
+        <DropdownItem className="stripe"onClick={()=>{  setLang('ur')}}>اردو</DropdownItem>
       </DropdownMenu>
     
     </UncontrolledDropdown>

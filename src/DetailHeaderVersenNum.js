@@ -7,6 +7,7 @@ import {
 } from "reactstrap";
 import "./LangDropdown.css";
 import {ChosenVerseFlagContext,ChosenVerseAndPageContext,CurrentPageContext,LoadingContext} from "./index";
+import { FormattedMessage } from "react-intl";
 
 const Style = {
   textDecoration: "none",
@@ -30,7 +31,7 @@ VerseNumbers.push(i+1);
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={Style}>
-     Verses
+      <FormattedMessage id="Verses"/>
       </DropdownToggle>
       <DropdownMenu style={{height: "12vw", overflowY: "scroll"}} >
      {VerseNumbers.map((num)=>

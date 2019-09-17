@@ -9,6 +9,7 @@ import "./LangDropdown.css";
 import {SurahContext} from "./index";
 import {Link} from "react-router-dom";
 import {CurrentPageContext,LastPageContext,LoadingContext,OffsetContext} from "./index";
+import { FormattedMessage } from "react-intl";
 
 
 
@@ -33,7 +34,7 @@ const [off, setOff] = useContext(OffsetContext);
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={Style}>
-      {Array.isArray(props.ChapData)? props.ChapData[id]["name_simple"]:"Surahs"}
+      {Array.isArray(props.ChapData)? props.ChapData[id]["name_simple"]:<FormattedMessage id="Surahs"/>}
       
       </DropdownToggle>
       <DropdownMenu style={{height: "12vw", overflowY: "scroll"}}>

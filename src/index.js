@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ThemeProvider } from "./Nightmode/ThemeContext";
-
+import {useLocalState} from "./customhooks"
 
 
 export const InfoContext=React.createContext();
@@ -25,12 +25,14 @@ export const LoadingContext=React.createContext();
 
 
 export const CheckedContext=React.createContext();
+export const isCheckedFlag=React.createContext();
 
     
 const Index=()=>{
    
-    console.log("RaedStatus:"+localStorage.getItem('ReadStatus'),localStorage.getItem('InfoStatus'))
-    const [lang,setlang]=useState("en");//localStorage.getItem('lang')
+    const [lang,setlang]=useLocalState("lang");//localStorage.getItem('lang')
+
+
     const [ShowInfo,setShow]=useState(false);
     const [ShowReading,setReading]=useState(false);
     const [SurahNo,setSurahNo]=useState(window.location.href.substring(window.location.href.indexOf("/#/")+3,window.location.href.length));
@@ -48,7 +50,10 @@ const Index=()=>{
     const [off,setoff]=useState();
 
     const [Loading,setLoading]=useState(true);
-    const [check, setCheck] = useState( {20:true}   );
+    const [check, setCheck] = useState( {20:true} );
+//     console.log("ReadStaus"+ ShowReading)
+//    console.log("InfoStaus"+ ShowInfo)
+   
     
 return(
    

@@ -17,17 +17,17 @@ function Modal(props){
 <Fade top>
      <div class="container-fluid collapse" id="surahinfo">
             <div class="row">
-                <div style={{paddingRight:"0px"}}class="col-3 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                <div style={{paddingRight:"0px"}}class="col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
                     <img style={{width:"480px", height:"550px"}} src={madinah} alt="Quran"/>
                 </div>
-                <div class="col-1 col-md-1 col-lg-1 col-xl-1 text-right text-uppercase">
+                <div class="col-md-1 col-lg-1 col-xl-1 text-right text-uppercase">
                     <h6>Verses</h6>
                     <p><span class="primarycolor">{props.ChapData[index].verses_count}</span></p>
                     <h6>Pages</h6>
                     <p><span class="primarycolor">{props.ChapData[index].pages[0]} <span class="dullcolor">:
                     </span>{props.ChapData[index].pages[1]} </span></p>
                 </div>
-                <div style={{backgroundColor:"#F4F4F4"}} class="col-8 col-md-8 col-lg-8 col-xl-8 pb-0">
+                <div style={{backgroundColor:"#F4F4F4"}} class="col-md-8 col-lg-8 col-xl-8 pb-0">
                     <div style={{maxHeight:"530px",overflowY:"scroll"}}>
                     <a style={{cursor:"pointer"}} onClick={()=>setStatus(!Status)}>
                         <i class="fas fa-times"></i>
@@ -51,17 +51,17 @@ function Modal(props){
 <Fade top>
      <div class="container-fluid collapse" id="surahinfo">
             <div class="row">
-                <div style={{paddingRight:"0px"}}class="col-3 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
+                <div style={{paddingRight:"0px"}}class="col-md-3 col-lg-3 col-xl-3 d-flex align-items-center surahinfo_img">
                     <img style={{width:"480px", height:"550px"}} src={mak} alt="Quran"/>
                 </div>
-                <div class="col-1 col-md-1 col-lg-1 col-xl-1 text-right text-uppercase">
+                <div class="col-md-1 col-lg-1 col-xl-1 text-right text-uppercase surahinfo_middle_txt">
                     <h6>Verses</h6>
                     <p><span class="primarycolor">{props.ChapData[index].verses_count}</span></p>
                     <h6>Pages</h6>
                     <p><span class="primarycolor">{props.ChapData[index].pages[0]} <span class="dullcolor">:
                     </span>{props.ChapData[index].pages[1]} </span></p>
                 </div>
-                <div style={{backgroundColor:"#F4F4F4"}} class="col-8 col-md-8 col-lg-8 col-xl-8">
+                <div style={{backgroundColor:"#F4F4F4"}} class="col-md-8 col-lg-8 col-xl-8 surahinfo_right_txt">
                     <div style={{maxHeight:"530px",overflowY:"scroll"}}>
                     <a style={{cursor:"pointer"}} onClick={()=>setStatus(!Status)}>
                         <i class="fas fa-times"></i>

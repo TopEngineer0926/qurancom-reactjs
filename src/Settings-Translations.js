@@ -94,19 +94,20 @@ const[check, setCheck]=useContext(CheckedContext);
          {(Translators)?Translators.translations.map((translator,index)=>
      
                 <ListItem button className={classes.nested}>
-{/*                    
-                    {console.log(index)}
-                    {console.log(check[index])} */}
+                  
+          
                         <FormControlLabel
                           control={
                           <Checkbox 
-                          
+                          checked={check[translator.id]}                   
                           onChange={handleChange(translator.id)} 
                           value={`checked${translator.id}`} />
-                        }
+                                        }
                           label={translator.name}
                           
                         />
+                      
+                    
                      
          </ListItem>
           ):"Loading"}
