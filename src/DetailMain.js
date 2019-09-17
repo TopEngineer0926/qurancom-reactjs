@@ -105,7 +105,7 @@ return `&translations[]=${prop}`
    <> 
    {(isLoading)? <>
     <div class="wraper_laader">
-<div class="loader"></div>
+<div class="loader loadersmall"></div>
 </div>
     {console.log("Loading: "+isLoading) }
               </> 
