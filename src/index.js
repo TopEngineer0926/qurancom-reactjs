@@ -30,7 +30,7 @@ export const isCheckedFlag=React.createContext();
     
 const Index=()=>{
    
-    const [lang,setlang]=useLocalState("lang");//localStorage.getItem('lang')
+    const [lang,setlang]=useState("en");//localStorage.getItem('lang')
 
 
     const [ShowInfo,setShow]=useState(false);
