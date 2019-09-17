@@ -10,7 +10,7 @@ import {
 import "./qfonts.css"
 import {Link} from "react-router-dom";
 import {goToTop} from 'react-scrollable-anchor'
-
+import CopyToClipboard from 'copy-to-clipboard';
 import Sound from 'react-sound';
 
 // import ReactAudioPlayer from 'react-audio-player';
@@ -132,9 +132,18 @@ function Body(props) {
 
                                                     </a>
                                                     <br/>
-                                                    <a href="">
-                                                        <i className="fas fa-paperclip"></i> Copy
-                                                    </a>
+                                                    {/* <CopyToClipboard text="SOme text">
+                                        
+                                        <button>Copy to clipboard with button</button>
+                                        </CopyToClipboard> */}
+
+{/* <CopyToClipboard label="Get date ISO string"/> */}
+                                                        
+                                                       
+                                                        <a href="javaScript:void(0)">
+                                                            <i className="fas fa-paperclip"></i> Copy
+                                                        </a>
+                                                        
                                                 </div>
                                             </div>
                                             <div className="social">

@@ -9,6 +9,7 @@
     "@material-ui/icons": "^4.2.1",
     "array-merge-by-key": "^1.0.1",
     "bootstrap": "^4.3.1",
+    "copy-to-clipboard": "^3.2.0",
     "emotion-theming": "^10.0.14",
     "html-entities": "^1.2.1",
     "material-ui-icons": "^1.0.0-beta.36",
@@ -42,7 +43,7 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
-    "start": "set PORT=3001  && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

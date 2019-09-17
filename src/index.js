@@ -30,7 +30,7 @@ export const isCheckedFlag=React.createContext();
     
 const Index=()=>{
    
-    const [lang,setlang]=useLocalState("lang");//localStorage.getItem('lang')
+    const [lang,setlang]=useState("en");//localStorage.getItem('lang')
 
 
     const [ShowInfo,setShow]=useState(false);
@@ -51,9 +51,20 @@ const Index=()=>{
 
     const [Loading,setLoading]=useState(true);
     const [check, setCheck] = useState( {20:true} );
-//     console.log("ReadStaus"+ ShowReading)
-//    console.log("InfoStaus"+ ShowInfo)
+    console.log("ReadStaus"+ ShowReading)
+   console.log("InfoStaus"+ ShowInfo)
+React.useEffect(()=>{
+    const ReadFlag=localStorage.getItem('ReadFlag');
+    if(ReadFlag){
+        setReading(JSON.parse(ReadFlag))
+        console.log('setLang:'+ ReadFlag);
+    }
+},[]);
    
+React.useEffect(()=>{
+    localStorage.setItem('ReadFlag',JSON.stringify(ShowReading))
+
+    },[ShowReading])
     
 return(
    
