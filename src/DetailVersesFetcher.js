@@ -83,9 +83,6 @@ function Body(props) {
                 <div className="container">
                     <div className="ayatboxouter">
 
-
-                        ===>
-
                         <Sound
                             url={Mp3File}
                             playStatus={Sound.status.PLAYING}
@@ -94,8 +91,6 @@ function Body(props) {
                             // onPlaying={this.handleSongPlaying}
                             // onFinishedPlaying={this.handleSongFinishedPlaying}
                         />
-
-                        ==>
 
 
                         {/*
@@ -106,7 +101,7 @@ function Body(props) {
                   />    */}
 
                         <If condition={SurahNo !== 1 && SurahNo !== 9}>
-                            <div class="p1" style={{textAlign: "center"}}> ﭑﭒﭓﭔ</div>
+                            <div class="p1 bism" style={{textAlign: "center"}}> ﭑﭒﭓﭔ</div>
                         </If>
 
                         {Array.isArray(props.data) ? props.data.map((mem) =>

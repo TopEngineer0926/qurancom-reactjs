@@ -1065,7 +1065,18 @@ header#hd .dropdown a {
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   margin: auto;
-  
+  overflow: hidden;
+  display: block;
+}
+.loader.loadersmall {
+  border: 10px solid #3061a7;
+  border-radius: 50%;
+  border-top: 10px solid #56c0d0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
   overflow: hidden;
   display: block;
 }
@@ -1209,4 +1220,7 @@ body {
 }
 .page404 .title {
   font-size: 84px;
+}
+b.pointer.ArabicFontChange {
+  padding: 0 2px;
 }

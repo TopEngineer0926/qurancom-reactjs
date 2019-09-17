@@ -318,6 +318,18 @@ span.mobilehidesetting {
 }
 div#surahinfo {
   width: 100vw !important;
+  padding-left: 15px;
+  padding-right: 15px
+}
+.surahinfo_right_txt,.surahinfo_middle_txt ,.surahinfo_img{
+  width: 100%;
+}
+.col-md-3.col-lg-3.col-xl-3.d-flex.align-items-center.surahinfo_img {
+  padding-right: 0;
+  padding-left: 0;
+}
+div#surahinfo {
+  margin-bottom: -200px;
 }
 }
 
