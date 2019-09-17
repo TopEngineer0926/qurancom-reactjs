@@ -297,17 +297,11 @@ main.detailmain .ayatboxouter .ayatrefbox .plycpy a{
 span.mobilehidesetting {
   display: none;
 }
+
 .next-previous-surah a {
-  margin: 20px;
-  margin-bottom: 0px;
-  font-size: 9px;
-  color: #56c0d0;
-  border-color: #dbdbdb;
-  border-radius: 30px;
-  width: 200px;
-  font-weight: 500;
-  margin: 5px;
-  padding: 10px 5px;
+  margin: 0 5px 0 0!important;
+  font-size: 10px !important;
+  padding:5px;
 }
 .next-previous-surah a i {
   display: none;

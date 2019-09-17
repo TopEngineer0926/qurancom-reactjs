@@ -200,7 +200,7 @@ const changepage=()=>{
         </div>
         </InfiniteScroll>
         <hr />
-        <div class="container mb-5">
+        <div class="container mb-5 p-1">
         <div class="next-previous-surah d-flex justify-content-between align-items-center">
         {(SurahNo!==1)?
         <Link to={`/${SurahNo-1}`} onClick={()=>{setSurah(SurahNo-1);setLoading(true);

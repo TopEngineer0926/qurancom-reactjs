@@ -15,7 +15,7 @@ function Modal(props){
     <>
 <If condition={props.ChapData[index].revelation_place==="madinah"}>
 <Fade top>
-     <div class="container-fluid collapse" id="surahinfo">
+     <div class="container-fluid collapse " id="surahinfo">
             <div class="row">
                 <div style={{paddingRight:"0px"}}class="col-md-3 col-lg-3 col-xl-3 d-flex align-items-center">
                     <img style={{width:"480px", height:"550px"}} src={madinah} alt="Quran"/>
