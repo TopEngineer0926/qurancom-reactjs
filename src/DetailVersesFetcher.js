@@ -215,7 +215,9 @@ function Body(props) {
                                                             {trans.text}
                                                         </p>
                                                     </div>)
-                                                : "Translations..."}
+                                                :     <div class="wraper_laader">
+                                                <div class="loader loadersmall"></div>
+                                              </div>}
                                             {/* <a href="#" className="bayyinah">Watch lecture by Bayyinah</a> */}
                                         </div>
                                     </div>

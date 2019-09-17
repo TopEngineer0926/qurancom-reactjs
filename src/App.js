@@ -1,12 +1,14 @@
 import React, {useContext} from "react";
 import Detail from "./Detailpage";
 import styled from "@emotion/styled";
-import {LangContext} from "./index";
+import {LangContext, SurahContext} from "./index";
 import { Route, HashRouter as Router,Switch } from "react-router-dom";
 import {IntlProvider} from "react-intl";
 import Home from "./Homepage";
 import { Suspense } from 'react';
 import messages from "./LocalizationText"
+import Notfound from './PageNotFound'
+
 const Wrapper = styled("div")`
 background: ${props => props.theme.background};
 .body {
@@ -36,6 +38,7 @@ main.readingmain {
 
   function App() {
     const [lang]=useContext(LangContext);
+    const[SurahNo]=useContext(SurahContext)
     return (
     <Wrapper>
      <IntlProvider messages={messages[lang]}>
@@ -43,7 +46,10 @@ main.readingmain {
  <Router>
   <Switch>
   <Route path="/" exact component={Home} />
-  <Route path="/" component={Detail} />
+  
+  <Route path={`/${SurahNo}`} component={Detail} />
+  <Route path="/" component={Notfound}/>
+  
 </Switch>
 </Router>
   </Suspense>

@@ -90,7 +90,9 @@ function Surahs() {
         </ul>
         <hr />
         {/* TAB CONTENT */}
-       
+        
+      
+    
         <div className="tab-content">
           {/* SHOW ALL SURAHS */}
         <If condition={Makkiflag===false  && Madniflag===false}> 
