@@ -51,20 +51,36 @@ const Index=()=>{
 
     const [Loading,setLoading]=useState(true);
     const [check, setCheck] = useState( {20:true} );
-    console.log("ReadStaus"+ ShowReading)
-   console.log("InfoStaus"+ ShowInfo)
+    
 React.useEffect(()=>{
     const ReadFlag=localStorage.getItem('ReadFlag');
+    const InfoFlag=localStorage.getItem('InfoFlag');
+    const Lango=localStorage.getItem('lang');
     if(ReadFlag){
         setReading(JSON.parse(ReadFlag))
-        console.log('setLang:'+ ReadFlag);
+        
+    console.log('setRead:'+ ReadFlag);
+    }
+    if(InfoFlag){
+        setShow(JSON.parse(InfoFlag))
+        console.log('setInfo:'+ ReadFlag);
+        
+    }
+    if(Lango){
+        setlang(JSON.parse(Lango))
+        console.log('Lang:'+ Lango);
+        
     }
 },[]);
    
 React.useEffect(()=>{
     localStorage.setItem('ReadFlag',JSON.stringify(ShowReading))
+    localStorage.setItem('InfoFlag',JSON.stringify(ShowInfo))
+    localStorage.setItem('lang',JSON.stringify(lang))
 
-    },[ShowReading])
+
+
+    },[ShowReading,ShowInfo,lang])
     
 return(
    

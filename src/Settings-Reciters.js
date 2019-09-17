@@ -80,7 +80,9 @@ export default function NestedList() {
         </ListItemIcon>
       <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>{reciter.reciter_name_eng} </Typography>} />
 
-        </ListItem>):"Loading"}
+        </ListItem>):<div class="wraper_laader">
+          <div class="loader loadersmall"></div>
+        </div>}
         </List>
       </Collapse>
   

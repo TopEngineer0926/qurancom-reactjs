@@ -45,20 +45,14 @@ import {SurahContext,CurrentPageContext,LastPageContext,endFlagContext,
           setChosen(false); //Flag for Verse Dropdown
           //setCheckedFlag(false)
 
-          console.log("in If, Page:"+OffsetandPage.Chosenpage+ "offset:"+OffsetandPage.offset);
-          console.log("in If, CurrentPage:"+Currentpage+ "Myoff:"+ off);
-         
-         
+      
          console.log( Object.keys(check).map(function(key, index){
          if(check[key]===true)
             return (`&translations[]=${key}`)
           
           }).join(''))
 
-                // for(var prop in check){
-                //   //count=count+1;
-                //   if(check[prop]===true){
-                //     console.log("for prop val:" +prop)
+             
 fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses?page=${Currentpage}&offset=${off}${Object.keys(check).map(function(prop, index){
   if(check[prop]===true) 
 return `&translations[]=${prop}`
@@ -92,12 +86,12 @@ return `&translations[]=${prop}`
 
             } 
     
-        console.log("last:"+lastPage);
+      
 
       }
      fetchData();
   
-    },[SurahNo,Currentpage,lastPage,off,check]);//,check
+    },[SurahNo,Currentpage,lastPage,off,check]);
 
 
   
@@ -107,8 +101,7 @@ return `&translations[]=${prop}`
     <div class="wraper_laader">
 <div class="loader"></div>
 </div>
-    {console.log("Loading: "+isLoading) }
-              </> 
+                </> 
      :
         <>  
         {Status && <Info data={props.info} ChapData={props.ChapData}/>}

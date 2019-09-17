@@ -90,6 +90,7 @@ const[check, setCheck]=useContext(CheckedContext);
       {/* TRASNLATORS LIST */}
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>     
+        
           
          {(Translators)?Translators.translations.map((translator,index)=>
      
@@ -110,7 +111,9 @@ const[check, setCheck]=useContext(CheckedContext);
                     
                      
          </ListItem>
-          ):"Loading"}
+          ):<div class="wraper_laader">
+          <div class="loader loadersmall"></div>
+        </div>}
 
  
          </List>
