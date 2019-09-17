@@ -42,7 +42,7 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3001  && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -65,6 +65,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-jsx-control-statements": "^4.0.0"
+    "babel-plugin-jsx-control-statements": "^4.0.0",
+    "webpack-cli": "^3.3.9"
   }
 }
