@@ -14,8 +14,8 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Sound from 'react-sound';
 import { Modal } from 'react-bootstrap';
 import Iframe from 'react-iframe'
-
-import {FacebookShareButton, TwitterShareButton,FacebookIcon} from 'react-share';
+import { FormattedMessage } from "react-intl";
+import {FacebookShareButton, TwitterShareButton} from 'react-share';
 import { array } from "prop-types";
 // import Modal from "react-responsive-modal";
 
@@ -140,7 +140,7 @@ var arr=[];
                                             <div className="plycpy">
                                                 <div className="plycpy-group text-center">
                                                     <a href="">
-                                                        <i className="fas fa-play"></i> Play
+                                                        <i className="fas fa-play"></i> <FormattedMessage id="Play"/>
 
 
                                                     </a>
@@ -148,9 +148,9 @@ var arr=[];
                                                   
                                                         
                                                                                                                
-                                                    <CopyToClipboard text={mem.text_simple}>                                                
+                                                    <CopyToClipboard text={`${mem.verse_key} - ${mem.text_madani}`}>                                                
                                                         <a href="javaScript:void(0)">
-                                                        <i className="fas fa-paperclip">Copy
+                                                        <i className="fas fa-paperclip"><FormattedMessage id="Copy"/>
                                                         
                                                          
                                                             </i>
@@ -298,14 +298,14 @@ var arr=[];
                             setOff(1);
                             setLast(0)
                         }}
-                              class="btn btn-outline-primary btn-lg prev_btn_btm">Previous Surah <i
+                              class="btn btn-outline-primary btn-lg prev_btn_btm"><FormattedMessage id="PreviousSurah"/> <i
                             class="fas fa-arrow-left"></i>
                         </Link>
                         : ""}
 
                     <Link to={`/${SurahNo}`} onClick={() => {
                         goToTop()
-                    }} class="btn btn-outline-primary btn-lg">Beginning of Surah
+                    }} class="btn btn-outline-primary btn-lg"><FormattedMessage id="BeginningofSurah"/>
                     </Link>
                     {(SurahNo !== 114) ?
                         <Link to={`/${SurahNo + 1}`} onClick={() => {
@@ -315,7 +315,8 @@ var arr=[];
                             setOff(1);
                             setLast(0)
                         }}
-                              class="btn btn-outline-primary btn-lg next_btn_btm">Next Surah <i
+                              class="btn btn-outline-primary btn-lg next_btn_btm">
+                                  <FormattedMessage id="NextSurah"/><i
                             class="fas fa-arrow-right"></i>
                         </Link>
                         : ""}

@@ -183,7 +183,7 @@ function Surahs() {
             </div>
             {/* <FormattedMessage id="Manzil"/>03 End */}
                   <p className="manzil-text">
-                     <b><FormattedMessage id="Manzil"/>04</b>
+                     <b><FormattedMessage id="Manzil"/> 04</b>
                   </p>
                   <div className="row" >
   {index4.map((indix)=>
@@ -209,7 +209,7 @@ function Surahs() {
             </div>
             {/* <FormattedMessage id="Manzil"/>04 End */}
                   <p className="manzil-text">
-                     <b><FormattedMessage id="Manzil"/>05</b>
+                     <b><FormattedMessage id="Manzil"/> 05</b>
                   </p>
                   <div className="row" >
   {index5.map((indix)=>
@@ -235,7 +235,7 @@ function Surahs() {
             </div>
             {/* <FormattedMessage id="Manzil"/>05 End */}
                   <p className="manzil-text">
-                     <b><FormattedMessage id="Manzil"/>06</b>
+                     <b><FormattedMessage id="Manzil"/> 06</b>
                   </p>
                   <div className="row" >
   {index6.map((indix)=>
@@ -261,7 +261,7 @@ function Surahs() {
             </div>
             {/* <FormattedMessage id="Manzil"/>06 End */}
             <p className="manzil-text">
-                     <b><FormattedMessage id="Manzil"/>07</b>
+                     <b><FormattedMessage id="Manzil"/> 07</b>
                   </p>
 
             <div className="row" >
