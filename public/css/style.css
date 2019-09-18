@@ -758,6 +758,7 @@ main.detailmain .ayatboxouter .ayatrefbox .social .social-group a {
   border-radius: 50%;
   padding: 14px;
   position: relative;
+  display: block;
 }
 
 main.detailmain .ayatboxouter .ayatrefbox .social .social-group a i {
@@ -1255,4 +1256,7 @@ b.pointer.ArabicFontChange {
 }
 .font-size-changer-buttons div {
   border: none !important;
+}
+.MuiRadio-colorSecondary.Mui-checked {
+  color: #ababab;
 }
