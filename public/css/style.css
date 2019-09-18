@@ -1253,3 +1253,6 @@ b.pointer.ArabicFontChange {
   width: 40px !important;
   margin: auto;
 }
+.font-size-changer-buttons div {
+  border: none !important;
+}

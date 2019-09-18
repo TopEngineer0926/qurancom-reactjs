@@ -331,6 +331,15 @@ div#surahinfo {
 div#surahinfo {
   margin-bottom: -200px;
 }
+.surah_dropdown .dropdown-menu.show a {
+  text-align: left !important;
+}
+.verse_dropdown .dropdown-menu.show {
+  min-width: 100px;
+}
+.lang_dropdown_detailpg .dropdown-menu.show{
+  height: auto !important;
+}
 }
 
 @media screen and (max-width: 400px) {

@@ -61,7 +61,7 @@ return (
       <div  className="col-3 float-left p-0 pr-1 verse_dropdown">
         <Verse VerseTotal={props.VerseTotal}/>
       </div>
-      <div  className="col-4 float-left p-0 pr-1">
+      <div  className="col-4 float-left p-0 pr-1 lang_dropdown_detailpg">
         <Languages />
       </div>
       <div  className="col-1 float-left p-0 setting_popup">
