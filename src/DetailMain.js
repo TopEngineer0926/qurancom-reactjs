@@ -92,6 +92,7 @@ return `&translations[]=${prop}`
      fetchData();
   
     },[SurahNo,Currentpage,lastPage,off,check]);
+    
 
 
   
@@ -107,15 +108,7 @@ return `&translations[]=${prop}`
         {Status && <Info data={props.info} ChapData={props.ChapData}/>}
  
  {(ReadStatus)?<Reading data={Verses}/>: <Body data={Verses} /> }
-        {/* <If condition={ReadStatus===true}>
-          
-              <Reading data={Verses}/>
-                            
-             </If>
-             <If condition={ReadStatus===false}>
-           
-             <Body data={Verses} />
-             </If> */}
+      
           </>
              
             }

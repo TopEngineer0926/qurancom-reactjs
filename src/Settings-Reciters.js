@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useState,useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
@@ -9,6 +9,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Radio from '@material-ui/core/Radio';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import {ReciterContext} from "./index"
 
 const color={
     color: '#ABABAB'
@@ -28,6 +29,7 @@ export default function NestedList() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [Reciters, setReciters] = useState();
+  const [ActiveReciter,setActive] = useContext(ReciterContext)
   
  
   useEffect(() => {  
@@ -50,6 +52,10 @@ export default function NestedList() {
     setOpen(!open);
   }
   
+  const handleChange = (ID) => {
+    
+   setActive(ID);
+  }
 
   return (
     <List
@@ -70,14 +76,13 @@ export default function NestedList() {
         <List component="div" disablePadding>
           {/* MAPPING STARTS */}
         {(Reciters)?Reciters.recitaitons.map((reciter)=>
-          <ListItem button className={classes.nested}>
+          <ListItem button className={classes.nested} onClick={()=>handleChange(reciter.id)}> 
           <ListItemIcon>
           <Radio 
-          
-           color="default"
-           
-      />
+          checked={(ActiveReciter===reciter.id)? true: false}
+           color="default" />
         </ListItemIcon>
+        
       <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>{reciter.reciter_name_eng} </Typography>} />
 
         </ListItem>):<div class="wraper_laader">

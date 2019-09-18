@@ -12,15 +12,17 @@ import {Link} from "react-router-dom";
 import {goToTop} from 'react-scrollable-anchor'
 import CopyToClipboard from 'copy-to-clipboard';
 import Sound from 'react-sound';
+import { Modal } from 'react-bootstrap';
+import Iframe from 'react-iframe'
 
-// import ReactAudioPlayer from 'react-audio-player';
-// import AudioPlayer from "react-h5-audio-player";
-// import file from "./verses/file.mp3";
+import {FacebookShareButton, TwitterShareButton,FacebookIcon} from 'react-share';
+import { array } from "prop-types";
+// import Modal from "react-responsive-modal";
 
 function Body(props) {
     const [Load, setLoading] = useContext(LoadingContext);
     const [offset, setOff] = useContext(OffsetContext);
-
+var arr=[];
     const [endFlag, setFlag] = useContext(endFlagContext);
     const [SurahNo, setSurah] = useContext(SurahContext);
     const [Currentpage, setCurrentPage] = useContext(CurrentPageContext);
@@ -29,6 +31,10 @@ function Body(props) {
     const [OffsetandPage, setPageandOffset] = useContext(ChosenVerseAndPageContext);
     const [isChosen, setChosen] = useContext(ChosenVerseFlagContext);
     const [Translations, setTranslations] = useState([]);
+   //FOR MODAL 
+    const [ModalStatus,setModal]=useState(false);
+    const [MediaArray,setMediaArray]=useState([]);
+    const [LittleID,setModalID]=useState();
 
     const [Mp3File, setMp3File] = useState(['https://s3.us-east-2.amazonaws.com/quran.com/verses/AbdulBaset/Mujawwad/mp3/002001.mp3']);
 
@@ -36,7 +42,12 @@ function Body(props) {
     const Entities = require('html-entities').AllHtmlEntities;
 
     const entities = new Entities();
-
+//Media Array being Set
+// Array.isArray(props.data)?
+// (SurahNo===1)?
+// props.data.map((verse)=>
+// setMediaArray([...MediaArray,verse.media_contents.url])
+// ):console.log("FromMedia Array"):console.log('....')
 
     useEffect(() => {
         if (isChosen) {
@@ -66,7 +77,13 @@ function Body(props) {
     const playWordAudio = (word) => {
         setMp3File(word.audio_url);
     }
-
+    const handleClick = (ID)=> {
+    console.log("handleClick"+ ID)
+        setModal(true);
+        setModalID(ID);
+      }
+// Array.isArray(props.data)?
+// console.log("Media Array:" + MediaArray):console.log("")
     return (
         <main className="detailmain mt-5">
 
@@ -104,7 +121,7 @@ function Body(props) {
                             <div class="p1 bism" style={{textAlign: "center"}}> ﭑﭒﭓﭔ</div>
                         </If>
 
-                        {Array.isArray(props.data) ? props.data.map((mem) =>
+                        {Array.isArray(props.data) ? props.data.map((mem,key) =>
 
                                 <div className="row">
                                     <div className="col-3 col-sm-1">
@@ -142,13 +159,19 @@ function Body(props) {
                                                 </div>
                                             </div>
                                             <div className="social">
-                                                <div className="social-group d-flex justify-content-between">
-                                                    <a href="" className="facustomfacebook">
+                                          
+
+                                                        <div className="social-group d-flex justify-content-between">
+                                                        <FacebookShareButton url="quran.com">
+                                            <a href="" className="facustomfacebook">
                                                         <i className="fab fa-facebook-f fa-lg"></i>
                                                     </a>
+                                                </FacebookShareButton>
+                                                <TwitterShareButton url="quran.com">
                                                     <a href="" className="facustomtwitter">
                                                         <i className="fab fa-twitter fa-lg"></i>
                                                     </a>
+                                                    </TwitterShareButton>
                                                 </div>
                                             </div>
                                         </div>
@@ -218,12 +241,47 @@ function Body(props) {
                                                 :     <div class="wraper_laader">
                                                 <div class="loader loadersmall"></div>
                                               </div>}
-                                            {/* <a href="#" className="bayyinah">Watch lecture by Bayyinah</a> */}
+                                             
+                                              {(SurahNo===1)?
+                                              
+                                                <a href="javaScript:void(0)" 
+                                                className="bayyinah"
+                                                
+                                                onClick={()=>{handleClick(key)}}>Watch lecture by Bayyinah
+                                            {console.log(arr.push(mem.media_contents.url))}
+                                                 </a>                                            
+                                                :""}
+                                                    
+                                                    
+
+                                                <Modal centered size="lg" show={ModalStatus} onHide={()=>setModal(false)}>
+                                                <Modal.Header closeButton>
+                                                <Modal.Title>Bayyinah</Modal.Title>
+                                                </Modal.Header>
+                                                <Modal.Body>
+                                                    {(arr[LittleID])?
+                                        <Iframe url={arr[LittleID]}
+                                                width="100%"
+                                                height="450px"
+                                                
+                                                position="relative"/>:
+                                                <div class="wraper_laader">
+                                                <div class="loader loadersmall"></div>
+                                                </div>
+                                                }
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                
+                                                    </Modal.Footer>
+                                               </Modal>
+
                                         </div>
                                     </div>
                                 </div>) :
                             ""}
 
+{console.log("Media:")}
+    {console.log(arr)}
 
                     </div>
 

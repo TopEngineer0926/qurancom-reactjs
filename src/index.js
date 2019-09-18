@@ -27,11 +27,14 @@ export const LoadingContext=React.createContext();
 export const CheckedContext=React.createContext();
 export const isCheckedFlag=React.createContext();
 
+export const ReciterContext=React.createContext();
+
     
 const Index=()=>{
    
     const [lang,setlang]=useState("en");//localStorage.getItem('lang')
 
+    const [Reciters,setRecits]=useState(1);
 
     const [ShowInfo,setShow]=useState(false);
     const [ShowReading,setReading]=useState(false);
@@ -98,7 +101,9 @@ return(
     <OffsetContext.Provider value= {[off,setoff]}>
     <LoadingContext.Provider value={[Loading,setLoading]}>
     <CheckedContext.Provider value={[check, setCheck]}>
+    <ReciterContext.Provider value={[Reciters,setRecits]}>
     <App/>
+    </ReciterContext.Provider>
     </CheckedContext.Provider>
     </LoadingContext.Provider>
     </OffsetContext.Provider>
