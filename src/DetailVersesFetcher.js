@@ -10,7 +10,7 @@ import {
 import "./qfonts.css"
 import {Link} from "react-router-dom";
 import {goToTop} from 'react-scrollable-anchor'
-import CopyToClipboard from 'copy-to-clipboard';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Sound from 'react-sound';
 import { Modal } from 'react-bootstrap';
 import Iframe from 'react-iframe'
@@ -20,6 +20,7 @@ import { array } from "prop-types";
 // import Modal from "react-responsive-modal";
 
 function Body(props) {
+    
     const [Load, setLoading] = useContext(LoadingContext);
     const [offset, setOff] = useContext(OffsetContext);
 var arr=[];
@@ -144,18 +145,17 @@ var arr=[];
 
                                                     </a>
                                                     <br/>
-                                                    {/* <CopyToClipboard text="SOme text">
-                                        
-                                        <button>Copy to clipboard with button</button>
-                                        </CopyToClipboard> */}
-
-{/* <CopyToClipboard label="Get date ISO string"/> */}
+                                                  
                                                         
-                                                       
+                                                                                                               
+                                                    <CopyToClipboard text={mem.text_simple}>                                                
                                                         <a href="javaScript:void(0)">
-                                                            <i className="fas fa-paperclip"></i> Copy
-                                                        </a>
+                                                        <i className="fas fa-paperclip">Copy
                                                         
+                                                         
+                                                            </i>
+                                                        </a>
+                                                        </CopyToClipboard>
                                                 </div>
                                             </div>
                                             <div className="social">
