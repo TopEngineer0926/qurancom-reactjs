@@ -1,64 +1,73 @@
-import React,{useEffect,useState,useContext} from "react";
+import React,{useEffect,useState,useContext,useRef} from "react";
 
 import Header from "./DetailHeader";
 import Footer from "./Footer";
 import Main from "./DetailMain";
-import {SurahContext,LoadingContext} from "./index";
-import { If} from 'react-control-statements';
+import {SurahContext,URLContext,DropDownChapterContext,LangContext} from "./Store";
+
 import { Helmet } from 'react-helmet';
+import { async } from "q";
+
 
 window.isLoading =true;
 function Homepage() {
-  const [ChapData, setHome]=useState();
+  const [ChapData, setHome]=useContext(DropDownChapterContext);
+  const [lang, setLang]=useContext(LangContext);    
+
   const [Verses, setVerses] = useState();
   const [info,setInfo]=useState();
 const [SurahNo, ]=useContext(SurahContext);
-const [isLoading, setLoading]=useContext(LoadingContext);
-  const id=SurahNo;
- 
+// const [isLoading, setLoading]=useContext(LoadingContext);
+const [URL, setUrl]=useContext(URLContext);
+const prevSurah = usePrevious(SurahNo);
  
 
   useEffect(() => {
-  
-  
    
-    const fetchData = async() => {
-      fetch('http://104.238.102.6/~yildirim/quran.com/api/api/chapters')
+    const fetchChapters = async()=>{
+      fetch(`${URL}chapters?language=${lang}`)
       .then(res =>res.json())
       .then(data=>setHome(data.chapters));
-       fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/verses`)
+    }
+  
+    const fetchData = async() => {
+  
+       fetch( `${URL}chapters/${SurahNo}/verses?language=${lang}`)
        .then(res =>res.json())
        .then(dat=>setVerses(dat.verses));
-        fetch( `http://104.238.102.6/~yildirim/quran.com/api/api/chapters/${SurahNo}/info`)
+        fetch( `${URL}chapters/${SurahNo}/info`)
          .then(res =>res.json())
          .then(dat=>{setInfo(dat.chapter_info);});
     
-                }
-     fetchData();
-              },[SurahNo]);
+        }
+       fetchData();
+       fetchChapters();
+              },[SurahNo,lang]);
+
+
+  function usePrevious(value) {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+  }
            
            
 
   return (
-  //   <>
-  //     {(isLoading)?
-   
-  // <div className="loader"></div> :
-  <>
- <Helmet>
-   <title> Islam Check | {(ChapData)?ChapData[SurahNo-1]["name_simple"]:""}</title>
-   </Helmet>
 
-
+<>
+<Helmet>
+ <title> Islam Check | {(ChapData)? ChapData[SurahNo-1]["name_simple"]:""}</title> 
+</Helmet>
   <Header ChapData={ChapData} VerseTotal={(Verses)? Verses.total:""}/>
   <Main info={info} Content={(Verses)? Verses:""} ChapData={ChapData}/>
 <Footer/> 
-</> 
-// }
-  // </>
-  
+</>
    
+  
+    
   );
-}
-
+  }
 export default Homepage;

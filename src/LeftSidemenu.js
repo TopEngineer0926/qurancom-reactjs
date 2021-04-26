@@ -37,23 +37,8 @@ export default props => {
         </Link >
       <div className="dropdown-divider" />
 
-      <Link to="/" className="Banner" style={menuStyle}>
-        <i className="fas fa-question-circle" />
-        &nbsp;&nbsp;&nbsp; <FormattedMessage id="Feed"/> &amp;  <FormattedMessage id="Help"/> 
-      </Link>
-
-      <Link to="/" className="Banner" style={menuStyle}>
-        <i className="fas fa-mobile-alt" /> &nbsp;&nbsp;&nbsp;&nbsp;<FormattedMessage id="Mobile"/>
-      </Link>
-
-      <Link to="/" className="Banner" style={menuStyle}>
-        <i className="fas fa-dollar-sign" />
-        &nbsp;&nbsp;&nbsp; &nbsp;<FormattedMessage id="Contri"/>
-      </Link>
-      <Link to="/"className="Banner" style={DevStyle}>
-        <i className="fas fa-laptop" />
-        &nbsp;&nbsp; &nbsp;<FormattedMessage id="Dev"/>
-      </Link>
+     
+     <a href="http://www.islamcheck.com/"><p  style={{color: "#747474", textAlign: "center"}}>www.islamcheck.com</p></a>
     </Menu>
   );
 };

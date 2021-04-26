@@ -9,13 +9,15 @@ import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Checkbox from '@material-ui/core/Checkbox';
-
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import {CheckedContext} from "./index"
-import If from 'react-control-statements/dist/If';
+import {CheckedContext,URLContext,TranslationsLoaderContext,LangContext} from "./Store"
+import {FormattedMessage} from "react-intl";
+import Divider from '@material-ui/core/Divider';
+import arraySort from "array-sort"
+import { async } from 'q';
+import {langToTrans} from './maps/languageToTranslatorMap';
+
+
 
 const color={
     color: '#ABABAB'
@@ -31,89 +33,140 @@ const color={
     paddingLeft: theme.spacing(4),
   },
 }));
- 
-
 
 export default function NestedList() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [Translators,setTranslators]= useState();
-  
+  const [Translators,setTranslators]= useState({translations:[]});
+  const [Reload,setReloadflag]=useState(false);
+  const [miniLoader,setMiniLoader]= useContext(TranslationsLoaderContext);
+
+  var arr=[]
   //cHECKBOXES
 const[check, setCheck]=useContext(CheckedContext);
 
+const[URL, setURL]=useContext(URLContext);
+
+const [lang,setLang] = useContext(LangContext);
+
   const handleChange = (ID) => event => {
     
+    if(ID!==null){
+      
     setCheck({...check,[ID]:event.target.checked});
+   setMiniLoader(true);
    
-    console.log(check);
+    }
+  
+  }
+
+  
+  const RemoveAll=()=>{
+      
+      setCheck({[langToTrans[lang]]: true});
+      setMiniLoader(true);
+      setReloadflag(!Reload);
+     
+
   }
  
   
-  useEffect(() => {  
+  useEffect(() => {
+    
+    setTranlators()
+  
+    },[Reload]);
+
+
+   const setTranlators = async()=>{
+    let translators = await sessionStorage.getItem('TranslatorsInSession',JSON.stringify({translations:[]}));
+    translators = JSON.parse(translators);
+    console.log(translators);
     const fetchData = async() => {
-
-      console.log("IN TRANS")
-        
-            fetch( ` http://104.238.102.6/~yildirim/quran.com/api/api/options/translations`)
+            fetch( ` ${URL}options/translations`)
             .then(res =>res.json())
-            .then(dat=> setTranslators(dat)); 
-          
-
-      
+            .then( dat=> { 
+            dat.translations.sort((a,b)=>{return a.language_name>b.language_name?1:-1}); 
+           /* dat.translations.forEach(element => {
+              if(element.id != 20) 
+              {check[element.id] = false;}              
+            });*/
+            setCheck(check);
+            setTranslators(dat);
+           }); 
       }
      fetchData();
-  
-    },[check]);
+   }
+
+
+    useEffect(()=>{
+     // console.log(Translators.translations.length);
+       if(Translators.translations.length>0)
+       {sessionStorage.setItem('TranslatorsInSession',JSON.stringify(Translators));}
+    },[Translators])
 
     function handleClick(){
       setOpen(!open);
     }
     
   return (
+
     <List
       component="nav"
       aria-labelledby="nested-list-subheader"
       className={classes.root}
     >
+       
     
  {/* translations */}
  <ListItem button onClick={handleClick} style={color}>
         <ListItemIcon style={color} >
-        <i class="fas fa-list"></i>
+        <i className="fas fa-list"></i>
         </ListItemIcon>
-        <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Translations </Typography>}/>
-        {open ? <ExpandLess/>: <ExpandMore/>}
-      </ListItem>
+        <ListItemText primary={<Typography style={{ color: '#747474', marginLeft:"-20px" }}>
+          <FormattedMessage id="Translations"/> 
+          
+         </Typography>}/>
       
+        {open ? <ExpandLess/>: <ExpandMore/>}
+
+       
+      </ListItem>
       
       {/* TRASNLATORS LIST */}
       <Collapse in={open} timeout="auto" unmountOnExit>
+      
         <List component="div" disablePadding>     
-        
-          
+        <button disabled = {miniLoader} onClick={RemoveAll}> Remove All</button>
+        <Divider/>
+         {/* {(Translators)?Translators.translations.sort((a,b)=>{return a.language_name>b.language_name?1:-1}).map((translator,index)=>
+              <span key={index} style={{display:"none"}}>{ arr.push(translator)} </span>
+            
+        ):""} */}
+       
+
+
+ 
          {(Translators)?Translators.translations.map((translator,index)=>
-     
-                <ListItem button className={classes.nested}>
-                  
-          
-                        <FormControlLabel
-                          control={
-                          <Checkbox 
-                          checked={check[translator.id]}                   
-                          onChange={handleChange(translator.id)} 
-                          value={`checked${translator.id}`} />
-                                        }
-                          label={translator.name}
-                          
-                        />
-                      
+         
+                  <ListItem  key={`Translator_${translator.id}` } button className={classes.nested} >
+                  <FormControlLabel
+                    control={
+                    <Checkbox 
+                    checked={check[translator.id]}                   
+                    onChange={handleChange(translator.id)} 
+                    value={`checked${translator.id}`}
+                    disabled = {miniLoader} 
+                    />
+                                  }
+                    label={translator.language_name + " - " + translator.name }
                     
-                     
-         </ListItem>
-          ):<div class="wraper_laader">
-          <div class="loader loadersmall"></div>
-        </div>}
+                  />
+                  </ListItem>
+         
+          ):<div className="wraper_laader">
+          <div className="loader loadersmall"></div>
+        </div>} 
 
  
          </List>

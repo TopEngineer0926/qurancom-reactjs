@@ -2,12 +2,104 @@
         Media Queries
 ************************/
 /*Large devices*/
+@media screen and (max-width: 992px) {
+  .arabic-index {
+    font-size: 40px;
+}
+#surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-left p .lead {
+  font-size: 12px;
+}
+footer .container .footer-content-left ul {
+  min-height: unset;
+}
+.middlebar_header {
+  display: none;
+}
+.right_header {
+  display: none;
+}
+.middlebar_header_mobile {
+  display: block;
+  max-width: 60%;
+  text-align: right;
+}
+.col-md-2.float-left.sidebar_header {
+  max-width: 40%;
+}
+.right_header_mobile {
+  min-width: 100vw;
+  padding-top: 10px !important;
+}
+.surah_dropdown {
+  min-width: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+.verse_dropdown {
+  min-width: 25%;
+  text-align: center;
+  max-width: 25%;
+}
+.lang_dropdown_detailpg {
+  min-width: 25%;
+  text-align: center;
+  max-width: 25%;
+}
+.setting_popup {
+  min-width: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+.right_header_mobile {
+  display: block;
+}
+.cassette__control_bar {
+  max-width: 50% !important;
+}
+main, div#surahinfo {
+  padding-top: 120px;
+}
+.surahinfo_img {
+  max-width: 100%;
+  min-width: 100%;
+}
+.surahinfo_img img{
+  width: 100% !important;
+height: auto !important;
+object-fit: cover;
+}
+.surahinfo_middle_txt {
+  max-width: 20%;
+  min-width: 20%;
+}
+.verse_dropdown .dropdown-menu.show ,.surah_dropdown .dropdown-menu.show {
+  height: 50vw  !important;
+  overflow-y: scroll  !important;
+}
+#surahinfo .row div:nth-of-type(2) p {
+  text-align: center;
+}
+#surahinfo .row div:nth-of-type(2) h6 {
+  text-align: center;
+}
+.surahinfo_right_txt {
+  min-width: 80%;
+  max-width: 80%;
+}
+.wraper_laader {
+  padding-top: 33%;
+  padding-bottom: 33%;
+}
+}
 /*Small Devices*/
 @media screen and (max-width: 767px) {
   header.indexheader .navbar {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 0px;
+  }
+  .cassette__control_bar {
+      max-width: 90% !important;
   }
   header.indexheader .navbar .navbar-nav .nav-item a.nav-link {
     display: -webkit-box;
@@ -21,7 +113,10 @@
     margin-left: 5px;
   }
   main.indexmain .container .herobis {
-    width: 50%;
+    
+      max-width: 100%;
+      height: auto;
+    
   }
   main.indexmain .container .heroiqr {
     width: 250px;
@@ -255,12 +350,12 @@ header.detailheader {
 .bism {
   font-size: 40px !important;
 }
-main.detailmain.mt-5 {
+/* main.detailmain.mt-5 {
   margin-top: 35% !important;
-}
+} */
 b.pointer {
-  font-size: 30px !important;
-  line-height: 35px !important;
+  font-size: 30px;
+  line-height: 35px;
 }
 .translation-box p {
   font-size: 12px !important;
@@ -340,6 +435,67 @@ div#surahinfo {
 .lang_dropdown_detailpg .dropdown-menu.show{
   height: auto !important;
 }
+main.readingmain {
+  padding-top: 190px;
+}
+.mainsurah.mtb-big.mt-0 .arabic {
+  padding-top: 0 !important;
+}
+.cassette .cassette__media_progress_bar {
+  width: 110%;
+}
+.searchcontent_list_main .col-1 {
+  max-width: 35% !important;
+}
+.search_topbar_pagination h6 {
+  font-size: 9px;
+}
+ul.pagination li {
+  font-size: 9px;
+  font-weight: 400;
+  margin-right: 4px;
+  color: #000;
+}
+.search_topbar_pagination .col-4,.search_topbar_pagination .col-8{
+  padding: 0 !important;
+  max-width: 50%;
+  min-width: 50%;
+}
+footer .container .footer-content-left .lead {
+  font-size: 12px;
+}
+.lead_footer_links{
+  padding-right: 0;
+  padding-left: 10px;
+}
+.lead_footer_links .small {
+  font-size: 11px;
+}
+main, div#surahinfo {
+  padding-top: 190px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.middlebar_header_mobile {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+.surahinfo_middle_txt {
+  padding: 0 !important;
+}
+.searchsuggestion_ul.small_searchsuggestion_ul {
+  top: 65px;
+}
+li.searchsuggestion_li {
+  text-align: left;
+}
+.MuiDrawer-root.MuiDrawer-modal {
+  z-index: 9999999 !important;
+}
+main.detailmain .ayatboxouter .ayatbox .bayyinah{
+  bottom: unset;
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -366,8 +522,6 @@ div#surahinfo {
 ul.navbar-nav.navbar1 .nav-item:nth-child(1) {
   width: 20%;
 }
-
-
 header .navbar .sidenavright {
   width: 290px;
 }

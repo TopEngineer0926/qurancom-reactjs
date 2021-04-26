@@ -22,7 +22,7 @@ const imgStyle = {
     
 function Header(props){
 return (
-  <header class="detailheader" style={{padding:15}}>
+  <header className="detailheader" style={{padding:15}}>
     <div className="col-md-2 float-left sidebar_header">
       <SideBar /> 
       <Link to="/">

@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React,{useContext,useState,useEffect} from "react";
 import {
   UncontrolledDropdown,
   DropdownToggle,
@@ -6,9 +6,9 @@ import {
   DropdownItem
 } from "reactstrap";
 import "./LangDropdown.css";  
-import {SurahContext} from "./index";
+import {SurahContext} from "./Store";
 import {Link} from "react-router-dom";
-import {CurrentPageContext,LastPageContext,LoadingContext,OffsetContext} from "./index";
+import {CurrentPageContext,LastPageContext,LoadingContext,OffsetContext,ChapterContext} from "./Store";
 import { FormattedMessage } from "react-intl";
 
 
@@ -27,8 +27,11 @@ const[pageNo,setPage]=useContext(CurrentPageContext);
 const[Lastpage,setLast]=useContext(LastPageContext);
 const [isLoading, setLoading]=useContext(LoadingContext);
 const [off, setOff] = useContext(OffsetContext);
+const [Content, setData] = useContext(ChapterContext);
 
 
+
+const [Active, setActive] = useState();
   const id=SurahNo-1;
  
   return (
@@ -38,8 +41,8 @@ const [off, setOff] = useContext(OffsetContext);
       
       </DropdownToggle>
       <DropdownMenu style={{height: "12vw", overflowY: "scroll"}}>
-      {Array.isArray(props.ChapData)?props.ChapData.map((mem)=>
-        <Link to={`/${mem.id}` } 
+      {Array.isArray(props.ChapData)?props.ChapData.map((mem,ind)=>
+        <Link key={`Surah_${ind}`} to={`/${mem.id}` } 
           
         onClick={()=>{ setSurahNo(mem.id)
             setPage(1)
@@ -49,8 +52,12 @@ const [off, setOff] = useContext(OffsetContext);
            }} 
            
             style={{textDecoration:"none"}}>
-        <DropdownItem className="stripe" ><span>{mem.id} &nbsp;&nbsp;{mem.name_simple}</span> </DropdownItem>
+             
+      <DropdownItem className = {(mem.id)? (SurahNo==mem.id)? "stripe Selected":"stripe":"stripe ...."}>
+        <span>{mem.id} &nbsp;&nbsp;{mem.name_simple}</span> </DropdownItem>
+
         </Link>
+        
       ):"Waiting for Surahs..."}
       </DropdownMenu>
     

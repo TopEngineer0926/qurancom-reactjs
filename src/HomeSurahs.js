@@ -1,17 +1,19 @@
 import React, {useState, useEffect, useContext } from 'react';
-import {Link} from "react-router-dom";
+import {NavLink,Link} from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import { If} from 'react-control-statements';
-import {SurahContext,CurrentPageContext,OffsetContext,ChosenVerseAndPageContext,ChosenVerseFlagContext,LoadingContext,LangContext} from "./index";
+import {SurahContext,CurrentPageContext,OffsetContext,URLContext,ChosenVerseFlagContext,LoadingContext,ChapterContext} from "./Store";
 import { goToTop } from 'react-scrollable-anchor'
+import {LangContext} from "./Store";
 
 function Surahs() {
   const [Surah, setSurahNo]=useContext(SurahContext);
   const[Makkiflag, ShowMakki]=useState(false);
   const[Madniflag, ShowMadni]=useState(false);
-  const [Content, setData] = useState();
-
-  const [lang, setLang]=useContext(LangContext);
+  const [Content, setData] = useContext(ChapterContext);
+ 
+  const [URL,setURL] = useContext(URLContext);
+  const [lang, setLang]=useContext(LangContext);    
   const [off, setOff] = useContext(OffsetContext);
   const[Currentpage,setCurrentPage]=useContext(CurrentPageContext);
   const [isLoading, setLoading]=useContext(LoadingContext);
@@ -47,17 +49,21 @@ function Surahs() {
          index7.push(i);
       }
    }
+   
 
 
    
   useEffect(() => {
    const fetchData = async() => {
-      fetch(`http://104.238.102.6/~yildirim/quran.com/api/api/chapters?language=${lang}`)
+      fetch(`${URL}chapters?language=${lang}`)
       .then(res =>res.json())
       .then(data=>setData(data.chapters))
      
                }
-   fetchData();
+    console.log(Content);
+    if(sessionStorage.getItem('PrevLanguage','')!=lang || (Object.entries(Content).length === 0 && Content.constructor === Object))           
+   {fetchData();
+   sessionStorage.setItem('PrevLanguage',lang)}
 },[lang]);
 
   return (
@@ -105,8 +111,8 @@ function Surahs() {
               </p>
               <div className="row" >
   {index1.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
-                <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix} >
+                <NavLink to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
                       <b>{Array.isArray(Content)? "0"+Content[indix]["id"] : "Loading"}</b>
@@ -121,7 +127,7 @@ function Surahs() {
                       <p className="arabic-index">{Array.isArray(Content)? Content[indix]["name_encoded"]:""}</p>
                     </div>
                   </div>
-                </Link>
+                </NavLink>
               </div>
             )}
             </div>
@@ -134,7 +140,7 @@ function Surahs() {
               </p>
               <div className="row" >
   {index2.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
                 <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
@@ -161,7 +167,7 @@ function Surahs() {
                   </p>
                   <div className="row" >
   {index3.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
                   <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
@@ -187,7 +193,7 @@ function Surahs() {
                   </p>
                   <div className="row" >
   {index4.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
                   <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
@@ -213,7 +219,7 @@ function Surahs() {
                   </p>
                   <div className="row" >
   {index5.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
                 <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
@@ -239,7 +245,7 @@ function Surahs() {
                   </p>
                   <div className="row" >
   {index6.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
                  <Link to={`/${indix+1}`} onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
@@ -266,7 +272,7 @@ function Surahs() {
 
             <div className="row" >
   {index7.map((indix)=>
-              <div className="col-lg-3 col-md-4 col-sm-6" >
+              <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
                  <Link to={`/${indix+1}`}onClick={()=>{setSurahNo(indix+1);setCurrentPage(1);setOff(0); setLoading(true);}}>
                   <div className="surahbox d-flex justify-content-between">
                     <div className="surah-content-left">
@@ -308,7 +314,7 @@ function Surahs() {
   Array.isArray(Content)?
   Content[indix].revelation_place=="makkah"?
      
-        <div className="col-lg-3 col-md-4 col-sm-6" >
+        <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
 
    <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
@@ -344,7 +350,7 @@ function Surahs() {
     Array.isArray(Content)?
     Content[indix].revelation_place=="makkah"?
        
-          <div className="col-lg-3 col-md-4 col-sm-6" >
+          <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
    <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -377,7 +383,7 @@ function Surahs() {
  
    Array.isArray(Content)?
     Content[indix].revelation_place=="makkah"?
-    <div className="col-lg-3 col-md-4 col-sm-6" >
+    <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
      <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -409,7 +415,7 @@ function Surahs() {
     
    Array.isArray(Content)?
     Content[indix].revelation_place=="makkah"?
-    <div className="col-lg-3 col-md-4 col-sm-6" >
+    <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
      <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -437,7 +443,7 @@ function Surahs() {
 {index5.map((indix)=>
   Array.isArray(Content)?
     Content[indix].revelation_place=="makkah"?
-    <div className="col-lg-3 col-md-4 col-sm-6" >
+    <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
    <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -465,7 +471,7 @@ function Surahs() {
 {index6.map((indix)=>
   Array.isArray(Content)?
   Content[indix].revelation_place=="makkah"?
-  <div className="col-lg-3 col-md-4 col-sm-6" >
+  <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
     <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -494,7 +500,7 @@ function Surahs() {
 {index7.map((indix)=>
   Array.isArray(Content)?
   Content[indix].revelation_place=="makkah"?
-  <div className="col-lg-3 col-md-4 col-sm-6" >
+  <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
     <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -537,7 +543,7 @@ function Surahs() {
   Array.isArray(Content)?
   Content[indix].revelation_place=="madinah"?
      
-        <div className="col-lg-3 col-md-4 col-sm-6" >
+        <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
 
    <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
@@ -573,7 +579,7 @@ function Surahs() {
     Array.isArray(Content)?
     Content[indix].revelation_place=="madinah"?
        
-          <div className="col-lg-3 col-md-4 col-sm-6" >
+          <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
    <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -606,7 +612,7 @@ function Surahs() {
  
    Array.isArray(Content)?
     Content[indix].revelation_place=="madinah"?
-    <div className="col-lg-3 col-md-4 col-sm-6" >
+    <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
      <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -638,7 +644,7 @@ function Surahs() {
     
    Array.isArray(Content)?
     Content[indix].revelation_place=="madinah"?
-    <div className="col-lg-3 col-md-4 col-sm-6" >
+    <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
      <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -666,7 +672,7 @@ function Surahs() {
 {index5.map((indix)=>
   Array.isArray(Content)?
     Content[indix].revelation_place=="madinah"?
-    <div className="col-lg-3 col-md-4 col-sm-6" >
+    <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
    <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -694,7 +700,7 @@ function Surahs() {
 {index6.map((indix)=>
   Array.isArray(Content)?
   Content[indix].revelation_place=="madinah"?
-  <div className="col-lg-3 col-md-4 col-sm-6" >
+  <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
     <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -723,7 +729,7 @@ function Surahs() {
 {index7.map((indix)=>
   Array.isArray(Content)?
   Content[indix].revelation_place=="madinah"?
-  <div className="col-lg-3 col-md-4 col-sm-6" >
+  <div className="col-lg-3 col-md-4 col-sm-6" key={indix}>
     <Link to={`/${indix+1}`} onClick={()=>setSurahNo(indix+1)}>
      <div className="surahbox d-flex justify-content-between">
        <div className="surah-content-left">
@@ -751,8 +757,8 @@ function Surahs() {
 
           </div>
         
-          <div class="tab-pane container fade" id="makki"></div>
-               <div class="tab-pane container fade" id="madni"></div>
+          <div className="tab-pane container fade" id="makki"></div>
+               <div className="tab-pane container fade" id="madni"></div>
          
         </div>
        

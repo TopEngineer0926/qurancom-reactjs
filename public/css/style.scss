@@ -563,13 +563,13 @@ main.indexmain {
     ul.quicklinks {
       margin-bottom: 0px;
       margin-left: -39px;
-      color: color(text);
+      color: #32a6bc;
 
       .btn {
         padding: 6px 10px;
 
         a {
-          color: color(primary);
+          color: #32a6bc;
           text-decoration: none;
           font-size: 12px;
           font-weight: 500;
@@ -631,14 +631,14 @@ main.indexmain {
     .tab-content {
       .tab-pane {
         p.manzil-text-first {
-          color: color(text);
+          color: #32a6bc;
           margin-top: 65px;
           margin-bottom: 30px;
           font-size: 14px;
         }
 
         p.manzil-text {
-          color: color(text);
+          color: #32a6bc;
           margin-top: 35px;
           margin-bottom: 30px;
           font-size: 14px;
@@ -656,15 +656,16 @@ main.indexmain {
               border-radius: 3px;
               padding: 6px;
               margin-bottom: 30px;
+              background-color: #32a6bc;
 
               .surah-content-left {
                 b {
-                  color: color(text);
+                  color: white;
                   font-size: 14px;
                 }
 
                 p {
-                  color: color(primary);
+                  color: white;
                   margin-top: 10px;
                   margin-bottom: 0px;
                   font-size: 12px;
@@ -684,7 +685,7 @@ main.indexmain {
                 }
 
                 .verse-count {
-                  color: color(dullcolor);
+                  color: white;
                   float: right;
                   font-size: 14px;
                   margin-bottom: 0px;

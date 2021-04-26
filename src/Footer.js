@@ -1,144 +1,158 @@
-import React,{useContext} from "react";
-import logo from "./img/logo.png";
-import {LangContext} from "./index";
+﻿import React,{useContext} from "react";
+import logo from "./img/logo-footer.png";
+import {LangContext} from "./Store";
 import {FormattedMessage} from "react-intl";
-import {SurahContext} from "./index"
+import {SurahContext} from "./Store"
 import {Link} from "react-router-dom";
 
 const cursor={
   cursor: "pointer",
 }
+
+
+
 function Footer() {
   const [lang, setLang]=useContext(LangContext);
   const [Surah, setSurahNo]=useContext(SurahContext);
   return (
     <footer id="footer">
-      <div class="container">
-        <div class="row d-flex justify-content-between">
-          <div class="col-sm-12 col-md-12 col-lg-8">
-            <div class="footer-content-left" id="mobileFooterContentLeft">
-              <div class="row">
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
-                  <p class="lead"><FormattedMessage id="Site"/></p>
-                  <ul>
-                    <li>
-                      {/* <a  class="small">
-                        <FormattedMessage id="Prayer"/>
-                      </a> */}
-                    </li>
-                    <li>
-                      <a  class="small">
-                      <FormattedMessage id="About"/>
+           <div className="container">
+             <div className="row">
+               <div className="col-sm-12 col-md-6">
+                 <div className="footerlogo">
+                    <img src={logo} alt="Islam Check" />
+                    </div>
+                    <a className="noLine" href="http://www.islamcheck.com/"><p  style={cursor, { color: "#ffff", textAlign: "center"}}>www.islamcheck.com</p></a>
+                    </div>
+               <div className="col-sm-12 col-md-6">
+                 <div className="row">
+                   <div className="col-sm-6 col-md-3">
+                    
+                  <ul className="footerstyle">
+                    <li style={cursor}>
+                      <a className="small" onClick={()=>{setLang('en')}}>English
                       </a>
                     </li>
-                    <li>
-                      <a  class="small">
-                      <FormattedMessage id="Contact"/>
+                    <li style={cursor}>
+                      <a className="small" onClick={()=>{ setLang('de')}} >Deutsch
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a className="small" onClick={()=>{ setLang('ur')}}>
+                      اردو
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('ar')}}>عربى
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('da')}}>Dansk
                       </a>
                     </li>
                   </ul>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
-                  <p class="lead"><FormattedMessage id="Quick"/></p>
-                  <ul>
-                    <li class="btn">
-                  <Link to="/36" onClick={()=>setSurahNo(36)}>Surah Yaseen</Link> 
-              </li>
-            <li class="btn">
-            <Link to="/55"  onClick={()=>setSurahNo(55)}>Surah Rahman</Link> 
-            </li>
-            <li class="btn">
-            <Link to="/67" onClick={()=>setSurahNo(67)} >Surah Al Mulk</Link> 
-            </li>
-            <li class="btn">
-      <Link to="/18" onClick={()=>{setSurahNo(18); } } >
-        Surah Al Kahf
-        </Link> 
-            </li>
-                  </ul>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-2">
-                  <p class="lead"><FormattedMessage id="Langs"/></p>
-                  <ul>
+                   </div>
+                   <div className="col-sm-6 col-md-3">
+                     
+                  <ul className="footerstyle">
+                    
                     <li style={cursor}>
-                      <a class="small" onClick={()=>{console.log(lang); setLang('en')}}>English
+                      <a  className="small" onClick={()=>{ setLang('tr')}}>Türkçe
                       </a>
                     </li>
                     <li style={cursor}>
-                      <a class="small" onClick={()=>{console.log(lang); setLang('de')}} >Deutsch
+                      <a  className="small" onClick={()=>{ setLang('fr')}} >Français
                       </a>
                     </li>
                     <li style={cursor}>
-                      <a class="small" onClick={()=>{console.log(lang); setLang('ur')}}>
-                        Urdu
+                      <a  className="small" onClick={()=>{ setLang('bg')}} >български
                       </a>
                     </li>
                     <li style={cursor}>
-                      <a  class="small" onClick={()=>{console.log(lang); setLang('ar')}}>عربى
+                      <a  className="small" onClick={()=>{ setLang('fa')}}>فارسی
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('fi')}} >Suomi
                       </a>
                     </li>
                   </ul>
-                </div>
-                <div class="col-3 col-sm-3 col-md-3 col-lg-4 pl-0">
-                  <p class="lead" />
-                  <ul class="footer-content-left-last">
+                   </div>
+                   <div className="col-sm-6 col-md-3">
+                     
+                  <ul className="footerstyle">
                     <li style={cursor}>
-                      <a  class="small"onClick={()=>{console.log(lang); setLang('indo')}}>Indonesia
+                      <a  className="small"onClick={()=>{setLang('bs')}}>Bosanski
                       </a>
                     </li>
                     <li style={cursor}>
-                      <a  class="small" onClick={()=>{console.log(lang); setLang('tr')}}>Türk
+                      <a  className="small" onClick={()=>{ setLang('nl')}}>Nederlands
                       </a>
                     </li>
                     <li style={cursor}>
-                      <a  class="small" onClick={()=>{console.log(lang); setLang('fr')}} >Francais
+                      <a  className="small" onClick={()=>{ setLang('ru')}} >Русский
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('it')}} >Italiano
+                      </a>
+                    </li>
+                    <li className="langlinks" style={cursor}>
+                      <a className="small" onClick={()=>{ setLang('sq')}} >Gjuhë Shqipe
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="footer-content-right">
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                  <div class="d-flex justify-content-between logo-social">
-                    <img src={logo} alt="Islam Check" style={{width:128}} />
-                    <ul class="social-icons d-flex">
-                      <li>
-                        <a href="">
-                          <i class="fab fa-facebook-square" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i class="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <i class="fab fa-instagram" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 pt-3">
-                <p class="footer-text">
-                <FormattedMessage id="Footertext"/>
-                </p>
-                <p class="footer-text">
-                  &copy; <FormattedMessage id="FootCopy"/>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+                   </div>
+                   <div className="col-sm-6 col-md-3">
+                     
+                  <ul className="footerstyle">
+                    <li style={cursor}>
+                      <a  className="small"onClick={()=>{setLang('es')}}>Español
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('pt')}}>Português
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('sv')}} >Svenska
+                      </a>
+                    </li>
+                    <li style={cursor}>
+                      <a  className="small" onClick={()=>{ setLang('no')}} >Norsk
+                      </a>
+                    </li>
+		   
+                    <li className="langlinks" style={cursor}>
+                      <a  className="small"onClick={()=>{setLang('id')}}>Bahasa Indonesia
+                      </a>
+                    </li>
+                  </ul>
+                   </div>
+                 </div>
+                 
+                 </div>     
+                  
+
+             </div>
+           </div>
+         
+         
+              
+             
+                 
+               
+                
+                
+                
+              
+              
+                
+              
+              
+     
+    
     </footer>
   );
 }

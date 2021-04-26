@@ -1,13 +1,13 @@
  form input[type='text'] {
-  background: #f4f4f4 !important;
-  color: #56c0d0 !important;
+  background: #32a6bc !important; 
+  /* color: #56c0d0 !important; */
   font-weight: 500 !important;
   border: none;
   outline: none;
 }
  /* Setting placeholder color etc. */
 .form-control::placeholder{ 
-  color: #56c0d0;
+  color: #32a6bc;
   font-weight: 500;
   font-size: 14px;
   opacity: 1;
@@ -16,6 +16,6 @@
 .fa-search {
   padding: 11px;
   color: #fff;
-  background-color: #56c0d0;
+  background-color: #32a6bc;
   border: transparent;
 }

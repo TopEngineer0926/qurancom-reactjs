@@ -38,8 +38,8 @@ body {
 }
 
 header {
-  -webkit-box-shadow: 0px 4px 5px 0px #dbdbdb;
-  box-shadow: 0px 4px 5px 0px #dbdbdb;
+  -webkit-box-shadow: 0;
+  box-shadow: 0
 }
 
 header .navbar a.navbartoggler {
@@ -127,7 +127,10 @@ header .navbar ul li a {
   text-decoration: none;
   margin: 0px;
 }
-
+.css-jfhehz .dropdown-menu {
+  max-height: 245px;
+  overflow: auto;
+}
 header .navbar ul li .dropdown-menu {
   left: -35%;
 }
@@ -140,6 +143,10 @@ header .navbar ul li .dropdown-menu .dropdown-item:hover {
   color: #fff;
   background-color: #56c0d0;
   cursor: pointer;
+}
+.Selected{
+  color: #fff;
+  background-color: #56c0d0;
 }
 
 header .navbar ul form input[type="text"] {
@@ -213,18 +220,18 @@ header .navbar .sidenavright {
 }
 
 header .navbar .sidenavright .fas {
-  color: #ababab;
+  color: #747474;
   width: 20px;
 }
 
 header .navbar .sidenavright .sidenavright-upper h6 {
   margin: 16px 0px;
-  color: #ababab;
+  color: #747474;
   font-size: 14px;
 }
 
 header .navbar .sidenavright .sidenavright-upper2 a {
-  color: #ababab;
+  color: #747474;
   display: block;
   padding: 5px;
   font-size: 14px;
@@ -239,7 +246,7 @@ header .navbar .sidenavright .sidenavright-upper2 a:hover {
 }
 
 header .navbar .sidenavright .sidenavright-middle a {
-  color: #ababab;
+  color: #747474;
   cursor: pointer;
   margin-top: 20px;
   font-size: 14px;
@@ -251,7 +258,7 @@ header .navbar .sidenavright .sidenavright-middle a i {
 
 header .navbar .sidenavright .sidenavright-middle #reciterOptions form {
   font-size: 12px;
-  color: #ababab;
+  color: #747474;
   margin: 10px;
 }
 
@@ -261,7 +268,7 @@ header .navbar .sidenavright .sidenavright-middle #reciterOptions form input {
 
 header .navbar .sidenavright .sidenavright-middle #translationsOptions form {
   font-size: 12px;
-  color: #ababab;
+  color: #747474;
   margin: 10px;
 }
 
@@ -271,13 +278,13 @@ header .navbar .sidenavright .sidenavright-middle #translationsOptions form inpu
 
 header .navbar .sidenavright .sidenavright-middle #toolTipOptions {
   font-size: 12px;
-  color: #ababab;
+  color: #747474;
   margin: 10px;
 }
 
 header .navbar .sidenavright .sidenavright-lower h6 {
   margin: 16px 0px;
-  color: #ababab;
+  color: #747474;
   font-size: 14px;
 }
 
@@ -287,30 +294,21 @@ header .navbardetail {
 }
 
 footer {
-  background-color: #323232;
+  background-color: #0D3656;
 }
 
 footer .container {
   padding: 0px 32px;
 }
 
-footer .container .footer-content-left p,
-footer .container .footer-content-left ul,
-footer .container .footer-content-left li,
-footer .container .footer-content-left a {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  color: #fff;
-}
 
-footer .container .footer-content-left ul {
+footer .container ul {
   list-style-type: none;
   min-height: 180px;
 }
 
 footer .container .footer-content-left ul li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 footer .container .footer-content-left ul li a:hover {
@@ -325,10 +323,17 @@ footer .container .footer-content-left .lead {
   margin-bottom: 10px;
 }
 
-footer .container .footer-content-right .logo-social {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  min-height: 30px;
+.footerstyle{
+  list-style: none;
+  color: white;
+  margin-top: 35px;
+
+}
+
+.footerlogo{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 footer .container .footer-content-right .logo-social ul.social-icons {
@@ -420,6 +425,13 @@ footer .container .footer-text {
 
 .mobileFooterContentLeft .col-3 li a.small {
   font-size: 0.5em;
+}
+.langlinks{
+  white-space: nowrap !important;
+}
+.responsiveimg {
+  max-width: 100%;
+  height: auto;
 }
 
 .sidenavvisible {
@@ -588,7 +600,7 @@ main.indexmain .container ul.quicklinks .btn {
 }
 
 main.indexmain .container ul.quicklinks .btn a {
-  color: #56c0d0;
+  color: #32a6bc;
   text-decoration: none;
   font-size: 12px;
   font-weight: 500;
@@ -610,7 +622,7 @@ main.indexmain .container ul.quicklinks .disabled {
 }
 
 #surahs .container .nav .nav-item .nav-link {
-  color: #ababab;
+  color: #747474;
   font-weight: 500;
   font-size: 14px;
   padding: 10px 25px;
@@ -626,7 +638,7 @@ main.indexmain .container ul.quicklinks .disabled {
 }
 
 #surahs .container .nav .nav-item .nav-link.active {
-  color: #56c0d0;
+  color: #32a6bc;
 }
 
 #surahs .container .nav .nav-item .nav-link.active .badge {
@@ -647,7 +659,7 @@ main.indexmain .container ul.quicklinks .disabled {
 }
 
 #surahs .container .tab-content .tab-pane p.manzil-text {
-  color: #ababab;
+  color: #747474;
   margin-top: 35px;
   margin-bottom: 30px;
   font-size: 14px;
@@ -668,12 +680,12 @@ main.indexmain .container ul.quicklinks .disabled {
 }
 
 #surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-left b {
-  color: #ababab;
+  color: white;
   font-size: 14px;
 }
 
 #surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-left p {
-  color: #56c0d0;
+  color: white;
   margin-top: 10px;
   margin-bottom: 0px;
   font-size: 11px;
@@ -693,10 +705,14 @@ main.indexmain .container ul.quicklinks .disabled {
 }
 
 #surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-right .verse-count {
-  color: #dbdbdb;
+  color: white;
   float: right;
   font-size: 14px;
   margin-bottom: 0px;
+}
+
+#surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-right .arabic-index {
+  color: white;
 }
 
 #surahs .container .tab-content .tab-pane .row:nth-last-of-type(1) {
@@ -792,7 +808,7 @@ main.detailmain .ayatboxouter .ayatbox .translation-box {
   line-height: 30px;
 }
 
-main.detailmain .ayatboxouter .ayatbox .translation-box a {
+main.detailmain .ayatboxouter .ayatbox .translation-box p.translator_name {
   text-transform: uppercase;
   font-size: 12px;
   color: #56c0d0;
@@ -826,9 +842,9 @@ main.detailmain hr:nth-last-of-type(1) {
 /***********************
         Reading Css
 ***********************/
-main.readingmain {
-  background-color: #f4f4f4;
-}
+/* main.readingmain { */
+  /* background-color: #f4f4f4; */
+/* } */
 
 main.readingmain #surahinfo .row div:nth-of-type(2) {
   background-color: #e8e8e8;
@@ -1000,10 +1016,11 @@ ul.nav.align-items-center.surrahsnav li a {
 }
 #surahs .container .tab-content .tab-pane .row a .surahbox {
   padding: 10px;
-  box-shadow: 1px 1px 8px -1px #b3b3b3;
+
+  background-color: #32a6bc;
 }
 .surahbox.d-flex.justify-content-between:hover {
-  background-color: #56c0d0;
+  background-color: #0d5a6e !important;
 }
 .surahbox.d-flex.justify-content-between:hover b {
   color: #ffffff  !important;
@@ -1012,12 +1029,12 @@ ul.nav.align-items-center.surrahsnav li a {
   color: #ffffff !important;
 }
 #surahs .container .tab-content .tab-pane .row a .surahbox .surah-content-right .verse-count {
-  color: #ababab;
+  color: white !important;
   font-weight: 600;
 }
 .bm-burger-button {
   width: 40px !important;
-  height: 36px !important;
+  height: 38px !important;
   top: 15px !important;
   border: 1px solid #56c0d0;
   border-radius: 5px;
@@ -1025,7 +1042,7 @@ ul.nav.align-items-center.surrahsnav li a {
 }
 span.bm-burger-bars {
   width: 20px !important;
-  left: 9px !important;
+  left: 8px !important;
   height: 3px !important;
   border-radius: 5px;
 }
@@ -1082,7 +1099,7 @@ header#hd .dropdown a {
   display: block;
 }
 .wraper_laader {
-  padding-top: 10%;
+  padding-top: 15%;
   padding-bottom: 15%;
 }
 
@@ -1136,7 +1153,7 @@ p.verse-count {
   z-index: 99999 !important;
 }
 body {
-  background: #f8f8f9;
+  background: #ffffff;
 }
 p.MuiTypography-root.MuiTypography-body1 {
   font-size: 15px;
@@ -1144,7 +1161,7 @@ p.MuiTypography-root.MuiTypography-body1 {
 }
 .bm-burger-button {
   width: 40px !important;
-  height: 36px !important;
+  height: 38px !important;
   top: 0px !important;
   border: 1px solid #56c0d0;
   border-radius: 5px;
@@ -1171,7 +1188,7 @@ p.MuiTypography-root.MuiTypography-body1 {
   }
   span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
     font-size: 15px;
-    color: #ababab;
+    color: #747474;
 }
 .MuiCheckbox-colorSecondary.Mui-checked {
   color: #56c0d0 !important;
@@ -1257,6 +1274,389 @@ b.pointer.ArabicFontChange {
 .font-size-changer-buttons div {
   border: none !important;
 }
+
+i.fas.fa-minus ,i.fas.fa-plus{
+  color: #56c0d0 !important;
+  font-size: 15px;
+}
+.arabictxt_size h6 ,.transtxt_size h6{
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.middlebar_header_mobile form input[type='text'],.middlebar_header form input[type='text']{
+  background: #e8e7e7 !important;
+}
+.cassette .cassette__control_bar {
+  background-color: #56c0d0 !important;
+}
+.cassette .cassette__media_progress_bar .progress {
+  background-color: #ddf2f5 !important;
+}
+button.Selected.stripe.dropdown-item {
+  color: white;
+}
 .MuiRadio-colorSecondary.Mui-checked {
+  color: #56c0d0 !important;
+}
+.MuiRadio-root {
+  color: #56c0d0 !important;
+}
+.MuiCheckbox-root {
+  color: #56c0d0 !important;
+}
+.MuiRadio-colorSecondary:hover {
+  background-color: #56c0d02e !important;
+}
+.MuiIconButton-root:hover {
+  background-color: #56c0d02e !important;
+}
+.cassette .cassette__media_progress_bar {
+  width: 85%;
+  height: auto;
+}
+.cassette .cassette__media_progress_bar .progress{
+  height: 8px;
+  top: 2px !important;
+}
+.aboutus_banner{
+  background-image: url('../img/aboutusbanner.jpg');
+  /* Set a specific height */
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutus_banner_websitelogo{
+  width: 200px;
+}
+.aboutus_section{
+  font-family:Montserrat, sans-serif
+}
+.aboutus_banner_heading{
+  color: white;
+}
+.about_desc_text h4{
+  font-size: 16px;
+  font-weight: 400;
+  color: #939598;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.about_desc_text h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #56c0d0;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.about_desc_text h2{
+  font-size: 22px;
+  font-weight: 600;
+  color: #56c0d0;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+}
+.about_desc_text h4 a{
+  color: #56c0d0;
+}
+.highlight_text_theme{
+  color: #56c0d0;
+}
+.aboutus_banner_container{
+  padding-top: 100px;
+}
+.contactus_banner{
+  background-image: url('../img/aboutusbanner.jpg');
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactus_banner_websitelogo{
+  width: 200px;
+}
+.contactus_section{
+  font-family:Montserrat, sans-serif
+}
+.contactus_banner_heading{
+  color: white;
+}
+.about_desc_text h4{
+  font-size: 16px;
+  font-weight: 400;
+  color: #939598;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.about_desc_text h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #56c0d0;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.about_desc_text h2{
+  font-size: 22px;
+  font-weight: 600;
+  color: #56c0d0;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+}
+.about_desc_text h4 a{
+  color: #56c0d0;
+}
+.contactus_banner_container{
+  padding-top: 100px;
+}
+.staric_form_label{
+  color: red;
+}
+.contactus_form_submit_btn{
+  background: #56c0d0;
+  width: 100%;
+  border: 2px solid #56c0d0
+}
+.contactus_form_submit_btn:hover{
+  background: #ffffff;
+  width: 100%;
+  color:#56c0d0;
+  border: 2px solid #56c0d0
+}
+.contactus_section .form-control:focus {
+  border-color: #56c0d0;
+  box-shadow: 0 0 0 0.2rem rgba(86, 192, 208, 0.49);
+}
+.search_topbar_pagination{
+  padding: 10px;
+  margin-top: 20px;
+  background: #e7e6e6;
+}
+.pagination{
+  margin: 0;
+  float: right;
+}
+ul.pagination li {
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 10px;
+  color: #000;
+}
+ul.pagination li a{
+  color: #000;
+}
+ul.pagination li.active a{
+  color: #56c0d0;
+}
+.verser_box_search {
+  padding: 10px 0;
+  text-align: center;
+  background: #56c0d0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+.SearchContent_list .ayatbox .translation-box p.translator_name{
+  color: #56c0d0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.searchcontent_list_main{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
+.searchcontent_list_main .tooltipmaindiv b.pointer:hover {
+  color: #56c0d0;
+}
+.detailheader input#search {
+  padding: 11px 7px 8px;
+  font-size: 14px;
+}
+.col-12.searchcontent_list_main .hlt1 {
+  color: #56c0d0;
+}
+ul.searchsuggestion_ul {
+  position: absolute;
+  list-style-type: none;
+  padding: 0px;
+  background: #f1f1f1;
+  box-shadow: 1px 1px 10px -1px grey;
+  top: 59px;
+  z-index: 999;
+  max-height: 250px;
+  overflow: auto;
+  width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+li.searchsuggestion_li {
+  border-bottom: 1px solid lightgrey;
+}
+li.searchsuggestion_li a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+    font-weight: 500;
+}
+li.searchsuggestion_li:hover {
+  background: #56c0d085;
+}
+.mainsurah .arabic b.pointer{
+  padding-left: 8px;
+}
+.searchsuggestion_li a em.hlt1{
+  color: #56c0d0;
+}
+.about_desc_text .btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0);
+}
+.SearchContent_list h4{
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10% 20px;
+}
+.searchsuggestion_ul.small_searchsuggestion_ul{
+  top: 40px;
+}
+.bm-overlay ,.bm-menu-wrap{
+  top: 0;
+}
+.fillspacestxt{
+  color: red !important;
+}
+h6.thankyoutxt {
+  padding: 20px;
+  background: #28a745;
+  color: white;
+  margin-bottom: 20px;
+}
+h6.thankyoutxt i{
+  float: right;
+  cursor: pointer;
+}
+.detailsearchbox button{
+  height: 40px;
+}
+.cassette__control_bar {
+  bottom: 15px  !important;
+  left: 15px  !important;
+  max-width: 25%  !important;
+  border-radius: 5px  !important;
+}
+.cassette__control_bar > * {
+  height: 25px  !important;
+}
+.cassette__media_button {
+  height: 25px !important;
+}
+.cassette__skip_button .vertical_bar {
+  border-left: 3px solid #fff  !important;
+  border-top: 6px solid #fff  !important;
+  border-bottom: 6px solid #fff  !important;
+}
+.cassette__skip_button .right_facing_triangle {
+  border-left: 10px solid #fff  !important;
+  border-top: 6px solid transparent  !important; 
+  border-bottom: 6px solid transparent  !important;
+}
+.cassette__play_pause_button .foreground {
+  position: relative  !important;
+  width: 20px  !important;
+  height: 20px  !important;
+}
+.cassette__material_toggle .inner {
+  width: 15px  !important;
+  height: 15px  !important;
+  bottom: 0  !important;
+  margin-top: 4px  !important;
+}
+.cassette__media_time_progress {
+  font-size: 12px  !important;
+  margin-right: 0  !important;
+  margin-top: 15px  !important;
+}
+.cassette__media_info_marquee {
+  font-size: 12px  !important;
+  margin-top: 15px  !important;
+}
+.cassette .cassette__media_progress_bar .progress {
+  height: 5px  !important;
+  top: 0px !important;
+}
+.cassette__play_pause_button .left::after{
+  border-width: 10px 20px !important;
+}
+/* .cassette__play_pause_button.playing .left::after, .cassette__play_pause_button.playing .right::after{ */
+  /* border-width: 15px 30px !important; */
+/* } */
+.cassette__play_pause_button.playing .left::after, .cassette__play_pause_button.playing .right::after {
+  border-width: 0 30px !important;
+  height: 30px !important;
+}
+#surahinfo .row div:nth-of-type(3) {
+  padding: 20px 0px 0 20px !important;
+}
+.surahinfo_img {
+  padding: 0;
+}
+#surahinfo .row{
+  margin: 0 !important;
+}
+.cassette .cassette__media_progress_bar {
+  width: 109%;
+}
+.cassette__play_pause_button .right::after {
+  border-width: 10px 27px !important;
+}
+.cassette__media_progress_container {
+  min-width: 85% !important;
+}
+.AlwaysSelected .MuiCheckbox-colorSecondary.Mui-checked {
+  color: #8d8d8d !important;
+}
+.MuiList-root button {
+  border: 0;
+  float: right;
+  width: 100%;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #56c0d0;
+}
+.cassette__media_button .foreground {
+  opacity: 1 !important;
+}
+.translator_name{
+  cursor: default;
+}
+.fade.popupmodal_bayan.modal.show {
+  z-index: 99999 !important;
+}
+.popupmodal_bayan .modal-content {
+  border: none;
+  box-shadow: 0px 0px 7px 0px #c1c1c1;
+}
+.popupmodal_bayan iframe {
+  border: none;
+}
+.font-size-down,.font-size-up {
+  cursor: pointer;
+}
+.plycpy-group.text-center {
   color: #ababab;
+}
+.plycpy-group.text-center span{
+  cursor: pointer;
+}
+span.bayyinah {
+  cursor: pointer;
 }

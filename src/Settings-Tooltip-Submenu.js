@@ -8,12 +8,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import {TranslitContext} from "./index";
+import {TranslitContext} from "./Store";
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
+import {FormattedMessage} from "react-intl";
 
 
 const color={
@@ -34,11 +32,7 @@ export default function NestedList() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [TranslitShowing, setTrans]=useContext(TranslitContext);
-  // const [selectedValue, setSelectedValue] = React.useContext(TooltipSelectContext);
 
-  // function handleRadioChange(event) {
-  //   setSelectedValue(event.target.value);
-  // }
   function handleClick() {
     setOpen(!open);
   }
@@ -54,9 +48,9 @@ export default function NestedList() {
    {/* TOOLTIP DISPLAY */}
       <ListItem button onClick={handleClick} style={color}>
         <ListItemIcon style={color} >
-        <i class="fas fa-globe-americas"></i> 
+        <i className="fas fa-globe-americas"></i> 
         </ListItemIcon>
-        <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Tooltip </Typography>}/>
+        <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}><FormattedMessage id="Tooltip"/> </Typography>}/>
         {open ? <ExpandLess/>: <ExpandMore/>}
       </ListItem>
       {/* Tooltip LIST */}
@@ -76,20 +70,10 @@ export default function NestedList() {
                           color="default"
                           
                         />
-          {/* <Radio 
-           onChange={handleRadioChange}
-           value="a"
-           checked={selectedValue === 'a'}
-           color="default"
-          /> */}
-          
-            {/* <ListItemText primary={<Typography style={{ color: '#ABABAB', marginLeft:"-20px" }}>Translations</Typography>} /> */}
+
           </ListItem>
 
-{/* Tranliteration */}
-         
-        
-       <ListItem  className={classes.nested} onClick={()=>{setTrans(true); console.log("Transliteration SHowing")} }>
+       <ListItem  className={classes.nested} onClick={()=>{setTrans(true);} }>
        <FormControlLabel
                           control={
                           <Radio checked={TranslitShowing}/>
