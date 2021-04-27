@@ -6,22 +6,17 @@ import Header from "./HomeHeader";
 import { Helmet } from 'react-helmet';
 
 function Homepage() {
-  
+
   return (
     <>
-    <Helmet>
-   <title> Islam Check | Home</title>
-   </Helmet>
-
-      <Header/>
-            <MainBody />
-            
+      <Helmet>
+        <title> Islam Check | Home</title>
+      </Helmet>
+      <Header />
+      <MainBody />
       <Surahss />
-          <Footer />
-     </> 
-   
-   
-   
+      <Footer />
+    </>
   );
 }
 
