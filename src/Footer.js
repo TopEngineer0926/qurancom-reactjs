@@ -124,7 +124,7 @@ function Footer() {
             </Grid>
             <Grid item className={classes.footerMain}>
                 <Grid container justify="center" direction="column">
-                    <Grid item className="row d-flex justify-content-center mt-5 mb-2">
+                    <Grid item className="row d-flex justify-content-center">
 
                         <form className="searchbox" >
                             <FormattedMessage id="placeholder" defaultMessage="search">
