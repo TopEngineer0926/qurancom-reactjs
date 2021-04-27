@@ -16,8 +16,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#077b85',
         paddingTop: theme.spacing(4),
         paddingBottom: theme.spacing(10),
-        paddingLeft: 461,
-        paddingRight: 329
     },
     btnStyle: {
         textDecoration: 'none',
@@ -41,6 +39,16 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 16,
         fontFamily: 'Montserrat',
         backgroundColor: 'white'
+    },
+    footerLeft: {
+        width: 461
+    },
+    footerRight: {
+        width: 329
+    },
+    footerMain: {
+        width: 'calc(100% - 329px - 461px)',
+        display: 'flex'
     }
 }));
 
@@ -111,66 +119,74 @@ function Footer() {
         }, 3000);
     }
     return (
-        <Grid container className={classes.root} justify="center" direction="column">
-            <Grid item className="row d-flex justify-content-center mt-5 mb-2">
+        <Grid container className={classes.root}>
+            <Grid item className={classes.footerLeft}>
+            </Grid>
+            <Grid item className={classes.footerMain}>
+                <Grid container justify="center" direction="column">
+                    <Grid item className="row d-flex justify-content-center mt-5 mb-2">
 
-                <form className="searchbox" >
-                    <FormattedMessage id="placeholder" defaultMessage="search">
-                        {placeholder => <input className={classes.searchStyle} autoComplete="off" autoCorrect="off" id='search' type="text" placeholder={placeholder} onChange={onTextChange} />}
-                    </FormattedMessage>
-                    <Link className={classes.btnStyle} to={`/search?q=${Text}`} onClick={handleClickSubmit}>
-                        START
+                        <form className="searchbox" >
+                            <FormattedMessage id="placeholder" defaultMessage="search">
+                                {placeholder => <input className={classes.searchStyle} autoComplete="off" autoCorrect="off" id='search' type="text" placeholder={placeholder} onChange={onTextChange} />}
+                            </FormattedMessage>
+                            <Link className={classes.btnStyle} to={`/search?q=${Text}`} onClick={handleClickSubmit}>
+                                START
                             </Link>
 
-                    {Showflag &&
-                        <ul className="searchsuggestion_ul">
-                            {Text.length > 0 &&
-                                SurahSuggestions.map((item, ind) =>
-                                    <li key={ind} className="searchsuggestion_li">
-                                        <Link to={`/${item.substring(item.indexOf("-") + 1, item.length)}`}
-                                            onClick={() => {
-                                                setSurahNo(item.substring(item.indexOf("-") + 1, item.length));
-                                                setLoading(true);
-                                                setPage(1)
-                                                setOff(1)
-                                                setLast(0)
-                                            }}>
-                                            {item}
-                                        </Link>
+                            {Showflag &&
+                                <ul className="searchsuggestion_ul">
+                                    {Text.length > 0 &&
+                                        SurahSuggestions.map((item, ind) =>
+                                            <li key={ind} className="searchsuggestion_li">
+                                                <Link to={`/${item.substring(item.indexOf("-") + 1, item.length)}`}
+                                                    onClick={() => {
+                                                        setSurahNo(item.substring(item.indexOf("-") + 1, item.length));
+                                                        setLoading(true);
+                                                        setPage(1)
+                                                        setOff(1)
+                                                        setLast(0)
+                                                    }}>
+                                                    {item}
+                                                </Link>
 
-                                    </li>
+                                            </li>
 
-                                )}
+                                        )}
 
-                            {suggestions2.map((item, ind) =>
-                                <li key={ind} className="searchsuggestion_li">
-                                    <Link to={`/${item.chapter_id}`}
-                                        onClick={() => {
-                                            setSurahNo(item.chapter_id);
-                                            if (item.translation_id != null) {
-                                                setCheck({ ...check, [item.translation_id]: true })
-                                            }
-                                            setCurrentPage(1 + (Math.trunc(item.verse_number / 10)));
-                                            setOff(item.verse_number % 10);
-                                            setChosen(true);
-                                            setLoading(true);
-                                            setShowflag(false);
+                                    {suggestions2.map((item, ind) =>
+                                        <li key={ind} className="searchsuggestion_li">
+                                            <Link to={`/${item.chapter_id}`}
+                                                onClick={() => {
+                                                    setSurahNo(item.chapter_id);
+                                                    if (item.translation_id != null) {
+                                                        setCheck({ ...check, [item.translation_id]: true })
+                                                    }
+                                                    setCurrentPage(1 + (Math.trunc(item.verse_number / 10)));
+                                                    setOff(item.verse_number % 10);
+                                                    setChosen(true);
+                                                    setLoading(true);
+                                                    setShowflag(false);
 
-                                        }}>
-                                        {ReactHtmlParser(item.text.substring(0, 70))}...
+                                                }}>
+                                                {ReactHtmlParser(item.text.substring(0, 70))}...
                 <span>  ({item.ayah})</span>
-                                    </Link>
-                                </li>
-                            )}
-                        </ul>}
-                </form>
-            </Grid>
-            <Grid item className={classes.logoMargin}>
-                <Grid container justify="center">
-                    <Grid item>
-                        <img src='/img/footer-logo.png'></img>
+                                            </Link>
+                                        </li>
+                                    )}
+                                </ul>}
+                        </form>
+                    </Grid>
+                    <Grid item className={classes.logoMargin}>
+                        <Grid container justify="center">
+                            <Grid item>
+                                <img src='/img/footer-logo.png'></img>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
+            </Grid>
+            <Grid item className={classes.footerRight}>
             </Grid>
         </Grid>
     );
