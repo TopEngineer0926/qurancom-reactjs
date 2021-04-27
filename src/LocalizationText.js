@@ -29,7 +29,7 @@
     Mobile: "Mobile",
     Dev: "Developers",
     Langs: "Languages",
-    placeholder: "Search Anything...",
+    placeholder: "Search",
     Quick: "Direct link",
     All: "All",
     Makki: "Makki Surahs of Quran",
