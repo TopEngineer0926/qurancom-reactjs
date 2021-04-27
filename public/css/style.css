@@ -1481,7 +1481,6 @@ ul.pagination li.active a{
   color: #56c0d0;
 }
 ul.searchsuggestion_ul {
-  position: absolute;
   list-style-type: none;
   padding: 0px;
   background: #f1f1f1;
