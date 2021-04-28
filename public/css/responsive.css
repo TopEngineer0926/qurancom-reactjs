@@ -327,7 +327,6 @@ display: none;
   vertical-align: 2px;
 }
 .dropdown-menu.show {
-  height: 50vw !important; 
 }
 header.detailheader {
   padding: 15px 5px !important;
