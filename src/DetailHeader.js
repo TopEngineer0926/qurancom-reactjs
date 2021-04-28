@@ -1,10 +1,11 @@
 import React, {useContext} from "react";
 import SideBar from "./LeftSidemenu.js";
 import "./LeftSidemenu.css";
-import logo from "./img/logo.png";
 import Languages from "./LangDropdown";
 import SurahName from "./DetailHeaderSurahName";
 import Verse from "./DetailHeaderVersenNum";
+import ArabicSize from './ArabicSize';
+import TranslationSize from './TranslationSize';
 import Search from "./DetailHeaderSearchbar";
 import Settings from "./Settings";
 import { Link } from "react-router-dom";
@@ -95,21 +96,7 @@ function Header(props) {
         },
         {
             label: 'Arabic size',
-            component: <FontSizeChanger
-                            targets={['.ArabicFontChange']}
-                            onChange={(element, newValue, oldValue) => {
-
-                                setArbicFontSize(newValue)
-                            }}
-                            options={{
-                                stepSize: 2,
-                                range: 1000
-                            }}
-                            className="arabictxt_size"
-                            customButtons={{
-                                down: <span > <i className="fas fa-minus"></i> </span>,
-                            }}
-                        />
+            component: <ArabicSize />
         },
         {
             label: 'Reciter',
@@ -122,22 +109,7 @@ function Header(props) {
         } : {},
         {
             label: 'Translation size',
-            component:  <FontSizeChanger
-                            targets={['.TranslationFontChanger']}
-                            onChange={(element, newValue, oldValue) => {
-                                setTransFont(newValue)
-                            }}
-                            options={{
-                                stepSize: 2,
-                                range: 1000
-                            }}
-                            className="transtxt_size"
-                            customButtons={{
-                                down: <span>
-                                    <i className="fas fa-minus"></i>
-                                </span>,
-                            }}
-                        />
+            component:  <TranslationSize />
         },
         {
             label: themeState.dark ? 'Day mode' : 'Night mode',
