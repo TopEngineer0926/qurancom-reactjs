@@ -66,34 +66,6 @@ function Surahs() {
   return (
     <section id="surahs" className="mt-5">
       <div className="container">
-        {/* <span> {JSON.stringify(Content)}</span> */}
-        {/* <span>{index1.map((indix)=>Array.isArray(Content)? Content[indix]["id"] : "Loading")}</span> */}
-        <ul className="nav align-items-center" hidden="hidden">
-          <li className="nav-item" onClick={() => { ShowMadni(false); ShowMakki(false) }} style={{ cursor: "pointer" }}>
-            <a className={`nav-link  ${!Makkiflag && !Madniflag && `active`}`} data-toggle="tab">
-              <FormattedMessage id="All" />
-            </a>
-          </li>
-          |
-          <li className="nav-item " onClick={() => { ShowMakki(true); ShowMadni(false); }} style={{ cursor: "pointer" }}>
-            <a className={`nav-link  ${Makkiflag && !Madniflag && `active`}`} data-toggle="tab">
-              <FormattedMessage id="Makki" /><span className="badge">88</span>
-            </a>
-          </li>
-          |
-
-          <li className="nav-item" onClick={() => { ShowMadni(true); ShowMakki(false) }} style={{ cursor: "pointer" }}>
-            <a className={`nav-link  ${!Makkiflag && Madniflag && `active`}`} data-toggle="tab">
-              <FormattedMessage id="Madni" /> <span className="badge">28</span>
-            </a>
-          </li>
-
-        </ul>
-        <hr />
-        {/* TAB CONTENT */}
-
-
-
         <div className="tab-content">
           {/* SHOW ALL SURAHS */}
           <If condition={Makkiflag === false && Madniflag === false}>
