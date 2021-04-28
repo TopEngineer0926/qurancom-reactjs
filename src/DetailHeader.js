@@ -1,22 +1,18 @@
 import React, {useContext} from "react";
-import SideBar from "./LeftSidemenu.js";
 import "./LeftSidemenu.css";
 import Languages from "./LangDropdown";
 import SurahName from "./DetailHeaderSurahName";
 import Verse from "./DetailHeaderVersenNum";
-import ArabicSize from './ArabicSize';
-import TranslationSize from './TranslationSize';
-import Search from "./DetailHeaderSearchbar";
-import Settings from "./Settings";
+import ArabicSize from './TranslationSize';
+import TranslationSize from './ArabicSize';
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Switch from '@material-ui/core/Switch';
 import { useTheme } from "./Nightmode/ThemeContext";
-import { InfoContext, ReadingContext, ArbicFontSizeContext, TopContext, TransFontChangeContext } from "./Store";
+import { ReadingContext, ArbicFontSizeContext,  TransFontChangeContext } from "./Store";
 import Translation from "./Settings-Translations";
 import Reciter from "./Settings-Reciters";
-import FontSizeChanger from 'react-font-size-changer';
 import { FormattedMessage } from "react-intl";
 
 const useStyles = makeStyles((theme) => ({
@@ -131,53 +127,6 @@ function Header(props) {
         }
     ]
     return (
-        // <header className="detailheader" style={{ padding: 15 }}>
-        //   <div className="col-md-2 float-left sidebar_header">
-        //     <SideBar />
-        //     <Link to="/">
-        //       <img src={logo} alt="logo" style={imgStyle} />
-        //     </Link>
-        //   </div>
-        //   <div className="col-md-7 float-left middlebar_header">
-        //     <div className="col-md-3 float-left text-center">
-        //       <SurahName ChapData={props.ChapData} />
-        //     </div>
-        //     <div className="col-md-2 float-left">
-        //       <Verse VerseTotal={props.VerseTotal} />
-        //     </div>
-        //     <div className="col-md-7 float-left p-0 ">
-        //       <Search />
-        //     </div>
-        //   </div>
-        //   <div className="col-md-3 float-left right_header">
-        //     <div className="col-md-6 float-left text-right language_web p-0">
-        //       <Languages />
-        //     </div>
-        //     <div className="col-md-6 float-left  text-center p-0">
-        //       <Settings />
-        //     </div>
-        //   </div>
-        //   {/* for mobile devices */}
-        //   <div className="col-md-12 float-left middlebar_header_mobile">
-        //     <div className="col-md-12 float-left p-0 ">
-        //       <Search />
-        //     </div>
-        //   </div>
-        //   <div className="col-md-3 float-left right_header_mobile  p-0 ">
-        //     <div className="col-4 float-left p-0 pr-1 surah_dropdown">
-        //       <SurahName ChapData={props.ChapData} />
-        //     </div>
-        //     <div className="col-3 float-left p-0 pr-1 verse_dropdown">
-        //       <Verse VerseTotal={props.VerseTotal} />
-        //     </div>
-        //     <div className="col-4 float-left p-0 pr-1 lang_dropdown_detailpg">
-        //       <Languages />
-        //     </div>
-        //     <div className="col-1 float-left p-0 setting_popup">
-        //       <Settings />
-        //     </div>
-        //   </div>
-        // </header>
         <Grid container className={classes.root}>
             <Grid item className={classes.headerLeft}>
                 <Grid container justify="center" direction="column">
