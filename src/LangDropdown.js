@@ -136,9 +136,10 @@ function Drop() {
             <DropdownMenu right style={dropdownStyle}>
                 <Scrollbars style={{ height: '20vh' }}>
                     {
-                        langData.map((language) => {
+                        langData.map((language, index) => {
                             return (
                                 <DropdownItem
+                                    key={index}
                                     className={
                                         lang
                                             ? lang === `${language.langClass}`

@@ -1066,7 +1066,7 @@ header {
   z-index: 9999;
 }
 main,div#surahinfo {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .quicklinks .btn {
   cursor: unset !important;
@@ -1153,7 +1153,7 @@ p.verse-count {
   z-index: 99999 !important;
 }
 body {
-  background: #ffffff;
+  background: #f9f9f9;
 }
 p.MuiTypography-root.MuiTypography-body1 {
   font-size: 15px;

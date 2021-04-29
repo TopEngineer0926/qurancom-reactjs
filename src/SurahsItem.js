@@ -95,7 +95,7 @@ function SurahsItem() {
             <div className={classes.boxContainer}>
               <Grid container>
                 <Grid item xs={8} className={classes.leftBox}>
-                  <Grid container display="flex" justifyContent="center" alignItems="center">
+                  <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12} style={{ borderBottom: '1px solid #eee' }}>
                       <Box display="flex" justifyContent="center" p={1}>
                         <Typography style={{ color: 'black', fontWeight: 'bold', fontSize: 20 }}>
@@ -104,7 +104,7 @@ function SurahsItem() {
                       </Box>
                     </Grid>
                   </Grid>
-                  <Grid container display="flex" justifyContent="center" alignItems="center">
+                  <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" p={1} pb={0}>
                         <div className={classes.arabicText}>{Array.isArray(Content) ? Content[indix]["name_encoded"] : ""}</div>
@@ -112,8 +112,8 @@ function SurahsItem() {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item container xs={4} className={classes.rightBox} display="flex" justifyContent="center" alignItems="center" style={{ backgroundColor: '#0c4d83', borderTopRightRadius: '8px', borderBottomRightRadius: '8px' }}>
-                  <Grid container display="flex" justifyContent="center" alignItems="center">
+                <Grid item container xs={4} className={classes.rightBox} display="flex" justify="center" alignItems="center" style={{ backgroundColor: '#0c4d83', borderTopRightRadius: '8px', borderBottomRightRadius: '8px' }}>
+                  <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" alignItems="center">
                         <Typography style={{ color: 'white', fontSize: '12px' }}>
@@ -122,7 +122,7 @@ function SurahsItem() {
                       </Box>
                     </Grid>
                   </Grid>
-                  <Grid container display="flex" justifyContent="center" alignItems="center">
+                  <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" alignItems="center">
                         <Typography style={{ color: 'white', fontSize: '13px' }}>

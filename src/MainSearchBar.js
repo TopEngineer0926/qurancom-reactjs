@@ -9,8 +9,8 @@ import SurahsItem from "./SurahsItem"
 
 function Main() {
   return (
-    <main className="indexmain" style={{ backgroundColor: '#e5e5e5' }} >
-      <section id="surahs" className="mt-5">
+    <main style={{paddingLeft: 132, marginTop: 40}} >
+      <section id="surahs">
         <div className="container">
           <div className="tab-content">
             <div className="tab-pane container active" id="all">
