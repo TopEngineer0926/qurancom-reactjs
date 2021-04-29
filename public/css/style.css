@@ -1069,7 +1069,7 @@ header {
   z-index: 9999;
 }
 main,div#surahinfo {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .quicklinks .btn {
   cursor: unset !important;
@@ -1156,7 +1156,7 @@ p.verse-count {
   z-index: 99999 !important;
 }
 body {
-  background: #ffffff;
+  background: #f9f9f9;
 }
 p.MuiTypography-root.MuiTypography-body1 {
   font-size: 15px;
@@ -1306,6 +1306,9 @@ button.Selected.stripe.dropdown-item {
 }
 .MuiCheckbox-root {
   color: white !important;
+}
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: #c2719f !important;
 }
 .MuiRadio-colorSecondary:hover {
   background-color: #56c0d02e !important;

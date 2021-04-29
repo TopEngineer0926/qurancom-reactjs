@@ -91,7 +91,7 @@ export default function NestedList() {
         <Scrollbars style={{ height: '20vh'}}>
           {
             (Reciters) ? Reciters.recitaitons.map((reciter, index) =>
-              <DropdownItem button className={classes.nested} onClick={() => handleChange(reciter.id)} key={index}>
+              <DropdownItem  className={classes.nested} onClick={() => handleChange(reciter.id)} key={index}>
                 {reciter.reciter_name_eng}
               </DropdownItem>) :
               <div className="wraper_laader">
