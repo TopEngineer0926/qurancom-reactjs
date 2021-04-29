@@ -1,363 +1,164 @@
 ﻿import React, { useContext } from "react";
 import { FormattedMessage } from "react-intl";
 import {
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
 } from "reactstrap";
 import "./LangDropdown.css";
-import { LangContext,CheckedContext } from "./Store";
-import {langToTrans} from './maps/languageToTranslatorMap';
+import { LangContext, CheckedContext } from "./Store";
+import { langToTrans } from './maps/languageToTranslatorMap';
+import { Scrollbars } from 'react-custom-scrollbars';
 
-const Style = {
-  textDecoration: "none",
-  fontSize: "14px",
-  color: "#747474"
-};
-
+const dropdownStyle = {
+    textDecoration: "none",
+    fontSize: 17,
+    fontFamily: 'Montserrat',
+    fontWeight: 'bold',
+    color: "white",
+    backgroundColor: '#37aee3',
+    borderRadius: 5,
+    '&:hover':{
+        backgroundColor: 'rgba(0,0,0,0.08)'
+      }
+}
 function Drop() {
-  const [lang, setLang] = useContext(LangContext);
-  const [check,setCheck] = useContext(CheckedContext);
-
-  return (
-    <UncontrolledDropdown>
-      <DropdownToggle nav caret style={Style}>
-        <FormattedMessage id="Langs" />
-      </DropdownToggle>
-
-      <DropdownMenu right>
-        <DropdownItem
-          className={
-            lang
-              ? lang === "de"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("de");
-            setCheck({[langToTrans.de]:true});
-          }}
-        >
-          Deutsch
-        </DropdownItem>
-
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "tr"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("tr");
-            setCheck({[langToTrans.tr]:true});
-          }}
-        >
-          Türkçe
-        </DropdownItem>
-
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "ar"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("ar");
-            setCheck({[langToTrans.ar]:true});
-          }}
-        >
-          عربى
-        </DropdownItem>
-
-
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "en"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("en");
-            setCheck({[langToTrans.en]:true});
-          }}
-        >
-          English
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "bs"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("bs");
-            setCheck({[langToTrans.bs]:true});
-          }}
-        >
-          Bosanski
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "sq"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("sq");
-            setCheck({[langToTrans.sq]:true});
-          }}
-        >
-          Gjuhë Shqipe
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "ur"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("ur");
-            setCheck({[langToTrans.ur]:true});
-          }}
-        >
-          اردو{" "}
-        </DropdownItem>
-
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "fa"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("fa");
-            setCheck({[langToTrans.fa]:true});
-          }}
-        >
-          فارسی{" "}
-        </DropdownItem>
-
-
-        <DropdownItem
-         className={
-          lang
-            ? lang === "ru"
-              ? "stripe Selected"
-              : "stripe"
-            : "stripe ...."
-        }
-          onClick={() => {
-            setLang("ru");
-            setCheck({[langToTrans.ru]:true});
-          }}
-        >
-          Русский
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "bg"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("bg");
-            setCheck({[langToTrans.bg]:true});
-          }}
-        >
-          български
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "fr"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("fr");
-            setCheck({[langToTrans.fr]:true});
-          }}
-        >
-          Français
-        </DropdownItem>
-
-
-
-        <DropdownItem
-         className={
-          lang
-            ? lang === "nl"
-              ? "stripe Selected"
-              : "stripe"
-            : "stripe ...."
-        }
-          onClick={() => {
-            setLang("nl");
-            setCheck({[langToTrans.nl]:true});
-          }}
-        >
-          Nederlands
-        </DropdownItem>
-
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "it"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("it");
-            setCheck({[langToTrans.it]:true});
-          }}
-        >
-          Italiano
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "es"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("es");
-            setCheck({[langToTrans.es]:true});
-          }}
-        >
-          Español
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "pt"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("pt");
-            setCheck({[langToTrans.pt]:true});
-          }}
-        >
-          Português
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "da"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("da");
-            setCheck({[langToTrans.da]:true});
-          }}
-        >
-          Dansk
-        </DropdownItem>
-
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "sv"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("sv");
-            setCheck({[langToTrans.sv]:true});
-          }}
-        >
-          Svenska
-        </DropdownItem>
-
-        <DropdownItem
-         className={
-          lang
-            ? lang === "no"
-              ? "stripe Selected"
-              : "stripe"
-            : "stripe ...."
-        }
-          onClick={() => {
-            setLang("no");
-            setCheck({[langToTrans.no]:true});
-          }}
-        >
-          Norsk
-        </DropdownItem>
-
-    <DropdownItem
-         className={
-          lang
-            ? lang === "fi"
-              ? "stripe Selected"
-              : "stripe"
-            : "stripe ...."
-        }
-          onClick={() => {
-            setLang("fi");
-            setCheck({[langToTrans.fi]:true});
-          }}
-        >
-          Suomi
-        </DropdownItem>
-
-        <DropdownItem
-          className={
-            lang
-              ? lang === "id"
-                ? "stripe Selected"
-                : "stripe"
-              : "stripe ...."
-          }
-          onClick={() => {
-            setLang("id");
-            setCheck({[langToTrans.id]:true});
-          }}
-        >
-          Bahasa Indonesia
-        </DropdownItem>
-      </DropdownMenu>
-    </UncontrolledDropdown>
-  );
+    const [lang, setLang] = useContext(LangContext);
+    const [check, setCheck] = useContext(CheckedContext);
+    const langData = [
+        {
+            langClass: 'de',
+            langLabel: 'Deutsch',
+            langToTrnas: langToTrans.de
+        },
+        {
+            langClass: 'tr',
+            langLabel: 'Türkçe',
+            langToTrnas: langToTrans.tr
+        },
+        {
+            langClass: 'ar',
+            langLabel: 'عربى',
+            langToTrnas: langToTrans.ar
+        },
+        {
+            langClass: 'en',
+            langLabel: 'English',
+            langToTrnas: langToTrans.en
+        },
+        {
+            langClass: 'bs',
+            langLabel: 'Bosanski',
+            langToTrnas: langToTrans.bs
+        },
+        {
+            langClass: 'sq',
+            langLabel: 'Gjuhë Shqipe',
+            langToTrnas: langToTrans.sq
+        },
+        {
+            langClass: 'ur',
+            langLabel: `اردو${" "}`,
+            langToTrnas: langToTrans.ur
+        },
+        {
+            langClass: 'fa',
+            langLabel: `فارسی${" "}`,
+            langToTrnas: langToTrans.fa
+        },
+        {
+            langClass: 'ru',
+            langLabel: 'Русский',
+            langToTrnas: langToTrans.ru
+        },
+        {
+            langClass: 'bg',
+            langLabel: 'български',
+            langToTrnas: langToTrans.bg
+        },
+        {
+            langClass: 'fr',
+            langLabel: 'Français',
+            langToTrnas: langToTrans.fr
+        },
+        {
+            langClass: 'nl',
+            langLabel: 'Nederlands',
+            langToTrnas: langToTrans.nl
+        },
+        {
+            langClass: 'it',
+            langLabel: 'Italiano',
+            langToTrnas: langToTrans.it
+        },
+        {
+            langClass: 'es',
+            langLabel: 'Español',
+            langToTrnas: langToTrans.es
+        },
+        {
+            langClass: 'pt',
+            langLabel: 'Português',
+            langToTrnas: langToTrans.pt
+        },
+        {
+            langClass: 'da',
+            langLabel: 'Dansk',
+            langToTrnas: langToTrans.da
+        },
+        {
+            langClass: 'sv',
+            langLabel: 'Svenska',
+            langToTrnas: langToTrans.sv
+        },
+        {
+            langClass: 'no',
+            langLabel: 'Norsk',
+            langToTrnas: langToTrans.no
+        },
+        {
+            langClass: 'fi',
+            langLabel: 'Suomi',
+            langToTrnas: langToTrans.fi
+        },
+        {
+            langClass: 'id',
+            langLabel: 'Bahasa Indonesia',
+            langToTrnas: langToTrans.id
+        },
+    ];
+    return (
+        <UncontrolledDropdown>
+            <DropdownToggle nav caret style={dropdownStyle}>
+                <FormattedMessage id="Langs" />
+            </DropdownToggle>
+            <DropdownMenu right style={dropdownStyle}>
+                <Scrollbars style={{ height: '20vh' }}>
+                    {
+                        langData.map((language) => {
+                            return (
+                                <DropdownItem
+                                    className={
+                                        lang
+                                            ? lang === `${language.langClass}`
+                                                ? "stripe Selected"
+                                                : "stripe"
+                                            : "stripe ...."
+                                    }
+                                    onClick={() => {
+                                        setLang(language.langClass);
+                                        setCheck({ [language.langToTrans]: true });
+                                    }}
+                                >
+                                    {language.langLabel}
+                                </DropdownItem>
+                            )
+                        })
+                    }
+                </Scrollbars>
+            </DropdownMenu>
+        </UncontrolledDropdown>
+    );
 }
 export default Drop;
