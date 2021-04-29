@@ -14,7 +14,7 @@ function Homepage() {
       </Helmet>
       <Header />
       <MainBody />
-      <Surahss />
+      {/* <Surahss /> */}
       <Footer />
     </>
   );
