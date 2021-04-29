@@ -2,7 +2,7 @@ import React from "react";
 import MainBody from "./MainSearchBar";
 import Surahss from "./HomeSurahs";
 import Footer from "./Footer";
-import Header from "./HomeHeader";
+import Header from "./DetailHeader";
 import { Helmet } from 'react-helmet';
 
 function Homepage() {

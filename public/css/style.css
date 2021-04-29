@@ -146,7 +146,7 @@ header .navbar ul li .dropdown-menu .dropdown-item:hover {
 }
 .Selected{
   color: #fff;
-  background-color: #56c0d0;
+  background-color: rgba(0,0,0,0.08);
 }
 
 header .navbar ul form input[type="text"] {
@@ -1191,7 +1191,7 @@ p.MuiTypography-root.MuiTypography-body1 {
   }
   span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
     font-size: 15px;
-    color: #747474;
+    color: white;
 }
 .MuiCheckbox-colorSecondary.Mui-checked {
   color: #56c0d0 !important;
@@ -1305,7 +1305,7 @@ button.Selected.stripe.dropdown-item {
   color: #56c0d0 !important;
 }
 .MuiCheckbox-root {
-  color: #56c0d0 !important;
+  color: white !important;
 }
 .MuiRadio-colorSecondary:hover {
   background-color: #56c0d02e !important;
@@ -1484,7 +1484,6 @@ ul.pagination li.active a{
   color: #56c0d0;
 }
 ul.searchsuggestion_ul {
-  position: absolute;
   list-style-type: none;
   padding: 0px;
   background: #f1f1f1;
