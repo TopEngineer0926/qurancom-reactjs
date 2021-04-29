@@ -739,6 +739,10 @@ main.detailmain .ayatboxouter .ayatbox {
   position: relative;
 }
 
+main.detailmain .ayatboxouter .ayatbox b {
+  color: black !important;
+}
+
 main.detailmain .ayatboxouter .ayatbox b:hover {
   color: #56c0d0;
 }
