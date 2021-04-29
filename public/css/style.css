@@ -1304,6 +1304,9 @@ button.Selected.stripe.dropdown-item {
 .MuiCheckbox-root {
   color: white !important;
 }
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: #c2719f !important;
+}
 .MuiRadio-colorSecondary:hover {
   background-color: #56c0d02e !important;
 }
