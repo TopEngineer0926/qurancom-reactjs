@@ -23,28 +23,64 @@ import { PlayPauseButton } from '@cassette/player';
 import { Modal } from 'react-bootstrap';
 import Sound from 'react-sound';
 import Iframe from 'react-iframe'
-import { FacebookShareButton, TwitterShareButton } from 'react-share';
+import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share';
 import { Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import ReactHtmlParser from 'react-html-parser';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import MenuList from '@material-ui/core/MenuList';
+import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Paper from '@material-ui/core/Paper';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Typography from '@material-ui/core/Typography';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
-import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
+import TabletAndroidIcon from '@material-ui/icons/TabletAndroid';
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
+import PauseCircleOutlineIcon from '@material-ui/icons/PauseCircleOutline';
+import FileCopyIcon from '@material-ui/icons/FileCopy';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    // maxWidth: 360,
-    backgroundColor: '#fff !important',
+const StyledMenu = withStyles({
+  paper: {
+    border: '1px solid #d3d4d5',
   },
-}));
+})((props) => (
+  <Menu
+    elevation={0}
+    getContentAnchorEl={null}
+    anchorOrigin={{
+      vertical: 'bottom',
+      horizontal: 'center',
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'center',
+    }}
+    {...props}
+  />
+));
+
+const StyledMenuItem = withStyles((theme) => ({
+  root: {
+    '&:focus': {
+      backgroundColor: '#167684',
+      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
+        color: theme.palette.common.white,
+      },
+    },
+    color: '#fff',
+  },
+}))(MenuItem);
+
+const useStyles = makeStyles({
+  root: {
+    width: 180,
+    backgroundColor: '#2691A1',
+    borderRadius: '6px'
+  },
+});
 
 function Body(props) {
   const classes = useStyles();
@@ -85,6 +121,8 @@ function Body(props) {
   const [LittleID, setModalID] = useState();
   const [Copied, setCopiedState] = useState("");
   const [CopiedButton, setCopiedButton] = useState(false);
+  const [CopiedText, setCopiedTextState] = useState("");
+  const [CopiedTextButton, setCopiedTextButton] = useState(false);
 
   //For DIsabling buttons
   const [Disabled, setDisabled] = useContext(DisabledContext);
@@ -149,15 +187,12 @@ function Body(props) {
           <span>
             {(paused) && (
               <a className="cursor-pointer" onClick={() => onTogglePause()}>
-                <i className="fas fa-play"></i> <span><FormattedMessage id="Play" />
-                </span>
+                <span><FormattedMessage id="Play" /></span>
               </a>
             )}
             {(!paused) && (
-              <a className="cursor-pointer" onClick={() => onTogglePause()}>
-                <i className="fas fa-pause"></i>
-                <span> <FormattedMessage id="Pause" />
-                </span>
+              <a className="cursor-pointer" onClick={() => onTogglePause()}>                
+                <span><FormattedMessage id="Pause" /></span>
               </a>
             )}
           </span>
@@ -165,7 +200,7 @@ function Body(props) {
 
         {(activeTrackIndex != props.trackIndex) && (
           <a className="cursor-pointer" onClick={() => playVerse(props.trackIndex)}>
-            <i className="fas fa-play"></i> <FormattedMessage id="Play" />
+            <FormattedMessage id="Play" />
           </a>
         )}
       </React.Fragment>
@@ -242,11 +277,18 @@ function Body(props) {
     setTimeout(() => { setCopiedButton(false) }, 2000);
   }
 
+  function copiedTextButtonAnim() {
+    setCopiedTextButton(true);
+    setTimeout(() => { setCopiedTextButton(false) }, 2000);
+  }
+
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
   const handleListItemClick = (event, index) => {
     setSelectedIndex(index);
   };
+
+  console.log(props.data, '++++');
 
   return (
     <div>
@@ -266,30 +308,47 @@ function Body(props) {
                 <div key={`Verse_${key}`}
                   className={currentVerseIndex == key && VersePlay ? 'row playing-verse-container' : 'row'}>
                   <div className="col-2 col-sm-2">
-                    <Paper className={classes.root}>
-                      <MenuList>
-                        <MenuItem>
-                          <ListItemIcon>
-                            <SendIcon fontSize="small" />
-                          </ListItemIcon>
-                          <Typography variant="inherit">A short message</Typography>
-                        </MenuItem>
-                        <MenuItem>
-                          <ListItemIcon>
-                            <PriorityHighIcon fontSize="small" />
-                          </ListItemIcon>
-                          <Typography variant="inherit">A very long text that overflows</Typography>
-                        </MenuItem>
-                        <MenuItem>
-                          <ListItemIcon>
-                            <DraftsIcon fontSize="small" />
-                          </ListItemIcon>
-                          <Typography variant="inherit" noWrap>
-                            A very long text that overflows
-                          </Typography>
-                        </MenuItem>
-                      </MenuList>
-                    </Paper>
+                    <MenuList className={classes.root}>
+                      <StyledMenuItem>
+                        <ListItemIcon><TabletAndroidIcon fontSize="small" /></ListItemIcon>
+                        <Typography variant="inherit">{mem.verse_key}</Typography>
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon><PlayCircleOutlineIcon fontSize="small" /></ListItemIcon>
+                        {/* <ListItemIcon><PauseCircleOutlineIcon fontSize="small" /></ListItemIcon> */}
+                        <PlayerContextUser trackIndex={key} />
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon><FileCopyIcon fontSize="small" /></ListItemIcon>
+                        <CopyToClipboard text={`${mem.verse_key} - ${mem.text_madani}`}
+                          onCopy={() => { copiedButtonAnim(); setCopiedState(mem.id); }}>
+                          <span className='cursor-pointer'>
+                            <a className="cursor-pointer" onClick={() => { }}>
+                              {(Copied === mem.id && CopiedButton)? <span><FormattedMessage id="Copied" /></span> : <span><FormattedMessage id="Copy Quran" /></span>}
+                            </a>
+                          </span>
+                        </CopyToClipboard>
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon><FileCopyIcon fontSize="small" /></ListItemIcon>
+                        <CopyToClipboard text={`${mem.verse_key} - ${mem.translations[0].text}`}
+                          onCopy={() => { copiedTextButtonAnim(); setCopiedTextState(mem.id); }}>
+                          <span className='cursor-pointer'>
+                            <a className="cursor-pointer" onClick={() => { }}>
+                              {(CopiedText === mem.id && CopiedTextButton)? <span><FormattedMessage id="Copied" /></span> : <span><FormattedMessage id="Copy Text" /></span>}
+                            </a>
+                          </span>
+                        </CopyToClipboard>
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon><FacebookIcon fontSize="small" /></ListItemIcon>
+                        <FacebookShareButton url="http://18.189.100.203">Facebook</FacebookShareButton>
+                      </StyledMenuItem>
+                      <StyledMenuItem>
+                        <ListItemIcon><WhatsAppIcon fontSize="small" /></ListItemIcon>
+                        <WhatsappShareButton url="http://18.189.100.203">Whatsapp</WhatsappShareButton>
+                      </StyledMenuItem>
+                    </MenuList>
                     {/* <div className="ayatrefbox">
                       <div className="ref">
                         <div
