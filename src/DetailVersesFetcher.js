@@ -71,6 +71,7 @@ const StyledMenuItem = withStyles((theme) => ({
       },
     },
     color: '#fff',
+    minHeight: 'auto'
   },
 }))(MenuItem);
 
@@ -293,7 +294,7 @@ function Body(props) {
   return (
     <div>
       <PlayerContextProvider playlist={props.audio} onTimeUpdate={(e) => updateTimer(e)} onActiveTrackUpdate={(e) => activeTrackUpdate(e)}>
-        <main className="detailmain mt-5" style={{ backgroundColor: '#e5e5e5'}}>
+        <main className="detailmain">
           <InfiniteScroll dataLength={Array.isArray(props.data) ? props.data.length : 0} next={changepage} hasMore={(ReciterLoading) ? false : endFlag}
             loader={
               <div className="wraper_laader">
