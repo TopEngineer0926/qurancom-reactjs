@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: 10,
         fontSize: 16,
         fontFamily: 'Montserrat',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        border: 'none'
     },
     footerLeft: {
         width: 461
