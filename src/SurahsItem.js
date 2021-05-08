@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     borderTopLeftRadius: '6px',
     borderBottomLeftRadius: '6px',
-    border: '1px solid #bbb',
+    border: '1px solid rgba(0, 0, 0, 0.06)',
+    borderRight: 'none',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
@@ -25,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     borderTopRightRadius: '6px',
     borderBottomRightRadius: '6px',
-    border: '1px solid #bbb',
+    border: '1px solid rgba(0, 0, 0, 0.06)',
+    borderLeft: 'none',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
@@ -98,7 +100,7 @@ function SurahsItem() {
                   <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12} style={{ borderBottom: '1px solid #eee' }}>
                       <Box display="flex" justifyContent="center" p={1}>
-                        <Typography style={{ color: 'black', fontWeight: 'bold', fontSize: 20 }}>
+                        <Typography style={{ color: 'black', fontWeight: 'bold', fontSize: 20, textTransform: 'uppercase', fontFamily: 'Montserrat' }}>
                           {Array.isArray(Content) ? Content[indix]["name_simple"] : "Loading"}
                         </Typography>
                       </Box>
@@ -116,7 +118,7 @@ function SurahsItem() {
                   <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" alignItems="center">
-                        <Typography style={{ color: 'white', fontSize: '12px' }}>
+                        <Typography style={{ color: 'white', fontSize: '12px', fontFamily: 'Montserrat' }}>
                           {Array.isArray(Content) ? "Sura " + Content[indix]["id"] : "Loading"}
                         </Typography>
                       </Box>
@@ -125,7 +127,7 @@ function SurahsItem() {
                   <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" alignItems="center">
-                        <Typography style={{ color: 'white', fontSize: '13px' }}>
+                        <Typography style={{ color: 'white', fontSize: '13px', fontFamily: 'Montserrat' }}>
                           {Array.isArray(Content) ? Content[indix]["verses_count"] : ""} Verses
                         </Typography>
                       </Box>
