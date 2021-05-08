@@ -54,7 +54,7 @@ const Store = ({ children }) => {
 
 
     // const [URL, setURL] = useState("http://18.189.100.203:8080/quran-app-services/api/");
-    const [URL, setURL] = useState("https://services.islamcheck.com/api/");
+    const [URL, setURL] = useState("https://services.der-koran.com/api/");
     //  const [AfterHash,setHash]=useState(window.location.href.substring(window.location.href.indexOf("/#/") + 3, window.location.href.length))
     const [lang, setlang] = useState("de");
     const [ShowInfo, setShow] = useState(false);
