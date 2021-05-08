@@ -26,14 +26,14 @@ function Homepage() {
     }
 
     const fetchData = async () => {
-
+      if (SurahNo) {
       fetch(`${URL}chapters/${SurahNo}/verses?language=${lang}`)
         .then(res => res.json())
         .then(dat => setVerses(dat.verses));
       fetch(`${URL}chapters/${SurahNo}/info`)
         .then(res => res.json())
         .then(dat => { setInfo(dat.chapter_info); });
-
+      }
     }
     fetchData();
     fetchChapters();

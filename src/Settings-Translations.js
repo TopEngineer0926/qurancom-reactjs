@@ -43,15 +43,16 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
-  nested: {
-    paddingLeft: theme.spacing(4),
-  },
   menuItemStyle: {
     height: 33,
     minminWidth: 105,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
+},
+listItemStyle: {
+  width: 220,
+  overflow: 'hidden'
 }
 }));
 
@@ -134,11 +135,11 @@ export default function NestedList() {
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
         <FormattedMessage id="Translations" />
       </DropdownToggle>
-      <DropdownMenu right style={dropdownStyle}>
+      <DropdownMenu right style={dropdownStyle} className={classes.listItemStyle}>
         <Scrollbars style={{ height: '20vh' }}>
           {(Translators) ? Translators.translations.map((translator, index) =>
 
-            <ListItem key={`Translator_${translator.id}`} button className={classes.nested} >
+            <ListItem key={`Translator_${translator.id}`} button>
               <FormControlLabel
                 control={
                   <Checkbox
