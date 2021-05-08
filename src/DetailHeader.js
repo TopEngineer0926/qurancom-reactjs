@@ -108,7 +108,7 @@ function Header(props) {
             component:  <TranslationSize />
         },
         {
-            label: themeState.dark ? 'Day mode' : 'Night mode',
+            label: themeState.dark ? 'Night mode' : 'Day mode',
             component: <Switch
                             checked={state.checkedA}
                             onChange={handleChange}
