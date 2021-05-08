@@ -28,11 +28,18 @@ const useStyles = makeStyles(theme => ({
       color: 'white'
     }
   },
+  menuItemStyle: {
+    height: 33,
+    minWidth: 105,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+}
 }));
 
 const dropdownStyle = {
   textDecoration: "none",
-  fontSize: 17,
+  fontSize: 12,
   fontFamily: 'Montserrat',
   fontWeight: 'bold',
   color: "white",
@@ -83,7 +90,7 @@ export default function NestedList() {
 
   return (
     <UncontrolledDropdown>
-      <DropdownToggle nav caret style={dropdownStyle}>
+      <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
         <FormattedMessage id="Reciters" />
       </DropdownToggle>
 

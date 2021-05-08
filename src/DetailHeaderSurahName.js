@@ -11,12 +11,21 @@ import { Link } from "react-router-dom";
 import { CurrentPageContext, LastPageContext, LoadingContext, OffsetContext, ChapterContext } from "./Store";
 import { FormattedMessage } from "react-intl";
 import { Scrollbars } from 'react-custom-scrollbars';
+import { makeStyles } from "@material-ui/core";
 
-
+const useStyles = makeStyles((theme)=>({
+    menuItemStyle: {
+        height: 33,
+        minWidth: 105,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+}));
 
 const dropdownStyle = {
   textDecoration: "none",
-  fontSize: 17,
+  fontSize: 12,
   fontFamily: 'Montserrat',
   fontWeight: 'bold',
   color: "white",
@@ -31,7 +40,7 @@ function Fatiha(props) {
   const [isLoading, setLoading] = useContext(LoadingContext);
   const [off, setOff] = useContext(OffsetContext);
   const [Content, setData] = useContext(ChapterContext);
-
+  const classes = useStyles();
 
 
   const [Active, setActive] = useState();
@@ -39,7 +48,7 @@ function Fatiha(props) {
 
   return (
     <UncontrolledDropdown>
-      <DropdownToggle nav caret style={dropdownStyle}>
+      <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
         {Array.isArray(props.ChapData) ? props.ChapData[id]["name_simple"] : <FormattedMessage id="Surahs" />}
 
       </DropdownToggle>

@@ -3,8 +3,8 @@ import "./LeftSidemenu.css";
 import Languages from "./LangDropdown";
 import SurahName from "./DetailHeaderSurahName";
 import Verse from "./DetailHeaderVersenNum";
-import ArabicSize from './TranslationSize';
-import TranslationSize from './ArabicSize';
+import TranslationSize from './TranslationSize';
+import ArabicSize from './ArabicSize';
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
@@ -36,11 +36,8 @@ const useStyles = makeStyles((theme) => ({
         paddingRight: 78,
         display: 'flex'
     },
-    headerRight: {
-        width: 329
-    },
     headerMain: {
-        width: 'calc(100% - 329px - 461px)',
+        width: 'calc(100% - 461px)',
         display: 'flex'
     },
     labelStyle: {
@@ -83,7 +80,7 @@ function Header(props) {
             component: <Languages />
         },
         {
-            label: 'Sura',
+            label: <FormattedMessage id="Surahs" />,
             component: <SurahName ChapData={props.ChapData} />
         },
         {
@@ -138,11 +135,11 @@ function Header(props) {
                 </Grid>
             </Grid>
             <Grid item className={classes.headerMain}>
-                <Grid container alignItems="center" justify="space-around">
+                <Grid container alignItems="center">
                     {
                         data.map((d, i)=>{
                             return (
-                                <Grid item key={i}>
+                                <Grid item key={i} style={{marginRight: 27}}>
                                     <Grid container justify="center" direction="column" alignItems="center">
                                         <Grid item>
                                     <label className={classes.labelStyle} style={{visibility: i==0? 'hidden' : 'visible'}}>{d.label}</label>
@@ -156,9 +153,6 @@ function Header(props) {
                         })
                     }
                 </Grid>
-            </Grid>
-            <Grid item className={classes.headerRight}>
-
             </Grid>
         </Grid>
     );

@@ -11,10 +11,20 @@ import { FormattedMessage } from "react-intl";
 import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { goToTop } from 'react-scrollable-anchor'
 import { Scrollbars } from 'react-custom-scrollbars';
+import { makeStyles } from "@material-ui/core";
 
+const useStyles = makeStyles((theme)=>({
+    menuItemStyle: {
+        height: 33,
+        minWidth: 105,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+}));
 const dropdownStyle = {
   textDecoration: "none",
-  fontSize: 17,
+  fontSize: 12,
   fontFamily: 'Montserrat',
   fontWeight: 'bold',
   color: "white",
@@ -38,7 +48,7 @@ function Verse(props) {
   const [Currentpage, setCurrentPage] = useContext(CurrentPageContext);
   const [isLoading, setLoading] = useContext(LoadingContext);
   const [Verses, setVerses] = useContext(VERSESCONTEXT);
-
+  const classes = useStyles();
   const [found, setfound] = useState(0);
 
   var VerseNumbers = [];
@@ -50,10 +60,10 @@ function Verse(props) {
 
   return (
     <UncontrolledDropdown>
-      <DropdownToggle nav caret style={dropdownStyle}>
+      <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
         <FormattedMessage id="Verses" />
       </DropdownToggle>
-      <DropdownMenu style={dropdownStyle} >
+      <DropdownMenu style={dropdownStyle}>
         <Scrollbars style={{ height: '20vh' }}>
           {VerseNumbers.map((num, index) =>
             <DropdownItem className="stripe" onClick={() => {

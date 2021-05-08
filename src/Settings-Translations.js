@@ -26,7 +26,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 const dropdownStyle = {
   textDecoration: "none",
-  fontSize: 17,
+  fontSize: 12,
   fontFamily: 'Montserrat',
   fontWeight: 'bold',
   color: "white",
@@ -46,6 +46,13 @@ const useStyles = makeStyles(theme => ({
   nested: {
     paddingLeft: theme.spacing(4),
   },
+  menuItemStyle: {
+    height: 33,
+    minminWidth: 105,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+}
 }));
 
 export default function NestedList() {
@@ -124,7 +131,7 @@ export default function NestedList() {
 
   return (
     <UncontrolledDropdown>
-      <DropdownToggle nav caret style={dropdownStyle}>
+      <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
         <FormattedMessage id="Translations" />
       </DropdownToggle>
       <DropdownMenu right style={dropdownStyle}>

@@ -10,6 +10,17 @@ import "./LangDropdown.css";
 import { LangContext, CheckedContext } from "./Store";
 import { langToTrans } from './maps/languageToTranslatorMap';
 import { Scrollbars } from 'react-custom-scrollbars';
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme)=>({
+    menuItemStyle: {
+        height: 33,
+        width: 165,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+}));
 
 const dropdownStyle = {
     textDecoration: "none",
@@ -21,11 +32,13 @@ const dropdownStyle = {
     borderRadius: 5,
     '&:hover':{
         backgroundColor: 'rgba(0,0,0,0.08)'
-      }
+    },
+    textTransform: 'uppercase'
 }
 function Drop() {
     const [lang, setLang] = useContext(LangContext);
     const [check, setCheck] = useContext(CheckedContext);
+    const classes = useStyles();
     const langData = [
         {
             langClass: 'de',
@@ -130,8 +143,8 @@ function Drop() {
     ];
     return (
         <UncontrolledDropdown>
-            <DropdownToggle nav caret style={dropdownStyle}>
-                <FormattedMessage id="Langs" />
+            <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
+                <FormattedMessage id="Langs"/>
             </DropdownToggle>
             <DropdownMenu right style={dropdownStyle}>
                 <Scrollbars style={{ height: '20vh' }}>
