@@ -8,7 +8,7 @@ import {
 import "./LangDropdown.css";
 import { SurahContext } from "./Store";
 import { Link } from "react-router-dom";
-import { CurrentPageContext, LastPageContext, LoadingContext, OffsetContext, ChapterContext } from "./Store";
+import { CurrentPageContext, LastPageContext, LoadingContext, OffsetContext, DropDownChapterContext } from "./Store";
 import { FormattedMessage } from "react-intl";
 import { Scrollbars } from 'react-custom-scrollbars';
 import { makeStyles } from "@material-ui/core";
@@ -39,7 +39,7 @@ function Fatiha(props) {
   const [Lastpage, setLast] = useContext(LastPageContext);
   const [isLoading, setLoading] = useContext(LoadingContext);
   const [off, setOff] = useContext(OffsetContext);
-  const [Content, setData] = useContext(ChapterContext);
+  const [Content, setData] = useContext(DropDownChapterContext);
   const classes = useStyles();
 
 
