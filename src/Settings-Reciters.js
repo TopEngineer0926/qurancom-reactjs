@@ -34,6 +34,10 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
+},
+listItemStyle: {
+  width: 240,
+  overflow: 'hidden'
 }
 }));
 
@@ -94,7 +98,7 @@ export default function NestedList() {
         <FormattedMessage id="Reciters" />
       </DropdownToggle>
 
-      <DropdownMenu right style={dropdownStyle}>
+      <DropdownMenu right style={dropdownStyle}  className={classes.listItemStyle}>
         <Scrollbars style={{ height: '20vh'}}>
           {
             (Reciters) ? Reciters.recitaitons.map((reciter, index) =>
