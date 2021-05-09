@@ -62,7 +62,7 @@ function Header(props) {
     const [ArbicFontSize, setArbicFontSize] = useContext(ArbicFontSizeContext);
     const [TransFontSize, setTransFont] = useContext(TransFontChangeContext);
     const [state, setState] = React.useState({
-        checkedA: themeState.dark ? false : true,
+        checkedA: themeState.dark ? true : false,
         checkedB: ShowRead ? true : false,
     });
 
@@ -105,7 +105,7 @@ function Header(props) {
             component:  <TranslationSize />
         },
         {
-            label: themeState.dark ? 'Night mode' : 'Day mode',
+            label: 'Night mode',
             component: <Switch
                             checked={state.checkedA}
                             onChange={handleChange}
