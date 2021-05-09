@@ -71,14 +71,17 @@ const StyledMenuItem = withStyles((theme) => ({
       },
     },
     color: '#fff',
-    minHeight: 'auto'
+    minHeight: 'auto',
+    paddingBottom: 0,
+    paddingTop: 0,
+    paddingLeft: 10
   },
 }))(MenuItem);
 
 const useStyles = makeStyles({
   root: {
-    width: 180,
-    backgroundColor: '#2691A1',
+    width: 130,
+    backgroundColor: '#167684',
     borderRadius: '6px'
   },
 });
@@ -187,12 +190,12 @@ function Body(props) {
         {(activeTrackIndex == props.trackIndex) && (
           <span>
             {(paused) && (
-              <a className="cursor-pointer" onClick={() => onTogglePause()}>
+              <a className="cursor-pointer" onClick={() => onTogglePause()} style={{fontSize: 13}}>
                 <span><FormattedMessage id="Play" /></span>
               </a>
             )}
             {(!paused) && (
-              <a className="cursor-pointer" onClick={() => onTogglePause()}>                
+              <a className="cursor-pointer" onClick={() => onTogglePause()} style={{fontSize: 13}}>                
                 <span><FormattedMessage id="Pause" /></span>
               </a>
             )}
@@ -200,7 +203,7 @@ function Body(props) {
         )}
 
         {(activeTrackIndex != props.trackIndex) && (
-          <a className="cursor-pointer" onClick={() => playVerse(props.trackIndex)}>
+          <a className="cursor-pointer" onClick={() => playVerse(props.trackIndex)} style={{fontSize: 13}}>
             <FormattedMessage id="Play" />
           </a>
         )}
@@ -311,43 +314,43 @@ function Body(props) {
                   <div className="col-2 col-sm-2">
                     <MenuList className={classes.root}>
                       <StyledMenuItem>
-                        <ListItemIcon><TabletAndroidIcon fontSize="small" /></ListItemIcon>
-                        <Typography variant="inherit">{mem.verse_key}</Typography>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><TabletAndroidIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <Typography variant="inherit" style={{fontSize: 13}}>{mem.verse_key}</Typography>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon><PlayCircleOutlineIcon fontSize="small" /></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><PlayCircleOutlineIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
                         {/* <ListItemIcon><PauseCircleOutlineIcon fontSize="small" /></ListItemIcon> */}
-                        <PlayerContextUser trackIndex={key} />
+                        <PlayerContextUser trackIndex={key}/>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon><FileCopyIcon fontSize="small" /></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
                         <CopyToClipboard text={`${mem.verse_key} - ${mem.text_madani}`}
                           onCopy={() => { copiedButtonAnim(); setCopiedState(mem.id); }}>
                           <span className='cursor-pointer'>
-                            <a className="cursor-pointer" onClick={() => { }}>
+                            <a className="cursor-pointer" onClick={() => { }} style={{fontSize: 13}}>
                               {(Copied === mem.id && CopiedButton)? <span><FormattedMessage id="Copied" /></span> : <span><FormattedMessage id="Copy Quran" /></span>}
                             </a>
                           </span>
                         </CopyToClipboard>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon><FileCopyIcon fontSize="small" /></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
                         <CopyToClipboard text={`${mem.verse_key} - ${mem.translations[0].text}`}
                           onCopy={() => { copiedTextButtonAnim(); setCopiedTextState(mem.id); }}>
                           <span className='cursor-pointer'>
-                            <a className="cursor-pointer" onClick={() => { }}>
+                            <a className="cursor-pointer" onClick={() => { }} style={{fontSize: 13}}>
                               {(CopiedText === mem.id && CopiedTextButton)? <span><FormattedMessage id="Copied" /></span> : <span><FormattedMessage id="Copy Text" /></span>}
                             </a>
                           </span>
                         </CopyToClipboard>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon><FacebookIcon fontSize="small" /></ListItemIcon>
-                        <FacebookShareButton url="http://18.189.100.203">Facebook</FacebookShareButton>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FacebookIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <FacebookShareButton url="http://18.189.100.203" style={{fontSize: 13}}>Facebook</FacebookShareButton>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon><WhatsAppIcon fontSize="small" /></ListItemIcon>
-                        <WhatsappShareButton url="http://18.189.100.203">Whatsapp</WhatsappShareButton>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><WhatsAppIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <WhatsappShareButton url="http://18.189.100.203" style={{fontSize: 13}}>Whatsapp</WhatsappShareButton>
                       </StyledMenuItem>
                     </MenuList>
                     {/* <div className="ayatrefbox">
