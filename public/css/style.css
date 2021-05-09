@@ -803,7 +803,7 @@ main.detailmain .ayatboxouter .ayatbox {
   position: relative;
 }
 main.detailmain .ayatboxouter .ayatbox b {
-  color: black;
+  /* color: black; */
 }
 
 main.detailmain .ayatboxouter .ayatbox b:hover {
