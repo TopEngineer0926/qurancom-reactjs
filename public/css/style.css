@@ -798,8 +798,6 @@ main.detailmain .ayatboxouter .ayatrefbox .social .social-group a.facustomtwitte
 
 main.detailmain .ayatboxouter .ayatbox {
   min-height: 265px;
-  margin: 40px 0px;
-  padding: 45px;
   position: relative;
 }
 main.detailmain .ayatboxouter .ayatbox b {
