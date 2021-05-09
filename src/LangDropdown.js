@@ -1,4 +1,4 @@
-﻿import React, { useContext } from "react";
+﻿import React, { useContext, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import {
     UncontrolledDropdown,
@@ -10,7 +10,7 @@ import "./LangDropdown.css";
 import { LangContext, CheckedContext } from "./Store";
 import { langToTrans } from './maps/languageToTranslatorMap';
 import { Scrollbars } from 'react-custom-scrollbars';
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme)=>({
     menuItemStyle: {
@@ -38,6 +38,7 @@ const dropdownStyle = {
 function Drop() {
     const [lang, setLang] = useContext(LangContext);
     const [check, setCheck] = useContext(CheckedContext);
+    const [selLang, setSelLang] = useState('DEUTSCH');
     const classes = useStyles();
     const langData = [
         {
@@ -144,7 +145,7 @@ function Drop() {
     return (
         <UncontrolledDropdown>
             <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-                <FormattedMessage id="Langs"/>
+                <Typography variant="inherit">{selLang}</Typography>
             </DropdownToggle>
             <DropdownMenu right style={dropdownStyle}>
                 <Scrollbars style={{ height: '20vh' }}>
@@ -163,6 +164,7 @@ function Drop() {
                                     onClick={() => {
                                         setLang(language.langClass);
                                         setCheck({ [language.langToTrans]: true });
+                                        setSelLang(language.langLabel);
                                     }}
                                 >
                                     {language.langLabel}

@@ -45,12 +45,11 @@ function Fatiha(props) {
 
   const [Active, setActive] = useState();
   const id = SurahNo - 1;
-  console.log(props.ChapData)
+
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-        {Array.isArray(props.ChapData) &&props.ChapData[id]? props.ChapData[id]["name_simple"] : <FormattedMessage id="Surahs" />}
-
+        {Array.isArray(props.ChapData) &&props.ChapData[id]? props.ChapData[id]["name_simple"] : "-"}
       </DropdownToggle>
       <DropdownMenu style={dropdownStyle}>
         <Scrollbars style={{ height: '20vh' }}>

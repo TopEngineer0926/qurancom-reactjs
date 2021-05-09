@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import { FormattedMessage } from "react-intl";
+import { SurahContext } from "./Store";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,6 +41,8 @@ const useStyles = makeStyles((theme) => ({
 
 function Header(props) {
     const classes = useStyles();
+    const [SurahNo, setSurahNo] = useContext(SurahContext);
+    setSurahNo(0);
     const data = [
         {
             label: 'lang',
