@@ -23,6 +23,7 @@ import {
   DropdownItem
 } from "reactstrap";
 import { Scrollbars } from 'react-custom-scrollbars';
+import SvgIcon from '@material-ui/icons/ExpandLess';
 
 const dropdownStyle = {
   textDecoration: "none",
@@ -139,17 +140,19 @@ export default function NestedList() {
         <Scrollbars style={{ height: '20vh' }}>
           {(Translators) ? Translators.translations.map((translator, index) =>
 
-            <ListItem key={`Translator_${translator.id}`} button>
+            <ListItem key={`Translator_${translator.id}`} button style={{paddingBottom: 'unset'}}>
               <FormControlLabel
+              style={{marginBottom: 'unset'}}
                 control={
                   <Checkbox
                     checked={check[translator.id]}
                     onChange={handleChange(translator.id)}
                     value={`checked${translator.id}`}
                     disabled={miniLoader}
+                    style={{width: 15, height: 15, marginLeft: 5, marginRight: 10}}
                   />
                 }
-                label={translator.language_name + " - " + translator.name}
+                label={<Typography style={{fontSize: 12}}>{translator.language_name + " - " + translator.name}</Typography>}
               />
             </ListItem>
 

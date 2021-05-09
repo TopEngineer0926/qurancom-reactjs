@@ -21,7 +21,6 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
     color: 'white',
     '&:hover':{
       backgroundColor: 'rgba(0,0,0,0.08)',
