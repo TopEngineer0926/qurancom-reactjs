@@ -314,16 +314,16 @@ function Body(props) {
                   <div className="col-2 col-sm-2">
                     <MenuList className={classes.root}>
                       <StyledMenuItem>
-                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><TabletAndroidIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><TabletAndroidIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
                         <Typography variant="inherit" style={{fontSize: 13}}>{mem.verse_key}</Typography>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><PlayCircleOutlineIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><PlayCircleOutlineIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
                         {/* <ListItemIcon><PauseCircleOutlineIcon fontSize="small" /></ListItemIcon> */}
                         <PlayerContextUser trackIndex={key}/>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
                         <CopyToClipboard text={`${mem.verse_key} - ${mem.text_madani}`}
                           onCopy={() => { copiedButtonAnim(); setCopiedState(mem.id); }}>
                           <span className='cursor-pointer'>
@@ -334,7 +334,7 @@ function Body(props) {
                         </CopyToClipboard>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
                         <CopyToClipboard text={`${mem.verse_key} - ${mem.translations[0].text}`}
                           onCopy={() => { copiedTextButtonAnim(); setCopiedTextState(mem.id); }}>
                           <span className='cursor-pointer'>
@@ -345,11 +345,11 @@ function Body(props) {
                         </CopyToClipboard>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FacebookIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FacebookIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
                         <FacebookShareButton url="http://18.189.100.203" style={{fontSize: 13}}>Facebook</FacebookShareButton>
                       </StyledMenuItem>
                       <StyledMenuItem>
-                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><WhatsAppIcon fontSize="small" style={{color: 'white'}}/></ListItemIcon>
+                        <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><WhatsAppIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
                         <WhatsappShareButton url="http://18.189.100.203" style={{fontSize: 13}}>Whatsapp</WhatsappShareButton>
                       </StyledMenuItem>
                     </MenuList>
