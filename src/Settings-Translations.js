@@ -150,6 +150,7 @@ export default function NestedList() {
                     value={`checked${translator.id}`}
                     disabled={miniLoader}
                     style={{width: 15, height: 15, marginLeft: 5, marginRight: 10}}
+                    size="small"
                   />
                 }
                 label={<Typography style={{fontSize: 12}}>{translator.language_name + " - " + translator.name}</Typography>}
