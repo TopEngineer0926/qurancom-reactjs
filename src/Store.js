@@ -59,9 +59,9 @@ const Store = ({ children }) => {
     const [lang, setlang] = useState("de");
     const [ShowInfo, setShow] = useState(false);
     const [ShowReading, setReading] = useState(false);
-    const [ArbicFontSize, setArbicFontSize] = useState(56);
+    const [ArbicFontSize, setArbicFontSize] = useState(60);
     const [NoResults, setNoResults] = useState(false)
-    const [TransFontSize, setTransFontSize] = useState(16);
+    const [TransFontSize, setTransFontSize] = useState(18);
     const [Chapters, setChapters] = useState({})
     const [DropDownChapters, setDropDownChapters] = useState(null)
 

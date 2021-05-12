@@ -48,6 +48,7 @@ function Verse(props) {
   const [Currentpage, setCurrentPage] = useContext(CurrentPageContext);
   const [isLoading, setLoading] = useContext(LoadingContext);
   const [Verses, setVerses] = useContext(VERSESCONTEXT);
+  const [selVerses, setSelVerses] = useState(-1);
   const classes = useStyles();
   const [found, setfound] = useState(0);
 
@@ -61,7 +62,7 @@ function Verse(props) {
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-        <FormattedMessage id="Verses" />
+        {selVerses == -1 ? "-" : VerseNumbers[selVerses]}
       </DropdownToggle>
       <DropdownMenu style={dropdownStyle}>
         <Scrollbars style={{ height: '20vh' }}>

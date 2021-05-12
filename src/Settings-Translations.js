@@ -72,10 +72,12 @@ export default function NestedList() {
 
   const [lang, setLang] = useContext(LangContext);
 
-  const handleChange = (ID) => event => {
+  const [selTranslations, setSelTranslations] = useState(-1);
+
+  const handleChange = (ID, ind) => event => {
 
     if (ID !== null) {
-
+      setSelTranslations(ind);
       setCheck({ ...check, [ID]: event.target.checked });
       setMiniLoader(true);
 
@@ -134,7 +136,7 @@ export default function NestedList() {
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-        <FormattedMessage id="Translations" />
+        {selTranslations == -1 ? "-" : <FormattedMessage id="Translations" />}
       </DropdownToggle>
       <DropdownMenu right style={dropdownStyle} className={classes.listItemStyle}>
         <Scrollbars style={{ height: '20vh' }}>
@@ -146,7 +148,7 @@ export default function NestedList() {
                 control={
                   <Checkbox
                     checked={check[translator.id]}
-                    onChange={handleChange(translator.id)}
+                    onChange={handleChange(translator.id, index)}
                     value={`checked${translator.id}`}
                     disabled={miniLoader}
                     style={{width: 15, height: 15, marginLeft: 5, marginRight: 10}}
