@@ -1,5 +1,5 @@
 import React, { useContext, Suspense, useEffect } from "react";
-import { Route, Switch, HashRouter as Router } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { IntlProvider } from "react-intl";
 import styled from "@emotion/styled";
 import { LangContext, SurahContext } from "./Store";
@@ -71,7 +71,7 @@ function App() {
 
   const [lang, setLang] = useContext(LangContext);
   const [SurahNo, setSurah] = useContext(SurahContext);
-  var AfterHash = window.location.href.substring(window.location.href.indexOf("/#/") + 3, window.location.href.length);
+  var AfterHash = window.location.pathname.substring(window.location.pathname.indexOf("/") + 1 , window.location.pathname.length);
 
   useEffect(() => {
     if (SurahNo < 1) {

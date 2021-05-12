@@ -5,7 +5,7 @@ import {SurahContext} from "./Store"
 function App() {
     
     const[SurahNo,setSurah]=useContext(SurahContext);
-    setSurah(window.location.href.substring(window.location.href.indexOf("/#/")+3,window.location.href.length));
+    setSurah(window.location.pathname.substring(window.location.pathname.indexOf("/")+1,window.location.pathname.length));
     
     return (
 <>

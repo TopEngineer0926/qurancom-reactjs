@@ -45,7 +45,7 @@ function Main(props) {
   const [URL, setURL] = useContext(URLContext);
   const [miniLoader, setMiniLoader] = useContext(TranslationsLoaderContext);
 
-  var AfterHash = window.location.href.substring(window.location.href.indexOf("/#/") + 3, window.location.href.length);
+  var AfterHash = window.location.pathname.substring(window.location.pathname.indexOf("/") + 1 , window.location.pathname.length);
 
 
   useEffect(() => {

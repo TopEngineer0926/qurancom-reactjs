@@ -55,7 +55,7 @@ const Store = ({ children }) => {
 
     // const [URL, setURL] = useState("http://18.189.100.203:8080/quran-app-services/api/");
     const [URL, setURL] = useState("https://services.der-koran.com/api/");
-    //  const [AfterHash,setHash]=useState(window.location.href.substring(window.location.href.indexOf("/#/") + 3, window.location.href.length))
+    //  const [AfterHash,setHash]=useState(window.location.pathname.substring(window.location.pathname.indexOf("/") + 1 , window.location.pathname.length))
     const [lang, setlang] = useState("de");
     const [ShowInfo, setShow] = useState(false);
     const [ShowReading, setReading] = useState(false);
@@ -65,7 +65,7 @@ const Store = ({ children }) => {
     const [Chapters, setChapters] = useState({})
     const [DropDownChapters, setDropDownChapters] = useState(null)
 
-    //  var AfterHash=window.location.href.substring(window.location.href.indexOf("/#/") + 3, window.location.href.length);
+    //  var AfterHash=window.location.pathname.substring(window.location.pathname.indexOf("/") + 1 , window.location.pathname.length);
     const [Reciters, setRecits] = useState(1);
     const [SurahNo, setSurahNo] = useState(0);
 
