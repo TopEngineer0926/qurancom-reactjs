@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center'
 },
 listItemStyle: {
-  width: 240,
+  width: 280,
   overflow: 'hidden'
 }
 }));
@@ -54,7 +54,7 @@ export default function NestedList() {
   const [Reciters, setReciters] = useState({ recitaitons: [] });
   const [ActiveReciter, setActive] = useContext(ReciterContext)
   const [URL, setURL] = useContext(URLContext)
-
+  const [selReciter, setSelReciter] = useState(-1);
   const [isLoading, setLoading] = useContext(LoadingContext);
 
   useEffect(() => {
@@ -85,8 +85,8 @@ export default function NestedList() {
     if (Reciters.recitaitons.length > 0) { sessionStorage.setItem('RecitersInSession', JSON.stringify(Reciters)); }
   }, [Reciters])
 
-  const handleChange = (ID) => {
-
+  const handleChange = (ID, ind) => {
+    setSelReciter(ind);
     setActive(ID);
     setLoading(true);
   }
@@ -94,15 +94,15 @@ export default function NestedList() {
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-        <FormattedMessage id="Reciters" />
+      {selReciter == -1 ? "-" : (Reciters.recitaitons[selReciter].style != null) ? Reciters.recitaitons[selReciter].reciter_name_eng + '(' + Reciters.recitaitons[selReciter].style + ')' : Reciters.recitaitons[selReciter].reciter_name_eng }
       </DropdownToggle>
 
       <DropdownMenu right style={dropdownStyle}  className={classes.listItemStyle}>
         <Scrollbars style={{ height: '20vh'}}>
           {
             (Reciters) ? Reciters.recitaitons.map((reciter, index) =>
-              <DropdownItem  className={classes.nested} onClick={() => handleChange(reciter.id)} key={index}>
-                {reciter.reciter_name_eng}
+              <DropdownItem  className={classes.nested} onClick={() => handleChange(reciter.id, index)} key={index}>
+                {reciter.reciter_name_eng}{(reciter.style != null) ? `(${reciter.style})` : '' }
               </DropdownItem>) :
               <div className="wraper_laader">
                 <div className="loader loadersmall"></div>
