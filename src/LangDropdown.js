@@ -145,7 +145,7 @@ function Drop() {
     return (
         <UncontrolledDropdown>
             <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-                <Typography variant="inherit">{selLang}</Typography>
+                <FormattedMessage id="SelLang" />
             </DropdownToggle>
             <DropdownMenu right style={dropdownStyle}>
                 <Scrollbars style={{ height: '20vh' }}>

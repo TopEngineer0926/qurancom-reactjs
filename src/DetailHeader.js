@@ -84,15 +84,15 @@ function Header(props) {
             component: <SurahName ChapData={props.ChapData} />
         },
         {
-            label: 'Verse',
+            label: <FormattedMessage id="Verses" />,
             component: <Verse VerseTotal={props.VerseTotal} />
         },
         {
-            label: 'Arabic size',
+            label: <FormattedMessage id="ArabicSize" />,
             component: <ArabicSize />
         },
         {
-            label: 'Reciter',
+            label: <FormattedMessage id="Reciters" />,
             component: <Reciter />
         },
         (!ShowRead) ?
@@ -101,11 +101,11 @@ function Header(props) {
             component: (ShowRead) ? "" : <Translation />
         } : {},
         {
-            label: 'Translation size',
+            label: <FormattedMessage id="TranslationSize" />,
             component:  <TranslationSize />
         },
         {
-            label: 'Night mode',
+            label: <FormattedMessage id="Nightmode" />,
             component: <Switch
                             checked={state.checkedA}
                             onChange={handleChange}
@@ -114,7 +114,7 @@ function Header(props) {
                         />
         },
         {
-            label: 'Arabic only',
+            label: <FormattedMessage id="Arabic" />,
             component:  <Switch
                             checked={state.checkedB}
                             onChange={handleChange}

@@ -80,7 +80,7 @@ const StyledMenuItem = withStyles((theme) => ({
 
 const useStyles = makeStyles({
   root: {
-    width: 130,
+    width: 150,
     backgroundColor: '#167684',
     borderRadius: '6px'
   },
@@ -328,7 +328,7 @@ function Body(props) {
                           onCopy={() => { copiedButtonAnim(); setCopiedState(mem.id); }}>
                           <span className='cursor-pointer'>
                             <a className="cursor-pointer" onClick={() => { }} style={{fontSize: 13}}>
-                              {(Copied === mem.id && CopiedButton)? <span><FormattedMessage id="Copied" /></span> : <span><FormattedMessage id="Copy Quran" /></span>}
+                              {(Copied === mem.id && CopiedButton)? <span><FormattedMessage id="CopiedQuran" /></span> : <span><FormattedMessage id="CopyQuran" /></span>}
                             </a>
                           </span>
                         </CopyToClipboard>
@@ -339,7 +339,7 @@ function Body(props) {
                           onCopy={() => { copiedTextButtonAnim(); setCopiedTextState(mem.id); }}>
                           <span className='cursor-pointer'>
                             <a className="cursor-pointer" onClick={() => { }} style={{fontSize: 13}}>
-                              {(CopiedText === mem.id && CopiedTextButton)? <span><FormattedMessage id="Copied" /></span> : <span><FormattedMessage id="Copy Text" /></span>}
+                              {(CopiedText === mem.id && CopiedTextButton)? <span><FormattedMessage id="CopiedText" /></span> : <span><FormattedMessage id="CopyText" /></span>}
                             </a>
                           </span>
                         </CopyToClipboard>

@@ -45,7 +45,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'English',
+    CopyQuran: 'Copy Quran',
+    CopyText: 'Copy Text',
+    CopiedQuran: 'Copied Quran',
+    CopiedText: 'Copied Text',
+    ArabicSize: 'Arabic Size',
+    TranslationSize: 'Translation Size',
   },
 
   de: {
@@ -94,7 +101,14 @@
     Contact: "Contact Ons",
     Footertext:
       "Al-kitaab.com (ook bekend als de nobele koran, al koran, heilige koran, koran) is een pro bono-project.",
-    FootCopy: "2019 Al-Kitaab.com. Alle rechten voorbehouden."
+    FootCopy: "2019 Al-Kitaab.com. Alle rechten voorbehouden.",
+    SelLang: 'Deutsch',
+    CopyQuran: 'Korantext kopieren',
+    CopyText: 'Übersetzung kopieren',
+    CopiedQuran: 'Korantext Kopiert',
+    CopiedText: 'Übersetzung Kopiert',
+    ArabicSize: 'Arabisch',
+    TranslationSize: 'Übersetzung',
   },
 
   id: {
@@ -143,7 +157,14 @@
     Contact: "Hubungi kami",
     Footertext:
       "Al-kitaab.com (juga dikenal sebagai quran mulia, al quran, quran suci, koran) adalah proyek pro bono.",
-    FootCopy: "2019 Al-Kitaab.com. Seluruh hak cipta."
+    FootCopy: "2019 Al-Kitaab.com. Seluruh hak cipta.",
+    SelLang: 'Bahasa Indonesia',
+    CopyQuran: 'Salin quran',
+    CopyText: 'Salin terjemahan',
+    CopiedQuran: 'Disalin quran',
+    CopiedText: 'Disalin terjemahan',
+    ArabicSize: 'Arab',
+    TranslationSize: 'Terjemahan',
   },
 
   ar: {
@@ -192,7 +213,14 @@
     Contact: "اتصل بنا",
     Footertext:
       ".(المعروف أيضًا باسم القرآن الكريم ، القرآن ، القرآن الكريم ، القرآن) هو مشروع مجاني Al- Kitaab.com",
-    FootCopy: "2019 كتاب. كل الحقوق محفوظة."
+    FootCopy: "2019 كتاب. كل الحقوق محفوظة.",
+    SelLang: 'عربى',
+    CopyQuran: 'نسخ القرآن',
+    CopyText: 'نسخ الترجمة',
+    CopiedQuran: 'نسخ القرآن',
+    CopiedText: 'نسخ الترجمة',
+    ArabicSize: 'عربى',
+    TranslationSize: 'ترجمة',
   },
 
   nl: {
@@ -241,7 +269,14 @@
     Contact: "Bizimle iletişime geçin",
     Footertext:
       "Alkitaab.com (asil Kur'an, Al Kur'an, Kur'an-ı Kerim olarak da bilinir) yanlısı bir bono projesidir.",
-    FootCopy: "2019 Al-Kitaab.com. Tüm hakları Saklıdır."
+    FootCopy: "2019 Al-Kitaab.com. Tüm hakları Saklıdır.",
+    SelLang: 'Nederlands',
+    CopyQuran: 'Kopieer koran',
+    CopyText: 'Vertaling kopiëren',
+    CopiedQuran: 'Gekopieerde koran',
+    CopiedText: 'Vertaling Gekopieerde',
+    ArabicSize: 'Arabisch',
+    TranslationSize: 'Vertaling',
   },
 
   fr: {
@@ -290,7 +325,14 @@
     Contact: "Contactez nous",
     Footertext:
       "Al-kitaab.com (également connu sous le nom de noble coran, al coran, saint coran, coran) est un projet bénévole.",
-    FootCopy: "2019 Al-Kitaab.com. Tous les droits sont réservés."
+    FootCopy: "2019 Al-Kitaab.com. Tous les droits sont réservés.",
+    SelLang: 'Français',
+    CopyQuran: 'Copier le coran',
+    CopyText: 'Traduction copie',
+    CopiedQuran: 'Copié le coran',
+    CopiedText: 'Traduction Copié',
+    ArabicSize: 'Arabe',
+    TranslationSize: 'Traduction',
   },
 
   ur: {
@@ -339,7 +381,14 @@
     Contact: "ہم سے رابطہ کریں",
     Footertext:
       "Al-kitaab.com(بطور نوبل قرآن ، القرآن ، قرآن پاک ، کوران بھی کہا جاتا ہے) ایک بنو پروجیکٹ ہے۔",
-    FootCopy: "2019 Al-Kitaab.com. جملہ حقوق محفوظ ہیں."
+    FootCopy: "2019 Al-Kitaab.com. جملہ حقوق محفوظ ہیں.",
+    SelLang: `اردو${" "}`,
+    CopyQuran: 'قرآن پاک کاپی کریں',
+    CopyText: 'ترجمہ کاپی کریں',
+    CopiedQuran: 'قرآن پاک کاپی کریں',
+    CopiedText: 'ترجمہ کاپی کریں',
+    ArabicSize: 'عربی',
+    TranslationSize: 'ترجمہ',
   },
 
   tr: {
@@ -388,7 +437,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Türkçe',
+    CopyQuran: 'Kuran kopyala',
+    CopyText: 'Traduction copie',
+    CopiedQuran: 'Kuran Kopyalandı',
+    CopiedText: 'Traduction Kopyalandı',
+    ArabicSize: 'Arapça',
+    TranslationSize: 'Meal',
   },
 
   bg: {
@@ -437,7 +493,14 @@
     Contact: "Bizimle iletişime geçin",
     Footertext:
       "Alkitaab.com (asil Kur'an, Al Kur'an, Kur'an-ı Kerim olarak da bilinir) yanlısı bir bono projesidir.",
-    FootCopy: "2019 Al-Kitaab.com. Tüm hakları Saklıdır."
+    FootCopy: "2019 Al-Kitaab.com. Tüm hakları Saklıdır.",
+    SelLang: 'български',
+    CopyQuran: 'Копиране на Корана',
+    CopyText: 'Копиране на превода',
+    CopiedQuran: 'Копиран на Корана',
+    CopiedText: 'Копиран на превода',
+    ArabicSize: 'Арабски',
+    TranslationSize: 'Превод',
   },
 
   no: {
@@ -486,7 +549,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Norsk',
+    CopyQuran: 'Kopier koranen',
+    CopyText: 'Kopier oversettelse',
+    CopiedQuran: 'Kopiert koranen',
+    CopiedText: 'Kopiert oversettelse',
+    ArabicSize: 'Arabisk',
+    TranslationSize: 'Oversettelse',
   },
 
   sv: {
@@ -535,7 +605,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Svenska',
+    CopyQuran: 'Kopiera koranen',
+    CopyText: 'Kopiera översättning',
+    CopiedQuran: 'Kopierat koranen',
+    CopiedText: 'Kopierat översättning',
+    ArabicSize: 'Arabiska',
+    TranslationSize: 'Översättning',
   },
 
   ru: {
@@ -584,7 +661,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Русский',
+    CopyQuran: 'Копировать Коран',
+    CopyText: 'Копировать перевод',
+    CopiedQuran: 'Скопировано Коран',
+    CopiedText: 'Скопировано перевод',
+    ArabicSize: 'арабский',
+    TranslationSize: 'перевод',
   },
   it: {
     SurahAlKahf: "Surah Al Kahf",
@@ -632,7 +716,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Italiano',
+    CopyQuran: 'Copia il Corano',
+    CopyText: 'Copia traduzione',
+    CopiedQuran: 'Copiato il Corano',
+    CopiedText: 'Copiato traduzione',
+    ArabicSize: 'Arabo',
+    TranslationSize: 'Traduzione',
   },
   bs: {
     SurahAlKahf: "Surah Al Kahf",
@@ -680,7 +771,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Bosanski',
+    CopyQuran: 'Kopija korana',
+    CopyText: 'Kopiraj prijevod',
+    CopiedQuran: 'Kopirano korana',
+    CopiedText: 'Kopirano prijevod',
+    ArabicSize: 'Arapski',
+    TranslationSize: 'Prijevod',
   },
   es: {
     SurahAlKahf: "Surah Al Kahf",
@@ -728,7 +826,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Español',
+    CopyQuran: 'Copiar el Corán',
+    CopyText: 'Copiar traducción',
+    CopiedQuran: 'Copiado el Corán',
+    CopiedText: 'Copiado traducción',
+    ArabicSize: 'Arábica',
+    TranslationSize: 'Traducción',
   },
   pt: {
     SurahAlKahf: "Surah Al Kahf",
@@ -776,7 +881,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Português',
+    CopyQuran: 'Copiar Alcorão',
+    CopyText: 'Copiar tradução',
+    CopiedQuran: 'Copiado Alcorão',
+    CopiedText: 'Copiado tradução',
+    ArabicSize: 'Árabe',
+    TranslationSize: 'Tradução',
   },
   fa: {
     SurahAlKahf: "Surah Al Kahf",
@@ -824,7 +936,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: `فارسی${" "}`,
+    CopyQuran: 'کپی قرآن',
+    CopyText: 'ترجمه را کپی کنید',
+    CopiedQuran: 'کپی قرآن',
+    CopiedText: 'ترجمه را کپی کنید',
+    ArabicSize: 'عربی',
+    TranslationSize: 'ترجمه',
   },
   sq: {
     SurahAlKahf: "Surah Al Kahf",
@@ -872,7 +991,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Gjuhë Shqipe',
+    CopyQuran: 'Kopjoni Kuranin',
+    CopyText: 'Kopjoni përkthimin',
+    CopiedQuran: 'Kopjuar Kuranin',
+    CopiedText: 'Kopjuar përkthimin',
+    ArabicSize: 'Arabisht',
+    TranslationSize: 'Përkthim',
   },
   da: {
     SurahAlKahf: "Surah Al Kahf",
@@ -920,7 +1046,14 @@
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Dansk',
+    CopyQuran: 'Kopier koranen',
+    CopyText: 'Oversættelse kopi',
+    CopiedQuran: 'Kopieret Kuranin',
+    CopiedText: 'Oversættelse Kopieret',
+    ArabicSize: 'Arabisk',
+    TranslationSize: 'Oversættelse',
   },
 fi: {
     SurahAlKahf: "Surah Al Kahf",
@@ -968,7 +1101,14 @@ fi: {
     Contact: "Contact Us",
     Footertext:
       "Al-kitaab.com (also known as the noble quran, al quran, holy quran, koran) is a pro bono project.",
-    FootCopy: "2019 Al-Kitaab.com. All rights reserved."
+    FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
+    SelLang: 'Suomi',
+    CopyQuran: 'Kopioi Koraani',
+    CopyText: 'Kopioi teksti',
+    CopiedQuran: 'Kopioitu Koraani',
+    CopiedText: 'Kopioitu teksti',
+    ArabicSize: 'Arabialainen',
+    TranslationSize: 'Käännös',
   },
 
  
