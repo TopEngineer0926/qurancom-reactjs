@@ -67,7 +67,7 @@ const Store = ({ children }) => {
 
     //  var AfterHash=window.location.pathname.substring(window.location.pathname.indexOf("/") + 1 , window.location.pathname.length);
     const [Reciters, setRecits] = useState(1);
-    const [SurahNo, setSurahNo] = useState(0);
+    const [SurahNo, setSurahNo] = useState(1);
 
     const [CurrentpageNo, setPage] = useState(1);
     const [LastpageNo, setLast] = useState(1);
@@ -84,7 +84,7 @@ const Store = ({ children }) => {
     const [off, setoff] = useState("0");
 
     const [Loading, setLoading] = useState(true);
-    const [check, setCheck] = useState({ 20: true });
+    const [check, setCheck] = useState({ 134: true });
 
     const [Query, setQuery] = useState("");
     const [Flag, setSearchFlag] = useState(false)
