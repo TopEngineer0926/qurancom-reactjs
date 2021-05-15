@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme)=>({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    listItemStyle: {
+      width: 200,
+      overflow: 'hidden'
     }
 }));
 
@@ -51,7 +55,7 @@ function Fatiha(props) {
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
         {Array.isArray(props.ChapData) &&props.ChapData[id]? props.ChapData[id]["name_simple"] : "-"}
       </DropdownToggle>
-      <DropdownMenu style={dropdownStyle}>
+      <DropdownMenu style={dropdownStyle} className={classes.listItemStyle}>
         <Scrollbars style={{ height: '20vh' }}>
           {Array.isArray(props.ChapData) ? props.ChapData.map((mem, ind) =>
             <Link key={`Surah_${ind}`} to={`/${mem.id}`}
