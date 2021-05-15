@@ -15,11 +15,15 @@ import { makeStyles, Typography } from "@material-ui/core";
 const useStyles = makeStyles((theme)=>({
     menuItemStyle: {
         height: 33,
-        width: 165,
+        width: 215,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
-    }
+    },
+    listItemStyle: {
+        width: 200,
+        overflow: 'hidden'
+      }
 }));
 
 const dropdownStyle = {
@@ -147,7 +151,7 @@ function Drop() {
             <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
                 <FormattedMessage id="SelLang" />
             </DropdownToggle>
-            <DropdownMenu right style={dropdownStyle}>
+            <DropdownMenu right style={dropdownStyle} className={classes.listItemStyle}>
                 <Scrollbars style={{ height: '20vh' }}>
                     {
                         langData.map((language, index) => {

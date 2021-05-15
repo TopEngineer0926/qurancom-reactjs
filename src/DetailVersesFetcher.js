@@ -74,7 +74,8 @@ const StyledMenuItem = withStyles((theme) => ({
     minHeight: 'auto',
     paddingBottom: 0,
     paddingTop: 0,
-    paddingLeft: 10
+    paddingLeft: 10,
+    whiteSpace: 'pre-wrap'
   },
 }))(MenuItem);
 
