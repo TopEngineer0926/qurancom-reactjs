@@ -75,13 +75,12 @@ const StyledMenuItem = withStyles((theme) => ({
     paddingBottom: 0,
     paddingTop: 0,
     paddingLeft: 10,
-    whiteSpace: 'pre-wrap'
   },
 }))(MenuItem);
 
 const useStyles = makeStyles({
   root: {
-    width: 150,
+    width: 180,
     backgroundColor: '#167684',
     borderRadius: '6px'
   },

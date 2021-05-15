@@ -440,7 +440,7 @@
     FootCopy: "2019 Al-Kitaab.com. All rights reserved.",
     SelLang: 'Türkçe',
     CopyQuran: 'Kuran kopyala',
-    CopyText: 'Traduction copie',
+    CopyText: 'Traduction kopyala',
     CopiedQuran: 'Kuran Kopyalandı',
     CopiedText: 'Traduction Kopyalandı',
     ArabicSize: 'Arapça',
