@@ -46,13 +46,13 @@ const useStyles = makeStyles(theme => ({
   },
   menuItemStyle: {
     height: 33,
-    minminWidth: 105,
+    minWidth: 105,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
 },
 listItemStyle: {
-  width: 220,
+  width: 300,
   overflow: 'hidden'
 }
 }));
