@@ -163,7 +163,7 @@ function Drop() {
                                     }
                                     onClick={() => {
                                         setLang(language.langClass);
-                                        setCheck({ [language.langToTrans]: true });
+                                        setCheck({ [language.langToTrnas]: true });
                                         setSelLang(language.langLabel);
                                     }}
                                 >
