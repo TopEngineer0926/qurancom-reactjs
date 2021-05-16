@@ -413,7 +413,7 @@
     FontSize: "Yazı Boyutu",
     Arabic: "Arapça",
     Translation: "Meal",
-    Verses: "Ayetler",
+    Verses: "Ayet",
     Surahs: "Sureler",
     Play: "Başlat",
     Copy: "Kopyala",
