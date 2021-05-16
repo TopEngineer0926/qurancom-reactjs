@@ -98,15 +98,19 @@ function SurahsItem() {
             <div className={classes.boxContainer}>
               <Grid container>
                 <Grid item xs={8} className={classes.leftBox}>
-                  <Grid container display="flex" justify="center" alignItems="center">
-                    <Grid item xs={12} style={{ borderBottom: '1px solid #eee' }}>
-                      <Box display="flex" justifyContent="center" p={1}>
-                        <Typography style={{ color: 'black', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase', fontFamily: 'Montserrat', whiteSpace: 'nowrap' }}>
-                          {Array.isArray(Content) ? Content[indix]["name_simple"] : "Loading"}
-                        </Typography>
-                      </Box>
-                    </Grid>
-                  </Grid>
+                  {
+                    lang != "ar"?
+                      <Grid container display="flex" justify="center" alignItems="center">
+                        <Grid item xs={12} style={{ borderBottom: '1px solid #eee' }}>
+                          <Box display="flex" justifyContent="center" p={1}>
+                            <Typography style={{ color: 'black', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase', fontFamily: 'Montserrat', whiteSpace: 'nowrap' }}>
+                              {Array.isArray(Content) ? Content[indix]["name_simple"] : "Loading"}
+                            </Typography>
+                          </Box>
+                        </Grid>
+                      </Grid>
+                    :<></>
+                  }
                   <Grid container display="flex" justify="center" alignItems="center">
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" p={1} pb={0}>
