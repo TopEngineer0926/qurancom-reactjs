@@ -346,11 +346,11 @@ function Body(props) {
                       </StyledMenuItem>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FacebookIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
-                        <FacebookShareButton url="http://18.189.100.203" style={{fontSize: 13}}>Facebook</FacebookShareButton>
+                        <FacebookShareButton url="http://3.66.105.245" style={{fontSize: 13}}>Facebook</FacebookShareButton>
                       </StyledMenuItem>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><WhatsAppIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
-                        <WhatsappShareButton url="http://18.189.100.203" style={{fontSize: 13}}>Whatsapp</WhatsappShareButton>
+                        <WhatsappShareButton url="http://3.66.105.245" style={{fontSize: 13}}>Whatsapp</WhatsappShareButton>
                       </StyledMenuItem>
                     </MenuList>
                     {/* <div className="ayatrefbox">
