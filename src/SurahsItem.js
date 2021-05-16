@@ -7,6 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles'
+import { FormattedMessage } from "react-intl";
 
 const useStyles = makeStyles((theme) => ({
   boxContainer: {
@@ -119,7 +120,13 @@ function SurahsItem() {
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" alignItems="center">
                         <Typography style={{ color: 'white', fontSize: '12px', fontFamily: 'Montserrat' }}>
-                          {Array.isArray(Content) ? "Sura " + Content[indix]["id"] : "Loading"}
+                          {
+                          Array.isArray(Content) ? 
+                            <div>
+                              <FormattedMessage id="Surahs" />
+                              <label>{Content[indix]["id"]}</label>
+                            </div>: "Loading"
+                          }
                         </Typography>
                       </Box>
                     </Grid>
@@ -128,7 +135,7 @@ function SurahsItem() {
                     <Grid item xs={12}>
                       <Box display="flex" justifyContent="center" alignItems="center">
                         <Typography style={{ color: 'white', fontSize: '13px', fontFamily: 'Montserrat' }}>
-                          {Array.isArray(Content) ? Content[indix]["verses_count"] : ""} Verses
+                          {Array.isArray(Content) ? Content[indix]["verses_count"] : ""} <FormattedMessage id="Verses" />
                         </Typography>
                       </Box>
                     </Grid>
