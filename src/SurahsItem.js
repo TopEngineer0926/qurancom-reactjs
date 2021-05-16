@@ -104,7 +104,7 @@ function SurahsItem() {
                         <Grid item xs={12} style={{ borderBottom: '1px solid #eee' }}>
                           <Box display="flex" justifyContent="center" p={1}>
                             <Typography style={{ color: 'black', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase', fontFamily: 'Montserrat', whiteSpace: 'nowrap' }}>
-                              {Array.isArray(Content) ? Content[indix]["name_simple"] : "Loading"}
+                              {Array.isArray(Content) ? Content[indix]["name_simple"].replace("suresi suresi", "suresi") : "Loading"}
                             </Typography>
                           </Box>
                         </Grid>
