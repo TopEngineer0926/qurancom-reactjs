@@ -53,6 +53,7 @@
     CopiedText: 'Copied Text',
     ArabicSize: 'Arabic Size',
     TranslationSize: 'Translation Size',
+    Surah: 'Sura',
   },
 
   de: {
@@ -109,6 +110,7 @@
     CopiedText: 'Übersetzung Kopiert',
     ArabicSize: 'Arabisch',
     TranslationSize: 'Übersetzung',
+    Surah: 'Soera',
   },
 
   id: {
@@ -165,6 +167,7 @@
     CopiedText: 'Disalin terjemahan',
     ArabicSize: 'Arab',
     TranslationSize: 'Terjemahan',
+    Surah: 'Surah',
   },
 
   ar: {
@@ -221,6 +224,7 @@
     CopiedText: 'نسخ الترجمة',
     ArabicSize: 'عربى',
     TranslationSize: 'ترجمة',
+    Surah: 'سورة',
   },
 
   nl: {
@@ -277,6 +281,7 @@
     CopiedText: 'Vertaling Gekopieerde',
     ArabicSize: 'Arabisch',
     TranslationSize: 'Vertaling',
+    Surah: 'Soera',
   },
 
   fr: {
@@ -333,6 +338,7 @@
     CopiedText: 'Traduction Copié',
     ArabicSize: 'Arabe',
     TranslationSize: 'Traduction',
+    Surah: 'Sourate',
   },
 
   ur: {
@@ -389,6 +395,7 @@
     CopiedText: 'ترجمہ کاپی کریں',
     ArabicSize: 'عربی',
     TranslationSize: 'ترجمہ',
+    Surah: 'سورۃ',
   },
 
   tr: {
@@ -445,6 +452,7 @@
     CopiedText: 'Meal Kopyalandı',
     ArabicSize: 'Arapça',
     TranslationSize: 'Meal',
+    Surah: 'Sure',
   },
 
   bg: {
@@ -501,6 +509,7 @@
     CopiedText: 'Копиран на превода',
     ArabicSize: 'Арабски',
     TranslationSize: 'Превод',
+    Surah: 'Сура',
   },
 
   no: {
@@ -557,6 +566,7 @@
     CopiedText: 'Kopiert oversettelse',
     ArabicSize: 'Arabisk',
     TranslationSize: 'Oversettelse',
+    Surah: 'Surahen',
   },
 
   sv: {
@@ -613,6 +623,7 @@
     CopiedText: 'Kopierat översättning',
     ArabicSize: 'Arabiska',
     TranslationSize: 'Översättning',
+    Surah: 'Surat',
   },
 
   ru: {
@@ -669,6 +680,7 @@
     CopiedText: 'Скопировано перевод',
     ArabicSize: 'арабский',
     TranslationSize: 'перевод',
+    Surah: 'Cура',
   },
   it: {
     SurahAlKahf: "Surah Al Kahf",
@@ -724,6 +736,7 @@
     CopiedText: 'Copiato traduzione',
     ArabicSize: 'Arabo',
     TranslationSize: 'Traduzione',
+    Surah: 'Sura',
   },
   bs: {
     SurahAlKahf: "Surah Al Kahf",
@@ -779,6 +792,7 @@
     CopiedText: 'Kopirano prijevod',
     ArabicSize: 'Arapski',
     TranslationSize: 'Prijevod',
+    Surah: 'Suri',
   },
   es: {
     SurahAlKahf: "Surah Al Kahf",
@@ -834,6 +848,7 @@
     CopiedText: 'Copiado traducción',
     ArabicSize: 'Arábica',
     TranslationSize: 'Traducción',
+    Surah: 'Sura',
   },
   pt: {
     SurahAlKahf: "Surah Al Kahf",
@@ -889,6 +904,7 @@
     CopiedText: 'Copiado tradução',
     ArabicSize: 'Árabe',
     TranslationSize: 'Tradução',
+    Surah: 'Sura',
   },
   fa: {
     SurahAlKahf: "Surah Al Kahf",
@@ -944,6 +960,7 @@
     CopiedText: 'ترجمه را کپی کنید',
     ArabicSize: 'عربی',
     TranslationSize: 'ترجمه',
+    Surah: 'سوره',
   },
   sq: {
     SurahAlKahf: "Surah Al Kahf",
@@ -999,6 +1016,7 @@
     CopiedText: 'Kopjuar përkthimin',
     ArabicSize: 'Arabisht',
     TranslationSize: 'Përkthim',
+    Surah: 'Sures',
   },
   da: {
     SurahAlKahf: "Surah Al Kahf",
@@ -1054,6 +1072,7 @@
     CopiedText: 'Oversættelse Kopieret',
     ArabicSize: 'Arabisk',
     TranslationSize: 'Oversættelse',
+    Surah: 'Suraen',
   },
 fi: {
     SurahAlKahf: "Surah Al Kahf",
@@ -1109,6 +1128,7 @@ fi: {
     CopiedText: 'Kopioitu teksti',
     ArabicSize: 'Arabialainen',
     TranslationSize: 'Käännös',
+    Surah: 'Suurasta',
   },
 
  

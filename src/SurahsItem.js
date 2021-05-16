@@ -126,10 +126,10 @@ function SurahsItem() {
                         <Typography style={{ color: 'white', fontSize: '12px', fontFamily: 'Montserrat' }}>
                           {
                           Array.isArray(Content) ? 
-                            <div>
-                              <FormattedMessage id="Surahs" />
+                            <>  
+                              <FormattedMessage id="Surah" />
                               <label>{Content[indix]["id"]}</label>
-                            </div>: "Loading"
+                            </>: "Loading"
                           }
                         </Typography>
                       </Box>
