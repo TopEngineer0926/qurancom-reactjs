@@ -110,7 +110,7 @@
     CopiedText: 'Übersetzung Kopiert',
     ArabicSize: 'Arabisch',
     TranslationSize: 'Übersetzung',
-    Surah: 'Soera',
+    Surah: 'Sure',
   },
 
   id: {
