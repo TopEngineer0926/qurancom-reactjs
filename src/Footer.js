@@ -131,9 +131,6 @@ function Footer() {
                             <FormattedMessage id="placeholder" defaultMessage="search">
                                 {placeholder => <input className={classes.searchStyle} autoComplete="off" autoCorrect="off" id='search' type="text" placeholder={placeholder} onChange={onTextChange} />}
                             </FormattedMessage>
-                            <Link className={classes.btnStyle} to={`/search?q=${Text}`} onClick={handleClickSubmit}>
-                                START
-                            </Link>
 
                             {Showflag &&
                                 <ul className="searchsuggestion_ul">
