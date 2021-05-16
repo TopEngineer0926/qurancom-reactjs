@@ -53,7 +53,7 @@ function Fatiha(props) {
   return (
     <UncontrolledDropdown>
       <DropdownToggle nav caret style={dropdownStyle} className={classes.menuItemStyle}>
-        {Array.isArray(props.ChapData) &&props.ChapData[id]? props.ChapData[id]["name_simple"] : "-"}
+        {Array.isArray(props.ChapData) &&props.ChapData[id]? props.ChapData[id]["name_simple"].replace("suresi suresi", "suresi") : "-"}
       </DropdownToggle>
       <DropdownMenu style={dropdownStyle} className={classes.listItemStyle}>
         <Scrollbars style={{ height: '20vh' }}>
