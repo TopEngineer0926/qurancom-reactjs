@@ -442,7 +442,7 @@ function Body(props) {
                       )}
                       {/* FETCH TRANSLATIONS */}
                       {Array.isArray(mem.translations) ? mem.translations.map((trans, i) =>
-                        <div key={`Translation_${i}`} className="translation-box TranslationFontChanger" style={{marginLeft: 25}}>
+                        <div key={`Translation_${i}`} className="translation-box TranslationFontChanger" style={{marginLeft: 50}}>
                           <span className="translator_name" style={{'fontSize': TransFontSize + "px"}}>{trans.resource_name}</span>
                           <p style={{'fontSize': TransFontSize + "px", 'lineHeight': TransFontSize / 10}}>{ReactHtmlParser(trans.text)}</p>
                         </div>)
