@@ -78,7 +78,7 @@ function SurahsItem() {
   return (
     <>
       {indexs.map((indix) =>
-        <div className="col-lg-3 col-md-4 col-sm-6" key={indix} >
+        <div className="col-lg-4 col-md-6" key={indix} >
           <NavLink to={`/${indix + 1}`} onClick={() => { setSurahNo(indix + 1); setCurrentPage(1); setOff(indix); setLoading(true); }}>
             {/* <div className="surahbox d-flex justify-content-between">
             <div className="surah-content-left">
