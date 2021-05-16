@@ -127,7 +127,7 @@ function SurahsItem() {
                           {
                           Array.isArray(Content) ? 
                             <>  
-                              <FormattedMessage id="Surah" />
+                              <FormattedMessage id="Surah" />&nbsp;
                               <label>{Content[indix]["id"]}</label>
                             </>: "Loading"
                           }
