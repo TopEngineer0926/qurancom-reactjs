@@ -335,7 +335,7 @@ function Body(props) {
                       </StyledMenuItem>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FileCopyIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
-                        <CopyToClipboard text={`${mem.verse_key} - ${mem.translations[0].text}`}
+                        <CopyToClipboard text={mem.translations ? `${mem.verse_key} - ${mem.translations[0].text}` : ''}
                           onCopy={() => { copiedTextButtonAnim(); setCopiedTextState(mem.id); }}>
                           <span className='cursor-pointer'>
                             <a className="cursor-pointer" onClick={() => { }} style={{fontSize: 13}}>
