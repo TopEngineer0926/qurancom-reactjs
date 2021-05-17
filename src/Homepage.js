@@ -50,7 +50,7 @@ function Homepage() {
   return (
     <>
       <Helmet>
-        <title> Islam Check | Home</title>
+        <title> Der Koran | Home</title>
       </Helmet>
       <Header ChapData={ChapData} />
       <MainBody />

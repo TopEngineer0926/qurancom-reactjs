@@ -7,7 +7,7 @@ function Contact(){
         return (
             <>
             <Helmet>
-    <title> Islam Check | About Us</title>
+    <title> Der Koran | About Us</title>
     </Helmet>
  
   

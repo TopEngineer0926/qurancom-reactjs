@@ -29,7 +29,7 @@ function Contact(){
         return (
             <>
              <Helmet>
-    <title> Islam Check | Contact Us</title>
+    <title> Der Koran | Contact Us</title>
     </Helmet>
  
         <div className="contactus_section">

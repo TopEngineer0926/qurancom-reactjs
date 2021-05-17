@@ -29,7 +29,7 @@ export default props => {
   return (
     <Menu {...props} >
       <Link to="/">
-      <img src={logo} alt="Islam Check" style={{width: "200px"}} />
+      <img src={logo} alt="Der Koran" style={{width: "200px"}} />
       </Link >
 
       <Link to="/" className="Banner" style={marg}>

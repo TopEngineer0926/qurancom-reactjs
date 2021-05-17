@@ -59,7 +59,7 @@ function Homepage() {
 
     <>
       <Helmet>
-        <title> Islam Check | {(ChapData) ? ChapData[SurahNo - 1]["name_simple"].replace("suresi suresi", "suresi") : ""}</title>
+        <title> Der Koran | {(ChapData) ? ChapData[SurahNo - 1]["name_simple"].replace("suresi suresi", "suresi") : ""}</title>
       </Helmet>
       <Header ChapData={ChapData} VerseTotal={(Verses) ? Verses.total : ""} />
       <Main info={info} Content={(Verses) ? Verses : ""} ChapData={ChapData} />

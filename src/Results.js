@@ -60,7 +60,7 @@ const [playWord, setPlayWord] = useState(0);
 
     <> 
     <Helmet>
-   <title> Islam Check | Search</title>
+   <title> Der Koran | Search</title>
    </Helmet>
    <Header/>
        <MainBody />

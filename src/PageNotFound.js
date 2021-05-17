@@ -10,7 +10,7 @@ function Page() {
 
             <>
             <Helmet>
-   <title> Islam Check | Page Not Found-404 </title>
+   <title> Der Koran | Page Not Found-404 </title>
    </Helmet>
    <Header/>
             <div className="flex-center position-ref full-height page404">
