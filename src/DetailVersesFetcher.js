@@ -82,7 +82,8 @@ const useStyles = makeStyles({
   root: {
     width: 180,
     backgroundColor: '#167684',
-    borderRadius: '6px'
+    borderRadius: '6px',
+    height: 145
   },
 });
 
@@ -311,7 +312,7 @@ function Body(props) {
               {Array.isArray(props.data) ? props.data.map((mem, key) =>
                 <div key={`Verse_${key}`}
                   className={currentVerseIndex == key && VersePlay ? 'row playing-verse-container' : 'row'}>
-                  <div className="col-sm-12 col-lg-2">
+                  <div className="col-sm-12 col-lg-2" style={{display: 'flex', justifyContent: 'center'}}>
                     <MenuList className={classes.root}>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><TabletAndroidIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
