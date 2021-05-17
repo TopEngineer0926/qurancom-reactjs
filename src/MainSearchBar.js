@@ -6,10 +6,20 @@ import { SurahContext, CurrentPageContext, OffsetContext, URLContext, LangContex
 import ReactHtmlParser from 'react-html-parser';
 import SurahNames from "./SurahNames"
 import SurahsItem from "./SurahsItem"
-
+import { makeStyles } from '@material-ui/core/styles'
+const useStyles = makeStyles((theme) => ({
+  root: {
+    paddingLeft: 132,
+    marginTop: 40,
+    [theme.breakpoints.down('sm')]: {
+      padding: 'unset'
+    },
+  }
+}));
 function Main() {
+  const classes = useStyles();
   return (
-    <main style={{paddingLeft: 132, marginTop: 40}} >
+    <main className={classes.root} >
       <section id="surahs">
         <div className="container">
           <div className="tab-content">

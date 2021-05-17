@@ -40,6 +40,16 @@ const useStyles = makeStyles((theme) => ({
     labelStyle: {
         fontSize: 13.33,
         fontFamily: 'Montserrat'
+    },
+    headerLogo: {
+        [theme.breakpoints.down('sm')]: {
+            width: 264
+        },
+    },
+    headerBar: {
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center'
+        },
     }
 }));
 
@@ -63,13 +73,13 @@ function Header(props) {
                 <Grid container justify="center" direction="column" alignItems="center">
                     <Grid item>
                         <Link to="/">
-                            <img src='/img/header-logo.png'></img>
+                            <img src='/img/header-logo.png' className={classes.headerLogo}></img>
                         </Link>
                     </Grid>
                 </Grid>
             </Grid>
             <Grid item className={classes.headerMain} xs={12} sm={12} md={8} lg={9}>
-                <Grid container alignItems="center" style={{marginLeft: 50}}>
+                <Grid container alignItems="center" style={{marginLeft: 50}} className={classes.headerBar}>
                     {
                         data.map((d, i)=>{
                             return (
