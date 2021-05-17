@@ -41,7 +41,10 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 16,
         fontFamily: 'Montserrat',
         backgroundColor: 'white',
-        border: 'none'
+        border: 'none',
+        [theme.breakpoints.down('sm')]: {
+            width: 284
+        },
     },
     footerLeft: {
         // width: 461
@@ -52,6 +55,11 @@ const useStyles = makeStyles((theme) => ({
     footerMain: {
         // width: 'calc(100% - 329px - 461px)',
         // display: 'flex'
+    },
+    footerLogo: {
+        [theme.breakpoints.down('sm')]: {
+            width: 264
+        },
     }
 }));
 
@@ -180,7 +188,7 @@ function Footer() {
                     <Grid item className={classes.logoMargin}>
                         <Grid container justify="center">
                             <Grid item>
-                                <img src='/img/footer-logo.png'></img>
+                                <img src='/img/footer-logo.png' className={classes.footerLogo}></img>
                             </Grid>
                         </Grid>
                     </Grid>

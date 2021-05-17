@@ -22,9 +22,14 @@ const useStyles = makeStyles((theme) => ({
     },
     headerLeft: {
         // width: 461,
-        paddingLeft: 57,
-        paddingRight: 78,
-        display: 'flex'
+        display: 'flex',
+        [theme.breakpoints.down('lg')]: {
+            paddingLeft: 57,
+            paddingRight: 78,
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: 'unset'
+        },
     },
     headerMain: {
         // width: 'calc(100% - 461px)',

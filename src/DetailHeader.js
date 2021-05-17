@@ -34,9 +34,15 @@ const useStyles = makeStyles((theme) => ({
     },
     headerLeft: {
         // width: 461,
-        paddingLeft: 57,
-        paddingRight: 78,
-        display: 'flex'
+
+        display: 'flex',
+        [theme.breakpoints.down('lg')]: {
+            paddingLeft: 57,
+            paddingRight: 78,
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: 'unset'
+        },
     },
     headerMain: {
         // width: 'calc(100% - 461px)',
@@ -47,6 +53,11 @@ const useStyles = makeStyles((theme) => ({
     labelStyle: {
         fontSize: 13.33,
         fontFamily: 'Montserrat'
+    },
+    headerLogo: {
+        [theme.breakpoints.down('sm')]: {
+            width: 264
+        },
     }
 }));
 const Head = {
@@ -133,7 +144,7 @@ function Header(props) {
                 <Grid container justify="center" direction="column" alignItems="center">
                     <Grid item>
                         <Link to="/">
-                            <img src='/img/header-logo.png'></img>
+                            <img src='/img/header-logo.png' className={classes.headerLogo}></img>
                         </Link>
                     </Grid>
                 </Grid>

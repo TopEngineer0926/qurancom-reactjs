@@ -311,7 +311,7 @@ function Body(props) {
               {Array.isArray(props.data) ? props.data.map((mem, key) =>
                 <div key={`Verse_${key}`}
                   className={currentVerseIndex == key && VersePlay ? 'row playing-verse-container' : 'row'}>
-                  <div className="col-2 col-sm-2">
+                  <div className="col-sm-12 col-lg-2">
                     <MenuList className={classes.root}>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><TabletAndroidIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
@@ -386,7 +386,7 @@ function Body(props) {
                       </div>
                     </div> */}
                   </div>
-                  <div className="col-10 col-sm-10">
+                  <div className="col-sm-12 col-lg-10">
                     <div className="ayatbox">
                       <Element name={"verse-index" + key}></Element>
                       {(currentVerseIndex != key) && (
