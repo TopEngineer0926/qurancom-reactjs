@@ -58,6 +58,11 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: 264
         },
+    },
+    headerBar: {
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center'
+        },
     }
 }));
 const Head = {
@@ -150,7 +155,7 @@ function Header(props) {
                 </Grid>
             </Grid>
             <Grid item className={classes.headerMain} xs={12} sm={12} md={8} lg={9}>
-                <Grid container alignItems="center" style={{marginLeft: 50}}>
+                <Grid container alignItems="center" style={{marginLeft: 50}} className={classes.headerBar}>
                     {
                         data.map((d, i)=>{
                             return (
