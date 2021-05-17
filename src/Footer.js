@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#077b85',
         paddingTop: theme.spacing(4),
         paddingBottom: theme.spacing(10),
+        justifyContent: 'center',
+        display: 'flex'
     },
     btnStyle: {
         textDecoration: 'none',
@@ -42,14 +44,14 @@ const useStyles = makeStyles((theme) => ({
         border: 'none'
     },
     footerLeft: {
-        width: 461
+        // width: 461
     },
     footerRight: {
-        width: 329
+        // width: 329
     },
     footerMain: {
-        width: 'calc(100% - 329px - 461px)',
-        display: 'flex'
+        // width: 'calc(100% - 329px - 461px)',
+        // display: 'flex'
     }
 }));
 

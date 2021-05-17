@@ -16,22 +16,21 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('lg')]: {
             height: 264
         },
-        [theme.breakpoints.down('md')]: {
-            height: 680
-        },
-        [theme.breakpoints.down('sm')]: {
-            height: 780
-        },
+
+        display: 'flex',
+        justifyContent: 'center',
     },
     headerLeft: {
-        width: 461,
+        // width: 461,
         paddingLeft: 57,
         paddingRight: 78,
         display: 'flex'
     },
     headerMain: {
-        width: 'calc(100% - 461px)',
-        display: 'flex'
+        // width: 'calc(100% - 461px)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     labelStyle: {
         fontSize: 13.33,
@@ -55,8 +54,8 @@ function Header(props) {
     ]
     return (
         <Grid container className={classes.root}>
-            <Grid item className={classes.headerLeft}>
-                <Grid container justify="center" direction="column">
+            <Grid item className={classes.headerLeft} xs={12} sm={12} md={4} lg={3}>
+                <Grid container justify="center" direction="column" alignItems="center">
                     <Grid item>
                         <Link to="/">
                             <img src='/img/header-logo.png'></img>
@@ -64,8 +63,8 @@ function Header(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item className={classes.headerMain}>
-                <Grid container alignItems="center">
+            <Grid item className={classes.headerMain} xs={12} sm={12} md={8} lg={9}>
+                <Grid container alignItems="center" style={{marginLeft: 50}}>
                     {
                         data.map((d, i)=>{
                             return (
