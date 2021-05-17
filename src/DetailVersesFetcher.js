@@ -346,11 +346,11 @@ function Body(props) {
                       </StyledMenuItem>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><FacebookIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
-                        <FacebookShareButton url={`${mem.text_madani} \n <br>- ${mem.translations[0].text}`} style={{fontSize: 13}}>Facebook</FacebookShareButton>
+                        <FacebookShareButton url={`${mem.text_madani} \n \n \n- ${mem.translations[0].text}`} style={{fontSize: 13}}>Facebook</FacebookShareButton>
                       </StyledMenuItem>
                       <StyledMenuItem>
                         <ListItemIcon style={{marginRight: 15, minWidth: 'unset'}}><WhatsAppIcon fontSize="small" style={{color: 'white', fontSize: '1rem'}}/></ListItemIcon>
-                        <WhatsappShareButton url={`${mem.text_madani} \n <br>- ${mem.translations[0].text}`} style={{fontSize: 13}}>Whatsapp</WhatsappShareButton>
+                        <WhatsappShareButton url={`${mem.text_madani} \n \n \n- ${mem.translations[0].text}`} style={{fontSize: 13}}>Whatsapp</WhatsappShareButton>
                       </StyledMenuItem>
                     </MenuList>
                     {/* <div className="ayatrefbox">
